@@ -1,0 +1,108 @@
+# Template Kerja dan Formulir Praktikum
+
+Di bawah ini disediakan format yang dapat disalin untuk tugas baru.
+
+## Template A — Task Journey Card
+
+| Komponen | Isian peserta |
+|---|---|
+| Tema dan pertanyaan | ... |
+| Titik A | ... |
+| Titik B dan kondisi lulus | ... |
+| Sasaran antara S1–Sn | ... |
+| Rute alamiah | ... |
+| Instrumen chatbot | ... |
+| Delegasi agen dan batas mandat | ... |
+| Kapasitas, energi, waktu, sumber daya | ... |
+| Risiko dan tata kelola | ... |
+| Hasil pekerjaan dan bukti | ... |
+| Hasil belajar dan bukti | ... |
+
+## Template B — Research Journey Card (Tema 2)
+
+| Elemen | Bukti artikel | Interpretasi peserta |
+|---|---|---|
+| DOI, penulis, tahun | ... | ... |
+| A / masalah awal | ... | ... |
+| B / target | ... | ... |
+| Rute dan sasaran antara | ... | ... |
+| L5 Ekosistem | ... | ... |
+| L4 Rute dan kendaraan | ... | ... |
+| L3 Arsitektur | ... | ... |
+| L2 Mesin | ... | ... |
+| L1 Energi dan teknologi | ... | ... |
+| Metrik, instrumen, protokol | ... | ... |
+| Hasil dan keterbatasan | ... | ... |
+| Kandidat gap (belum terverifikasi?) | ... | ... |
+
+## Template C — Research Evaluation Contract
+
+| Komponen | Definisi |
+|---|---|
+| Pertanyaan penelitian | ... |
+| Baseline pembanding | ... |
+| Metrik utama | ... |
+| Metrik sekunder | ... |
+| Instrumen pengukuran | ... |
+| Dataset/populasi dan izin | ... |
+| Kondisi/skenario uji | ... |
+| Ambang keberhasilan dan batas minimum | ... |
+| Ketidakpastian serta analisis statistik | ... |
+| Keterbatasan klaim | ... |
+
+## Template D — Matriks klaim dan bukti (Tema 3)
+
+| Klaim | Bukti utama | Mengapa mendukung | Keberatan dan batasan | Status verifikasi |
+|---|---|---|---|---|
+| ... | ... | ... | ... | ... |
+
+## Template E — Visual Knowledge Specification (Tema 5)
+
+| Elemen visual | Semantik | Bukti sumber | Bentuk/notasi | Sudah dicek? |
+|---|---|---|---|---|
+| ... | ... | ... | ... | ... |
+
+## Template F — AI Assistance Ledger
+
+| Waktu | Tujuan | Moda | Instruksi/delegasi | Keluaran | Verifikasi manusia | Pembelajaran |
+|---|---|---|---|---|---|---|
+| ... | ... | ... | ... | ... | ... | ... |
+
+## Template G — Refleksi
+
+Tuliskan: (1) apa yang awalnya tidak dapat saya lakukan; (2) apa yang sekarang dapat saya lakukan tanpa AI; (3) pekerjaan apa yang saya delegasikan, dan mengapa; (4) jawaban AI mana yang saya koreksi; (5) bagaimana saya memastikan integritas karya; (6) apa rute berikutnya untuk memperbaiki kompetensi saya.
+
+## Menggunakan formulir sebagai alat berpikir
+
+Template berguna ketika membantu peserta menemukan informasi yang belum jelas. Ia kehilangan fungsi jika setiap kolom diisi kalimat umum hanya agar tampak lengkap. Mulailah dari satu kasus, isi bagian yang benar-benar diketahui, lalu tandai pertanyaan yang membutuhkan diagnosis atau pencarian sumber. Keterangan “belum diketahui; akan diperiksa melalui pretest” lebih informatif daripada “kemampuan cukup baik” tanpa bukti.
+
+Formulir perlu saling terhubung. Tujuan B pada Task Journey Card harus cocok dengan metrik dalam Evaluation Contract. Klaim esai perlu menunjuk pada Research Journey Card atau sumber lain yang tercatat. Elemen dalam VKS harus mengacu pada angka atau hubungan yang telah diperiksa. Ledger bantuan menghubungkan penggunaan AI dengan perubahan artefak. Keterhubungan ini memungkinkan reviewer mengikuti satu kesimpulan dari tujuan sampai bukti.
+
+## Contoh pengisian lintas formulir
+
+Ambil kasus pembelajaran Bayes. Pada Template A, A ditulis “peserta menggunakan 90% sebagai peluang sakit setelah positif pada soal diagnosis awal.” B ditulis “peserta menentukan penyebut yang benar dan menyelesaikan kasus baru tanpa petunjuk.” Pernyataan tersebut lebih operasional daripada “memahami Bayes” karena menunjuk perilaku yang dapat diamati.
+
+Pada Template C, instrumen berupa dua soal ekuivalen dengan konteks berbeda dan permintaan menjelaskan penyebut. Metrik utama adalah ketepatan penalaran, sedangkan waktu dicatat sebagai indikator tambahan. Ambang ilustratif dapat mensyaratkan penyebut, tabel, dan penafsiran benar; ambang ini harus ditetapkan pengajar sebelum pemeriksaan, bukan dipilih setelah melihat hasil. Prinsip keselarasan membantu menjaga hubungan tujuan dan instrumen [@cmu-alignment].
+
+Pada Template F, satu baris dapat berbunyi: “meminta petunjuk tentang ruang sampel; chatbot bertanya siapa yang termasuk kelompok positif; peserta memperbaiki tabel; diperiksa dengan hitung ulang manual.” Bagian pembelajaran menyebut perubahan yang dialami peserta, bukan kualitas bahasa jawaban chatbot. Pada Template G, peserta menjelaskan mengapa ia semula memilih penyebut keliru dan bagaimana kesalahan itu dapat dikenali pada kasus spam.
+
+## Contoh matriks klaim–bukti yang telah diisi
+
+| Klaim | Bukti | Hubungan penalaran | Batasan | Status |
+|---|---|---|---|---|
+| Tes berbantuan belum cukup membuktikan kemandirian | Peserta menyelesaikan latihan dengan petunjuk tetapi belum mengerjakan soal transfer | Kondisi bantuan berbeda dari kompetensi yang ingin disimpulkan | Ini diagnosis satu kegiatan, bukan efek kausal AI | Perlu tes mandiri |
+| Pada parameter Bayes bab ini, posterior positif 15,38% | 90 positif benar dan 495 positif palsu | Penyebut berisi seluruh hasil positif | Parameter hipotetis | Hitungan diperiksa |
+
+Tabel menunjukkan bahwa status verifikasi dapat berbeda antarjenis klaim. Sebuah hitungan dapat sudah diperiksa, sementara kesimpulan tentang kemampuan masih memerlukan pengukuran. Hindari satu tanda centang global untuk seluruh laporan apabila komponennya mempunyai dasar bukti berbeda.
+
+## Mengelola versi dan perubahan keputusan
+
+Berikan identitas kasus, tanggal, penyusun, dan nomor versi pada paket formulir. Ketika tujuan berubah, catat alasan dan dampaknya pada rubrik, jadwal, serta produk. Jangan mengganti B diam-diam agar hasil yang sudah ada tampak berhasil. Pembaruan yang sah menunjukkan perubahan kebutuhan atau bukti, sekaligus mempertahankan jejak definisi sebelumnya.
+
+Pisahkan data sumber, olahan, dan laporan. Jika informasi sensitif tidak dapat dibagikan, sediakan deskripsi akses dan contoh sintetis yang cukup untuk memahami prosedur. Prinsip FAIR membantu memikirkan ketercarian, akses, interoperabilitas, dan penggunaan ulang [@fair2016]; FAIR tidak mengharuskan setiap data menjadi publik. Struktur pencatatan harus sesuai izin dan kebutuhan audit.
+
+## Latihan review berpasangan
+
+Tukar paket formulir dengan rekan. Reviewer memilih satu klaim hasil, mencari bukti, memeriksa kecocokannya dengan B, lalu menyebut informasi yang hilang. Penyusun memperbaiki satu hubungan yang putus sebelum menambah uraian baru. Kegiatan selesai ketika reviewer dapat menjelaskan mengapa hasil dinilai tercapai atau belum tercapai tanpa meminta penjelasan tambahan dari penyusun.
+
+Kesalahan yang sering muncul adalah menyebut alat sebagai tujuan, frekuensi kegiatan sebagai kompetensi, dan prompt sebagai bukti kebenaran. Perbaikannya selalu kembali ke perubahan keadaan yang dapat diamati. Template yang matang menyimpan keputusan dan bukti yang membuat pekerjaan dapat dilanjutkan orang lain, sekaligus memberi peserta bahan untuk memahami perkembangan kemampuannya sendiri.

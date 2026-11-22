@@ -1,0 +1,64 @@
+# Graf Keadaan, Peta Masalah, dan Penemuan Rute
+
+## Representasi masalah
+
+Definisikan graf berarah $G=(V,E)$ dengan simpul $v\in V$ sebagai **keadaan**, bukan selalu lokasi geografis. Sisi $e=(v_i,v_j)$ menyatakan transisi yang mungkin melalui tindakan tertentu. Keadaan awal $s_0=A$ dan himpunan sasaran $G_{\mathrm{goal}}$ dapat berupa satu simpul B atau sekumpulan keadaan yang memenuhi syarat.
+
+Simpul antara dapat merepresentasikan draft, kompetensi, dataset tervalidasi, komitmen tim, atau hasil pengujian. Graf perlu memuat prasyarat, dependensi, ancaman, sumber daya, dan ketidakpastian: tidak semua sisi yang dibayangkan dapat langsung dilalui.
+
+## Tiga status sisi
+
+1. **Diketahui dan layak**: transisi didukung bukti dan dapat dijalankan sekarang.
+2. **Diketahui tetapi belum layak**: perlu skills, sumber daya, waktu atau akses tambahan.
+3. **Hipotesis**: transisi mungkin ada tetapi belum dibuktikan.
+
+Understanding PUDAL bertugas mengungkap dan menguji status tersebut sebelum Planning menganggapnya sebagai opsi. Hal ini krusial ketika AI mengusulkan alternatif yang tampaknya meyakinkan tetapi belum terverifikasi.
+
+## Menyusun peta bertahap
+
+Mulailah dari A dan B, lalu daftar prasyarat hasil B secara mundur dan tindakan yang mungkin dilakukan secara maju. Gabungkan keduanya menjadi peta. Identifikasi simpul penghubung, jalur kritis, kegiatan paralel, dan ketergantungan kemampuan. Cantumkan keyakinan dan sumber bukti pada tiap rute. Peta diperbarui ketika pengguna atau lingkungan berubah.
+
+## Dua graf yang terhubung
+
+**State–Route Graph** menunjukkan keadaan dan transisinya. **Resource–Energy Graph** menunjukkan sumber daya eksternal, mekanisme akses, konversi, cadangan, dan engine yang dapat memanfaatkannya. Kelayakan rute diperoleh dari hubungan dua graf tersebut. Rute ada secara konseptual belum tentu bisa digunakan bila sumber daya pendukung tidak tersedia di lokasi dan waktu yang tepat.
+
+## Contoh akademik
+
+$A$: lembar jawaban kosong. $M_1$: pertanyaan dipahami. $M_2$: konsep serta metode dipilih. $M_3$: jawaban awal dihasilkan. $M_4$: hasil diuji. $B$: jawaban benar dan dapat dijelaskan. Jalur samping dapat berupa konsultasi buku, latihan ulang, penggunaan alat hitung, atau meminta bantuan peer reviewer.
+
+## Menentukan tingkat rincian simpul
+
+Graf terlalu rinci berubah menjadi daftar semua gerakan kecil, sedangkan graf terlalu kasar menyembunyikan prasyarat penting. Pilih simpul ketika perubahan keadaannya memengaruhi keputusan berikutnya. Untuk modul Bayes, “file dibuka” mungkin tidak perlu menjadi milestone, tetapi “parameter dan jawaban acuan diperiksa” perlu karena tutorial dan prompt bergantung padanya. Tingkat rincian disesuaikan dengan risiko dan tujuan pengguna graf.
+
+Keadaan perlu cukup lengkap untuk menjelaskan transisi. “Draf tersedia” dan “draf tersedia serta telah diperiksa” merupakan dua keadaan berbeda. Jika keduanya digabung, rute menuju publikasi tampak lebih pendek karena pekerjaan pemeriksaan menghilang. Deskripsi simpul yang baik menyebut artefak, status kualitas, dan prasyarat yang sudah terpenuhi.
+
+## Menyusun tabel transisi sebelum menggambar
+
+Graf dapat mulai dari tabel agar informasi tidak hilang dalam tata letak.
+
+| Dari → ke | Tindakan | Prasyarat | Bukti selesai | Status |
+|---|---|---|---|---|
+| Diagnosis → konsep terpilih | Analisis jawaban awal | Soal diagnosis dan respons | Daftar miskonsepsi | Layak |
+| Konsep → contoh terverifikasi | Susun tabel dan hitung ulang | Parameter disepakati | Jawaban acuan cocok | Layak |
+| Contoh → simulator | Implementasi perhitungan | Kemampuan kode dan waktu | Hasil cocok dengan acuan | Belum layak jika skill kurang |
+| Simulator → transfer | Latihan variasi dan tes mandiri | Soal baru tersedia | Penalaran mandiri benar | Hipotesis efektivitas |
+
+Baris terakhir penting: tersedianya simulator tidak menjamin transfer. Sisi itu memerlukan pengujian pendidikan, sehingga statusnya berbeda dari sisi perhitungan yang dapat diperiksa langsung. Catatan status mencegah peta mengubah dugaan menjadi kepastian.
+
+## Dependensi, jalan alternatif, dan keadaan buntu
+
+Sebagian pekerjaan dapat paralel setelah konsep disepakati: penyuntingan bahasa dan pengujian kode dapat berjalan bersama. Namun publikasi menunggu keduanya. Jika graf hanya menggambarkan satu rantai, peluang paralel hilang; jika semua kegiatan dianggap paralel, dependensi dilanggar. Gunakan hubungan prasyarat untuk menentukan urutan, kemudian jadwalkan berdasarkan ketersediaan orang dan alat.
+
+Keadaan buntu terjadi ketika tidak ada transisi layak menuju tujuan pada sumber daya saat ini. Kelompok dapat mengurangi lingkup, memperoleh dukungan, belajar, atau merundingkan B. Misalnya simulator interaktif dibatalkan dan diganti tabel variasi yang dapat dijalankan manual. Tujuan memahami pengaruh prior tetap dapat dijaga tanpa mempertahankan seluruh bentuk produk.
+
+## Menghubungkan peta keadaan dengan peta sumber daya
+
+Sisi “menguji tutorial dengan pengguna baru” memerlukan bukan hanya dokumen, tetapi waktu dan akses pengguna. Jika calon penguji baru tersedia setelah tenggat, sisi tersebut belum layak pada jadwal semula. Hubungkan setiap transisi penting dengan sumber daya yang dibutuhkan dan waktu ketersediaannya. Informasi yang tampak administratif ini dapat menentukan rute lebih kuat daripada kecanggihan alat.
+
+Pendekatan rekayasa sistem menekankan hubungan kebutuhan, rancangan, dan pembuktian [@nasa2016]. Dalam graf buku ini, hubungan tersebut diterjemahkan menjadi prasyarat serta bukti pada sisi. Ini rancangan representasi yang dapat diuji kegunaannya, bukan klaim bahwa semua masalah sosial dapat direduksi menjadi graf deterministik.
+
+## Memperbarui peta dari pengujian
+
+Sesudah dua pengguna mencoba tutorial, kelompok mungkin menemukan bahwa prasyarat membaca persentase belum terpenuhi. Tambahkan simpul latihan persentase atau rute bantuan, kemudian catat sumber penemuannya. Jangan sekadar menghapus pengguna tersebut dari evaluasi agar rute lama terlihat berhasil. Peta yang diperbarui menjelaskan untuk siapa rute dapat digunakan.
+
+Sebagai latihan, susun enam sampai sepuluh keadaan untuk tugas Anda, lalu tandai satu sisi hipotesis dan satu sisi yang belum layak. Rancang pengujian murah untuk sisi hipotesis serta tindakan yang membuat sisi kedua layak. Jawaban perlu membedakan memperoleh pengetahuan tentang rute dari memperoleh kemampuan menjalani rute.

@@ -1,0 +1,29 @@
+# Referensi dan Sumber Pengembangan
+
+## Literatur dan kerangka proyek
+
+Buku ini disusun berdasarkan diskusi proyek mengenai enam tema dan dokumen TISE berikut yang disediakan sebagai materi proyek:
+
+- Langi, A. Z. R. (2026). *TISE 1.0: A Sustainability-Constrained Model for Mission-Oriented Ecosystems Under Changing Conditions.*
+- Langi, A. Z. R. (2026). *TISE 2.0: Co-Learning Mission-Oriented Ecosystems with a Capability-Gated Learning Index.*
+- Langi, A. Z. R. (2026). *TISE 3.0: A Governed Startup Creator for Mission-Oriented Ecosystems.*
+- Langi, A. Z. R. (2026). *TISE, the Q-Cycle, and the Digital-Twin Research Method: A Conceptual Explanation and Ongoing Research Agenda.*
+- Langi, A. Z. R. *Rekayasa Cerdas Multi-Kawasan: Kompilasi* (kumpulan naskah, termasuk metafora transportasi, instrumen, dan engine).
+
+## Dokumentasi dan sumber eksternal yang dapat diperiksa
+
+- [Quarto: Creating a Book](https://quarto.org/docs/books/) — struktur dan format proyek buku.
+- [Quarto: Extension Formats Listing](https://quarto.org/docs/extensions/listing-formats.html) — katalog ekstensi format; bukan satu template buku.
+- [Quarto: Document Listings](https://quarto.org/docs/websites/website-listings.html) — bila ingin membangun katalog modul lanjutan.
+- [UNESCO: Guidance for generative AI in education and research](https://unesdoc.unesco.org/ark:/48223/pf0000386693) — landasan penggunaan AI secara human-centered.
+- [UNESCO: Recommendation on the Ethics of Artificial Intelligence](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics) — prinsip hak, privasi, keadilan, dan tata kelola.
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — pendekatan penilaian risiko.
+- [PRISMA 2020 Statement](https://www.prisma-statement.org/prisma-2020-statement) — pelaporan review sistematis.
+- [Hugging Face: StudyChat](https://huggingface.co/datasets/wmcnicho/StudyChat) — interaksi mahasiswa dengan tutor berbasis AI.
+- [Hugging Face: EDU Interactions](https://huggingface.co/datasets/aiboxlab/edu-interactions) — contoh dataset interaksi pendidikan.
+- [Kaggle: MAP — Charting Student Math Misunderstandings](https://www.kaggle.com/competitions/map-charting-student-math-misunderstandings) — analisis miskonsepsi matematis.
+- [draw.io](https://www.drawio.com/), [Mermaid](https://mermaid.js.org/), [Graphviz](https://graphviz.org/) — visualisasi dan pemodelan diagram.
+
+::: {.callout-warning title="Catatan akademik"}
+Daftar sumber ini merupakan titik awal serta rujukan dokumentasi, **bukan** bibliografi komprehensif hasil pencarian SLR. Ketika digunakan sebagai buku ajar resmi atau diterbitkan, referensi pernyataan empiris, izin reproduksi materi, dan akurasi seluruh metadata sumber perlu diverifikasi kembali.
+:::

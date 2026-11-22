@@ -1,0 +1,62 @@
+# Register 42 Artefak
+
+Tabel ini diturunkan dari `data/ARTIFACT_REGISTER_asli.csv` pada repositori KIPP yang tersedia. Kode baru **TT.JJ.NN** disandingkan dengan kode asli untuk menghindari hilangnya jejak. Judul bersifat rencana pengembangan, bukan pernyataan bahwa semua artefak telah rampung.
+
+| Kode baru | ID asal | Tema | Jenis | Judul | Penanggung jawab | Prioritas |
+|---|---|---|---|---|---|---|
+| 01.01.01 | K-L01 | AI for Learning | knowledge | Prinsip belajar efektif menggunakan AI | Tim 01 | P0 |
+| 01.01.02 | K-L02 | AI for Learning | knowledge | Metakognisi, belajar aktif, dan uji pemahaman | Tim 02 | P0 |
+| 01.02.01 | S-L01 | AI for Learning | skills | Belajar satu konsep sulit dengan bantuan AI | Tim 01 | P1 |
+| 01.02.02 | S-L02 | AI for Learning | skills | Membuat latihan, kuis, dan umpan balik formatif | Tim 02 | P1 |
+| 01.03.01 | P-L01 | AI for Learning | prompts | Socratic AI Tutor | Tim 01 | P1 |
+| 01.03.02 | P-L02 | AI for Learning | prompts | Penguji pemahaman dan miskonsepsi | Tim 02 | P1 |
+| 01.04.01 | C-L01 | AI for Learning | cases | Mengukur peningkatan pemahaman satu konsep | Tim 01+02 | P2 |
+| 02.01.01 | K-R01 | AI for Literature Research | knowledge | Struktur paper dan pembacaan kritis | Tim 03 | P0 |
+| 02.01.02 | K-R02 | AI for Literature Research | knowledge | Strategi penelusuran dan validasi sumber | Tim 04 | P0 |
+| 02.02.01 | S-R01 | AI for Literature Research | skills | Membaca dan meringkas paper berbantuan AI | Tim 03 | P1 |
+| 02.02.02 | S-R02 | AI for Literature Research | skills | Matriks literatur dan identifikasi research gap | Tim 04 | P1 |
+| 02.03.01 | P-R01 | AI for Literature Research | prompts | Critical Paper Reader | Tim 03 | P1 |
+| 02.03.02 | P-R02 | AI for Literature Research | prompts | Literature Comparison and Synthesis | Tim 04 | P1 |
+| 02.04.01 | C-R01 | AI for Literature Research | cases | Sintesis lima paper yang terverifikasi | Tim 03+04 | P2 |
+| 03.01.01 | K-W01 | AI for Academic Writing | knowledge | Struktur karya ilmiah dan argumentasi | Tim 05 | P0 |
+| 03.01.02 | K-W02 | AI for Academic Writing | knowledge | Integritas akademik, sitasi, dan atribusi AI | Tim 06 | P0 |
+| 03.02.01 | S-W01 | AI for Academic Writing | skills | Membuat outline dari pertanyaan penelitian | Tim 05 | P1 |
+| 03.02.02 | S-W02 | AI for Academic Writing | skills | Revisi paragraf, koherensi, dan argumentasi | Tim 06 | P1 |
+| 03.03.01 | P-W01 | AI for Academic Writing | prompts | Academic Outline Coach | Tim 05 | P1 |
+| 03.03.02 | P-W02 | AI for Academic Writing | prompts | Critical Writing Reviewer | Tim 06 | P1 |
+| 03.04.01 | C-W01 | AI for Academic Writing | cases | Revisi draf dengan jejak perbaikan | Tim 05+06 | P2 |
+| 04.01.01 | K-C01 | AI for Coding & Data Analysis | knowledge | Pemrograman berbantuan AI dan debugging | Tim 07 | P0 |
+| 04.01.02 | K-C02 | AI for Coding & Data Analysis | knowledge | Analisis data, validasi, dan reproduksibilitas | Tim 08 | P0 |
+| 04.02.01 | S-C01 | AI for Coding & Data Analysis | skills | Notebook Python dari masalah ke pengujian | Tim 07 | P1 |
+| 04.02.02 | S-C02 | AI for Coding & Data Analysis | skills | Notebook Pandas dan Matplotlib | Tim 08 | P1 |
+| 04.03.01 | P-C01 | AI for Coding & Data Analysis | prompts | Coding Tutor and Debugging Assistant | Tim 07 | P1 |
+| 04.03.02 | P-C02 | AI for Coding & Data Analysis | prompts | Data Analysis and Result Verification | Tim 08 | P1 |
+| 04.04.01 | C-C01 | AI for Coding & Data Analysis | cases | Analisis dataset akademik dengan verifikasi | Tim 07+08 | P2 |
+| 05.01.01 | K-V01 | AI for Visualization & Presentation | knowledge | Prinsip komunikasi visual ilmiah | Tim 09 | P0 |
+| 05.01.02 | K-V02 | AI for Visualization & Presentation | knowledge | Presentasi akademik, storytelling, dan TAIDA | Tim 10 | P0 |
+| 05.02.01 | S-V01 | AI for Visualization & Presentation | skills | Diagram konsep dan grafik yang benar | Tim 09 | P1 |
+| 05.02.02 | S-V02 | AI for Visualization & Presentation | skills | Presentasi akademik lima menit | Tim 10 | P1 |
+| 05.03.01 | P-V01 | AI for Visualization & Presentation | prompts | Scientific Visual Designer | Tim 09 | P1 |
+| 05.03.02 | P-V02 | AI for Visualization & Presentation | prompts | Academic Presentation Coach | Tim 10 | P1 |
+| 05.04.01 | C-V01 | AI for Visualization & Presentation | cases | Paper menjadi infografik dan presentasi akurat | Tim 09+10 | P2 |
+| 06.01.01 | K-P01 | AI for Academic Problem Solving | knowledge | Problem framing dan identifikasi kebutuhan | Tim 11 | P0 |
+| 06.01.02 | K-P02 | AI for Academic Problem Solving | knowledge | Alternatif solusi, keputusan, dan evaluasi nilai | Tim 12 | P0 |
+| 06.02.01 | S-P01 | AI for Academic Problem Solving | skills | Analisis masalah berbantuan AI | Tim 11 | P1 |
+| 06.02.02 | S-P02 | AI for Academic Problem Solving | skills | Decision matrix, simulasi, dan risiko | Tim 12 | P1 |
+| 06.03.01 | P-P01 | AI for Academic Problem Solving | prompts | Problem Framing and Root Cause Analyst | Tim 11 | P1 |
+| 06.03.02 | P-P02 | AI for Academic Problem Solving | prompts | Solution Critic and Decision Support | Tim 12 | P1 |
+| 06.04.01 | C-P01 | AI for Academic Problem Solving | cases | Solusi untuk masalah nyata kehidupan akademik | Tim 11+12 | P2 |
+
+**Catatan:** jika penamaan folder/kode di repositori berbeda dari rancangan pada bab implementasi, gunakan register sebagai referensi migrasi. Setiap baris harus mempunyai tautan konten dan rekaman review yang dapat diperbarui.
+
+## Cara memeriksa kelengkapan register
+
+Setiap tema seharusnya mempunyai dua Knowledge, dua Skills, dua Prompts, dan satu Case Study. Periksa jumlah per jenis dan per tema, bukan hanya total 42. Total yang benar masih dapat menyembunyikan satu tema kekurangan artefak dan tema lain mempunyai duplikasi. ID baru dan ID asal perlu unik dalam fungsinya serta mempunyai pasangan yang dapat ditelusuri.
+
+Tambahkan path sumber, versi, status review, bukti uji, dan tanggal pembaruan pada registri operasional. Lampiran ini memuat rencana artefak dari bahan proyek; ia tidak menggantikan registri aktif yang membuktikan status implementasi. Perubahan judul diperbolehkan jika identitas dan alasan perubahan tetap tercatat.
+
+## Contoh penerimaan satu artefak
+
+Untuk `01.02.01`, reviewer memeriksa bahwa tutorial mempunyai tujuan, prasyarat, input, langkah, hasil yang diharapkan, dan cara mendeteksi kesalahan. Ia lalu menjalankan satu contoh tanpa bantuan penyusun. Status diterima diberikan setelah kegagalan yang ditemukan diperbaiki atau batas penggunaannya dinyatakan secara jelas.
+
+Jika tutorial belum diuji, gunakan status draf atau menunggu pengujian. Kejujuran status membantu pasangan kelompok merencanakan integrasi. Artefak yang belum diterima tidak harus dihapus; ia tetap berguna sebagai pekerjaan terbuka dengan penanggung jawab dan tindakan berikutnya.

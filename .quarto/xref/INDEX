@@ -1,0 +1,104 @@
+{
+  "index.qmd": {
+    "index.html": "16b76b62"
+  },
+  "01-pendahuluan.qmd": {
+    "01-pendahuluan.html": "3c24996d"
+  },
+  "02-taida-triune.qmd": {
+    "02-taida-triune.html": "de68e0d1"
+  },
+  "03-empat-artefak.qmd": {
+    "03-empat-artefak.html": "75f9acbb"
+  },
+  "04-pudal-dasar.qmd": {
+    "04-pudal-dasar.html": "dcf9ec5d"
+  },
+  "05-graf-model-masalah.qmd": {
+    "05-graf-model-masalah.html": "497593b5"
+  },
+  "06-tiga-engine.qmd": {
+    "06-tiga-engine.html": "83e0f446"
+  },
+  "07-energi-kerja-sumberdaya.qmd": {
+    "07-energi-kerja-sumberdaya.html": "7a19070a"
+  },
+  "08-lima-pudal.qmd": {
+    "08-lima-pudal.html": "f1e09e1e"
+  },
+  "09-milestone-replanning.qmd": {
+    "09-milestone-replanning.html": "76dfcd25"
+  },
+  "10-learning-exploration.qmd": {
+    "10-learning-exploration.html": "38f81a0a"
+  },
+  "11-model-formal.qmd": {
+    "11-model-formal.html": "fd4e0226"
+  },
+  "12-arsitektur-agen.qmd": {
+    "12-arsitektur-agen.html": "1419ba13"
+  },
+  "13-enam-learning-paths.qmd": {
+    "13-enam-learning-paths.html": "1f3c4fe4"
+  },
+  "14-proyek-uas.qmd": {
+    "14-proyek-uas.html": "2a86d0cc"
+  },
+  "15-implementasi-teknis.qmd": {
+    "15-implementasi-teknis.html": "29475770"
+  },
+  "16-evaluasi-dan-agenda-riset.qmd": {
+    "16-evaluasi-dan-agenda-riset.html": "301755d4"
+  },
+  "tise-six-themes/00-pengantar-enam-tema.qmd": {
+    "00-pengantar-enam-tema.html": "664dbb89"
+  },
+  "tise-six-themes/01-kerangka-tise.qmd": {
+    "01-kerangka-tise.html": "83e8bd6b"
+  },
+  "tise-six-themes/02-tema1-learning.qmd": {
+    "02-tema1-learning.html": "f8114c04"
+  },
+  "tise-six-themes/03-tema2-literature.qmd": {
+    "03-tema2-literature.html": "0a1556fe"
+  },
+  "tise-six-themes/04-tema3-writing.qmd": {
+    "04-tema3-writing.html": "70652567"
+  },
+  "tise-six-themes/05-tema4-data.qmd": {
+    "05-tema4-data.html": "07594692"
+  },
+  "tise-six-themes/06-tema5-visualisasi.qmd": {
+    "06-tema5-visualisasi.html": "6e91cda9"
+  },
+  "tise-six-themes/07-tema6-problem-solving.qmd": {
+    "07-tema6-problem-solving.html": "80845919"
+  },
+  "tise-six-themes/08-implementasi-asesmen.qmd": {
+    "08-implementasi-asesmen.html": "d626922f"
+  },
+  "tise-six-themes/09-template-kerja.qmd": {
+    "09-template-kerja.html": "64658adb"
+  },
+  "tise-six-themes/references.qmd": {
+    "references.html": "c53e6f09"
+  },
+  "17-penutup.qmd": {
+    "17-penutup.html": "5d564745"
+  },
+  "A-register-42-artefak.qmd": {
+    "A-register-42-artefak.html": "8d1f545d"
+  },
+  "B-template-kasus.qmd": {
+    "B-template-kasus.html": "5c7689f3"
+  },
+  "C-glosarium.qmd": {
+    "C-glosarium.html": "e501d750"
+  },
+  "D-sumber-dan-gambar.qmd": {
+    "D-sumber-dan-gambar.html": "4e58f595"
+  },
+  "tise-six-themes/appendix-tools.qmd": {
+    "appendix-tools.html": "e99f8a92"
+  }
+}

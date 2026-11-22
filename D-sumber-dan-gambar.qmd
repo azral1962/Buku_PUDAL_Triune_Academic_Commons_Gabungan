@@ -1,0 +1,48 @@
+# Sumber Bahan, Dokumentasi Visual, dan Catatan Editorial
+
+## Asal materi
+
+Naskah disusun dari percakapan proyek KIPP yang mengembangkan: enam learning paths, empat artefak, TAIDA, PUDAL, graf A–B, tiga engine, sumber daya dan energi, hierarki lima PUDAL, intermediate destinations, dan milestones. Bahan yang tersedia sebagai berkas pendamping: `data/Petunjuk_UAS_KIPP.qmd`, `data/ARTIFACT_REGISTER_asli.csv`, dan `data/KIPP_Pembagian_Kelompok_dan_42_Artefak.xlsx`.
+
+## Indeks gambar hasil percakapan
+
+| Gambar | Lokasi di buku | Nama berkas |
+|---|---|---|
+| Ringkasan enam learning paths | Prakata | `images/overview.png` |
+| Ringkasan 42 artefak | Bab 3 | `images/artefacts.png` |
+| Pembagian tim | Bab 3 | `images/teams.png` |
+| Ekosistem sumber daya | Bab 7 | `images/resource.png` |
+| Portal dan sumber belajar | Bab 12 | `images/portal.png` |
+| Learning Flow Tema 1–6 | Bab 13, masing-masing tema | `images/lp1.png` s.d. `images/lp6.png` |
+| Workflow mahasiswa | Bab 14 | `images/flow.png` |
+| Struktur repositori | Bab 15 | `images/repository.png` |
+| Panduan GitHub | Bab 15 | `images/github.png` |
+
+## Hal yang perlu diverifikasi sebelum publikasi akademik
+
+1. Persamaan, fungsi tujuan, dan klasifikasi engine adalah **model konseptual usulan**, belum divalidasi eksperimen.
+2. Enam gambar Learning Flow merupakan ilustrasi yang dibuat selama percakapan; teks pada gambar harus diperiksa ulang ketika digunakan sebagai rujukan penilaian resmi.
+3. Registri dan judul tugas berasal dari bahan proyek, dan status aktual tiap artefak perlu disinkronkan dengan repositori yang aktif.
+4. Bobot penilaian UAS merupakan rancangan untuk pengesahan, bukan ketentuan resmi.
+5. Uang, waktu, dan kapasitas kognitif adalah sumber daya dalam analogi kerja; hanya energi fisik yang memiliki unit joule.
+
+## Rujukan teknis Quarto
+
+- [Creating a Book — Quarto](https://quarto.org/docs/books/)
+- [Book Structure — Quarto](https://quarto.org/docs/books/book-structure.html)
+
+Buku mengikuti struktur resmi `project: type: book`, file wajib `index.qmd`, daftar bab pada `_quarto.yml`, dan folder keluaran `_book/` setelah dirender. Rujukan Quarto menjelaskan **format penerbitan**, bukan sumber empiris bagi kerangka PUDAL.
+
+## Landasan literatur edisi pengembangan
+
+Literatur pembelajaran dipakai untuk membahas diagnosis, pengaturan diri, dan latihan mengingat kembali [@hpl2018; @roediger2006]. Sumber statistik mendukung pembacaan tabel probabilitas [@openstax-stat]. Literatur argumentasi dan visualisasi membantu membedakan klaim, penalaran, representasi, serta ketidakpastian [@purdue-toulmin; @wilke2019]. Pembahasan tersebut tidak menjadi bukti langsung efektivitas seluruh arsitektur PUDAL.
+
+Dokumentasi rekayasa sistem, tata kelola risiko, dan pedoman AI menjadi bahan pembandingan desain [@nasa2016; @nist2023; @unesco-genai]. Sumber tentang komputasi ilmiah dan FAIR mendukung pengorganisasian bukti serta penggunaan ulang [@wilson2017; @fair2016]. Penilaian kausal, pelaporan review, dan tata kelola bersama mempunyai landasan tersendiri [@cunningham2021; @prisma2020; @ostrom2009].
+
+Tanggal pemeriksaan sumber daring untuk pengembangan ini adalah 22 November 2026. Utamakan tahun terbit sumber pada sitasi, bukan tahun akses. Dokumentasi perangkat dapat berubah; langkah implementasi perlu diperiksa terhadap versi yang dipakai. Buku terbuka ditautkan sebagai bahan baca, tanpa menyalin bab atau gambar berlisensi pihak lain.
+
+## Cara mengaudit satu klaim
+
+Pilih klaim, temukan sitasi, lalu periksa apakah sumber membahas objek, populasi, dan hasil yang sama. Jika buku menerapkan prinsip pada kasus baru, hubungan itu harus dinyatakan sebagai penerapan atau hipotesis. Periksa pula apakah angka berasal dari pengukuran, perhitungan parameter, atau ilustrasi. Ketiga asal angka mempunyai batas kesimpulan yang berbeda.
+
+Gambar proyek dipertahankan sebagai dokumentasi visual awal. Jika label gambar berbeda dari penjelasan yang diperbarui, gunakan teks dan perhitungan terverifikasi sebagai dasar, lalu catat kebutuhan revisi aset. Sumber eksternal tidak dipakai untuk mengklaim bahwa gambar proyek merupakan model ilmiah tervalidasi.

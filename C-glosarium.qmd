@@ -1,0 +1,59 @@
+# Glosarium
+
+**A / B:** keadaan awal dan keadaan tujuan.
+
+**Acquire–Convert–Store–Execute:** empat fungsi konseptual pengelolaan sumber daya untuk kerja.
+
+**Case Study:** kasus yang menempatkan Knowledge, Skills, Prompts dalam satu demonstrasi PUDAL.
+
+**Decision gate:** titik keputusan sesudah evaluasi untuk melanjutkan, mengubah, belajar, atau berhenti.
+
+**Engine:** mekanisme pelaksanaan kerja yang mengubah sumber daya menjadi transisi keadaan.
+
+**Goal Model:** representasi tujuan dan kriteria keberhasilan.
+
+**Instrumental Engine:** kemampuan intrinsik yang diperbesar dengan instrumen.
+
+**Learning Path:** alur belajar dari masalah hingga demonstrasi dan evaluasi kompetensi.
+
+**Milestone:** keadaan antara yang memiliki kriteria penerimaan terukur.
+
+**Mixed Engine:** penggunaan kombinasi engine natural, instrumental dan vehicular.
+
+**Natural Engine:** pelaksanaan kerja oleh kemampuan dan tenaga intrinsik.
+
+**PUDAL:** Perceive, Understand, Decide, Act, Learn.
+
+**PUDAL-1/2/3/4/5:** Orientation, Understanding, Planning, Execution, Learning.
+
+**Resource–Energy Graph:** peta sumber daya, akses, konversi dan suplai.
+
+**Rolling-horizon replanning:** memperbarui rencana tahap berikut berdasarkan keadaan aktual setiap checkpoint.
+
+**Stage:** segmen proses di antara dua milestone.
+
+**State–Route Graph:** representasi keadaan dan transisi antar-keadaan.
+
+**TAIDA:** Target, Attention, Interest, Desire, Action.
+
+**Triune Intelligence:** Individual, Collective, Artificial Intelligence yang saling mendukung.
+
+**Understanding PUDAL:** eksplorasi yang membangun peta termasuk rute yang belum diketahui.
+
+**Vehicular Engine:** layanan/mesin eksternal yang mengerjakan bagian utama pekerjaan terdelegasi.
+
+## Pembedaan istilah yang sering tertukar
+
+**Aktivitas dan keadaan:** membaca lima artikel adalah aktivitas; matriks sintesis yang dapat ditelusuri adalah keadaan hasil. Aktivitas tidak otomatis menjamin keadaan yang diinginkan.
+
+**Bukti dan klaim:** klaim menyatakan sesuatu yang ingin diterima; bukti memberi dasar untuk memeriksanya. Kualitas dasar itu bergantung pada metode, kecocokan dengan klaim, dan keterlacakan sumber.
+
+**Verifikasi dan validasi:** dalam adaptasi buku ini, verifikasi memeriksa kesesuaian terhadap spesifikasi, sedangkan validasi menilai kecocokan bagi penggunaan yang dimaksud. Rumus dapat benar sementara tutorial belum membantu pengguna sasaran.
+
+**Kelayakan dan optimalitas:** rute layak memenuhi kendala; rute optimal terbaik menurut model dan fungsi tujuan tertentu. Pilihan yang mendapat skor tertinggi belum tentu layak jika melanggar batas wajib.
+
+**Hasil tugas dan hasil belajar:** hasil tugas adalah mutu keluaran pekerjaan; hasil belajar adalah perubahan kemampuan yang perlu bukti tersendiri. Keluaran bagus dengan bantuan tidak otomatis membuktikan kemampuan mandiri.
+
+**Sumber daya dan energi fisik:** sumber daya mencakup waktu, uang, data, akses, kemampuan, dan energi. Hanya besaran energi fisik yang dicatat dalam satuan energi; komponen lain memakai satuan dan neracanya sendiri.
+
+**Hipotesis dan temuan:** hipotesis adalah dugaan yang dapat diuji; temuan merupakan hasil pengamatan atau analisis dengan metode yang dinyatakan. Usulan desain perlu ditandai sampai bukti pengujiannya tersedia.

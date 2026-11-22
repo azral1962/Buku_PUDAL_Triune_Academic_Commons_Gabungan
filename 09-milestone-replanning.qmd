@@ -1,0 +1,61 @@
+# Intermediate Goals, Stages, Milestones, dan Replanning
+
+## Perjalanan sulit harus dapat dipecah
+
+Pecah perjalanan besar $A\to B$ menjadi:
+
+$$A=M_0\longrightarrow M_1\longrightarrow M_2\longrightarrow\cdots\longrightarrow M_n=B.$$
+
+**Stage** ialah kegiatan/transisi dari $M_i$ menuju $M_{i+1}$. **Milestone** ialah keadaan terukur yang membuktikan kemajuan. **Checkpoint** ialah saat pemeriksaan, sedangkan **decision gate** ialah keputusan untuk lanjut, perbaiki, ubah engine, belajar, atau berhenti.
+
+## Milestone bukan sekadar tanggal
+
+Kriteria milestone perlu menyatakan artefak atau capaian, standar kualitas, bukti verifikasi, penanggung jawab, dan batas waktu. Contoh: bukan 'telah membaca lima paper', melainkan 'matriks sintesis lima paper dengan referensi dan klaim yang dapat ditelusuri'.
+
+## Replanning pada setiap milestone
+
+Setelah mencapai $M_i$, agen memeriksa keadaan aktual, anggaran sumber daya, engine yang tersedia, waktu tersisa, rute alternatif, dan celah kemampuan. Bila ada perubahan penting, kebijakan untuk segmen berikutnya $\pi_{i}$ diperbarui. Ini disebut **rolling-horizon planning**: merancang global namun menyesuaikan lokal.
+
+## Hubungan Learning dan milestones
+
+Setiap milestone dapat menjadi titik isi ulang sumber daya atau titik investasi belajar. Bila rute selanjutnya membutuhkan skill baru, Understanding mengidentifikasi kesenjangan dan Learning PUDAL menjalankan latihan yang dibutuhkan sebelum Execution melanjutkan.
+
+## Contoh perjalanan 21 hari
+
+- **M₀:** kelompok, kasus, dan bahan masih belum terstruktur.
+- **M₁ (akhir pekan 1):** kebutuhan pengguna dan dua Knowledge per tema terdefinisi serta ditinjau.
+- **M₂ (pekan 2):** dua Skills dan dua Prompts teruji; jalur demonstrasi tersedia.
+- **M₃ (pekan 3):** Case Study mendemonstrasikan putaran PUDAL, lengkap dengan evidence dan revisi.
+- **B:** agen/learning path dapat digunakan dan diulas mahasiswa lain melalui portal.
+
+Tahap publikasi dan verifikasi dapat paralel pada minggu ketiga. Jadwal harus disesuaikan dengan kondisi kelas; angka di atas merupakan rencana proyek, bukan bukti realisasi.
+
+## Menulis milestone sebagai kontrak penerimaan
+
+Milestone yang baik menyatakan keadaan yang telah tersedia bagi tahap berikutnya. “Tutorial ditulis hari Jumat” hanya menyebut kegiatan dan waktu. “Pengguna baru dapat menjalankan contoh sampai jawaban acuan, dengan semua prasyarat tercantum, pada akhir Jumat” menambahkan mutu dan bukti. Kriteria perlu cukup jelas sehingga reviewer dapat memberi keputusan yang konsisten.
+
+Dalam proyek modul Bayes, M1 dapat berupa konsep, parameter, dan jawaban acuan yang sudah diperiksa. M2 berupa tutorial yang dijalankan orang di luar penyusunnya. M3 berupa prompt yang diuji pada masukan benar, salah, dan ambigu. B mengintegrasikan materi dengan kasus transfer serta dokumentasi batasannya. Masing-masing membutuhkan bukti yang berbeda, sehingga satu tangkapan layar portal tidak cukup untuk semuanya.
+
+## Menetapkan checkpoint sebelum risiko membesar
+
+Checkpoint tidak harus menunggu milestone gagal. Jika ketidakpastian terbesar terletak pada pemahaman pengguna, uji satu contoh sebelum menulis sepuluh contoh. Jika terletak pada akses data, periksa izin sebelum menyusun model. Pemeriksaan dini menghindari investasi besar pada asumsi yang belum benar. Frekuensi checkpoint dipilih dari risiko dan biaya pemeriksaan, bukan kebiasaan rapat semata.
+
+Pada checkpoint, bandingkan rencana dengan keadaan aktual. Pisahkan pekerjaan selesai, pekerjaan diterima, dan pekerjaan yang masih menunggu verifikasi. Persentase “90% selesai” tidak banyak membantu jika sisa 10% mencakup pengujian paling tidak pasti. Tampilkan daftar bukti yang sudah ada dan hambatan yang masih terbuka.
+
+## Contoh replanning dengan angka yang jelas
+
+Pada hari ketujuh, kelompok memperkirakan sisa pekerjaan delapan jam tutorial, enam jam simulator, dan enam jam validasi. Kapasitas aktual sampai tenggat tinggal 16 jam-orang. Rencana 20 jam tidak layak. Kelompok mengurangi simulator menjadi tabel variasi yang membutuhkan dua jam, sehingga total menjadi 16 jam. Tujuan konsep, tutorial, dan validasi tetap dijaga, sementara bentuk produk berubah. Angka ini sepenuhnya ilustratif.
+
+Keputusan tersebut perlu ditinjau terhadap B. Jika simulator interaktif merupakan persyaratan wajib yang telah disepakati, pengurangan fitur membutuhkan perubahan lingkup yang sah. Jika ia hanya preferensi, planner dapat mengubah rute sambil mempertahankan tujuan. Pembedaan ini mencegah replanning menjadi pembenaran untuk menurunkan standar secara diam-diam.
+
+## Biaya perubahan dan kestabilan rencana
+
+Rencana yang tidak pernah berubah mengabaikan informasi baru. Rencana yang berubah setiap kali ada ide baru membuat pekerjaan tidak selesai. Catat pemicu perubahan: bukti kegagalan, perubahan sumber daya, kebutuhan pengguna, atau risiko yang melewati batas. Bandingkan manfaat perubahan dengan biaya perpindahan alat, pembelajaran ulang, dan pekerjaan yang harus diulang.
+
+Versi rencana sebaiknya menyimpan alasan, asumsi, dan dampak pada milestone. Sesudah perubahan, pastikan anggota memahami urutan dan tanggung jawab baru. Pergantian file tanpa komunikasi dapat menciptakan dua rencana yang sama-sama dianggap berlaku. Dalam commons, status versi aktif perlu terlihat di halaman masuk proyek.
+
+## Latihan decision gate
+
+Susun empat pilihan pada satu gate: lanjut, perbaiki lokal, ubah rute, atau hentikan/negosiasikan tujuan. Untuk setiap pilihan, tulis bukti yang akan mendukungnya. Misalnya lanjut membutuhkan jawaban acuan dan uji pengguna lolos; perbaikan lokal sesuai bila satu langkah tutorial hilang; perubahan rute sesuai bila alat utama tidak tersedia; penghentian sesuai bila tujuan tidak lagi dibutuhkan.
+
+Kerangka risiko NIST menekankan perlunya mengelola risiko sepanjang penggunaan sistem AI [@nist2023]. Pada proyek ini, decision gate menjadi salah satu tempat untuk meninjau risiko aktual dan tindak lanjut. Gate berguna jika menghasilkan keputusan dan pemilik tindakan, bukan hanya persetujuan formal tanpa pemeriksaan bukti.

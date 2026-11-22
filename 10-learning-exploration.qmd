@@ -1,0 +1,59 @@
+# Learning PUDAL dan Penemuan Rute yang Lebih Optimal
+
+## Dua jenis belajar
+
+Fase **Learn** dalam setiap PUDAL memperbaiki keputusan berdasarkan hasil tindakan. Sebaliknya, **Learning PUDAL** merupakan proyek belajar yang eksplisit: meningkatkan Knowledge, Skills, Tools, dan kebijakan keputusan agar suatu transisi menjadi mungkin atau lebih efisien.
+
+## Peta yang diketahui versus kemampuan menjalani
+
+Agen menyimpan $G_t=(V_t,E_t)$ sebagai **peta yang diketahui atau dihipotesiskan**. Ia juga memiliki himpunan sisi yang benar-benar bisa ditempuh, $E^{\mathrm{feasible}}_t\subseteq E_t$. Setelah eksplorasi, informasi baru dapat menambah sisi peta. Setelah pembelajaran kemampuan, sebagian sisi yang sebelumnya tidak layak dapat menjadi layak; ini berbeda dari menciptakan jalan fisik baru.
+
+## Lima kegiatan Learning PUDAL
+
+1. **Perceive:** mengidentifikasi tugas yang gagal, lambat, mahal, atau tidak bisa ditempuh.
+2. **Understand:** mendiagnosis keterbatasan pengetahuan, skills, tools, atau akses.
+3. **Decide:** memilih jalur pembelajaran serta target kompetensi dan biaya pembelajaran.
+4. **Act:** latihan, eksperimen, mentoring, prototyping, dan verifikasi.
+5. **Learn:** menilai peningkatan kinerja pada tugas baru, lalu memperbarui peta dan kebijakan.
+
+## Nilai belajar versus kecepatan sesaat
+
+Misalnya satu analisis memerlukan 10 jam manual. Belajar Python 4 jam lalu memproses data 3 jam memerlukan total 7 jam (contoh hipotetis). Namun, bila latihan lebih panjang, keputusan belajar masih bisa bernilai karena digunakan untuk banyak tugas berikutnya. **Rute tercepat untuk satu tugas belum tentu rute terbaik untuk pertumbuhan kompetensi jangka panjang.**
+
+## Penemuan peluang
+
+Understanding PUDAL mengeksplorasi 'rute apa yang mungkin ada'; Learning PUDAL mengeksplorasi 'kemampuan apa yang perlu diperoleh agar rute tersebut dapat dipakai'. Keduanya berinteraksi: penemuan rute baru bisa memicu belajar; kemampuan baru dapat mengungkap rute yang sebelumnya tidak terlihat.
+
+## Tanggung jawab epistemik
+
+AI dapat menyarankan rute atau mengajarkan skill, tetapi klaim 'sudah mampu' harus didukung bukti demonstrasi mandiri, tes pada masalah baru, audit kode, atau validasi sumber. Jangan mengubah model kemampuan hanya berdasarkan rasa percaya diri atau keluaran teks AI.
+
+## Mendiagnosis kesenjangan sebelum memilih bahan belajar
+
+Kelambatan tidak selalu menandakan kekurangan pengetahuan. Anggota dapat memahami Bayes tetapi belum terbiasa memakai editor; bisa juga menguasai alat tetapi tidak memahami probabilitas. Diagnosis dilakukan dengan meminta demonstrasi kecil dan penjelasan. Jika anggota mampu menghitung manual tetapi gagal menulis kode, latihan implementasi diperlukan. Jika kode berjalan tetapi ia tidak dapat menjelaskan penyebut, latihan konsep lebih mendasar diperlukan.
+
+Learning PUDAL menetapkan kemampuan sasaran dengan bukti dan batas waktu. “Belajar Python” terlalu luas. “Membuat fungsi posterior, memeriksa rentang input, dan mencocokkan empat kasus acuan” cukup spesifik untuk satu proyek. Keterampilan baru kemudian diuji pada parameter berbeda agar keberhasilan tidak hanya berasal dari menyalin contoh.
+
+## Menilai investasi belajar dengan biaya penuh
+
+Misalkan satu pekerjaan manual membutuhkan lima jam, sedangkan sesudah belajar alat dapat dikerjakan dua jam. Pelatihan awal memerlukan sembilan jam. Untuk $n$ pekerjaan serupa, rute manual membutuhkan $5n$ jam dan rute belajar membutuhkan $9+2n$ jam. Keduanya sama pada $n=3$; penghematan waktu muncul mulai pekerjaan keempat, dengan asumsi kualitas dan biaya pemeliharaan setara. Ini perhitungan ilustratif, bukan prediksi otomatis bagi setiap pembelajar.
+
+Keputusan belajar tetap dapat bernilai sebelum titik impas waktu jika keterampilan menjadi tujuan pendidikan atau membuka rute penting. Sebaliknya, investasi dapat tidak layak jika tugas jarang berulang dan tenggat sangat dekat. Pertimbangkan pula lupa, perubahan alat, dan kebutuhan pembaruan. Nilai belajar sebaiknya dibahas sebagai profil manfaat, bukan satu angka presisi tanpa dasar.
+
+## Eksplorasi informasi dan latihan kemampuan
+
+Eksplorasi mencari tahu apakah rute atau alat cocok. Latihan membuat pelaku mampu memakai rute tersebut. Mencoba tiga pustaka visualisasi selama satu jam dapat memberi informasi tentang kompatibilitas, tetapi belum membuktikan penguasaan salah satunya. Catat hasil kedua kegiatan secara berbeda: pengetahuan tentang pilihan dan bukti kemampuan.
+
+Gunakan eksperimen kecil untuk mengurangi biaya eksplorasi. Sebelum memigrasikan seluruh modul, coba satu halaman dengan rumus, gambar, tabel, dan sitasi. Sebelum memakai tutor, uji satu miskonsepsi yang diketahui. Eksperimen memiliki pertanyaan dan kriteria penghentian. Mencoba alat tanpa pertanyaan dapat berubah menjadi pencarian tanpa akhir.
+
+## Belajar dengan bantuan yang berkurang
+
+Mulai dari contoh yang dijelaskan, lanjut ke tugas dengan sebagian petunjuk, lalu tugas baru tanpa bantuan. Pada setiap tahap, peserta menjelaskan alasan dan memeriksa kesalahannya. Umpan balik perlu cukup spesifik untuk mengubah tindakan, misalnya menunjukkan kelompok pembanding yang salah, bukan hanya menyatakan jawaban kurang tepat. Penelitian pembelajaran menekankan peran pengetahuan awal, konteks, dan pengaturan diri [@hpl2018].
+
+Praktik mengambil kembali pengetahuan dapat disisipkan sesudah jeda, alih-alih terus membaca ulang contoh [@roediger2006]. Pada modul Bayes, peserta diminta membangun ulang tabel dari narasi baru. Bukti ini lebih relevan terhadap penguasaan daripada rasa akrab dengan rumus. Jadwal dan bentuk latihan perlu disesuaikan; buku ini tidak menetapkan interval yang berlaku untuk semua materi.
+
+## Mencatat perubahan himpunan tindakan layak
+
+Sesudah latihan, jangan hanya menambah label “mahir” pada profil. Sebut tindakan yang kini bisa dilakukan: membuat tabel, memvalidasi input, menjelaskan error, atau menelusuri sumber. Perbarui prasyarat sisi graf yang bergantung pada kemampuan tersebut. Jika kemampuan hanya terlihat ketika tutor memberi petunjuk, tandai kondisi bantuannya.
+
+Sebagai latihan, pilih satu sisi graf yang semula belum layak. Susun diagnosis, latihan singkat, demonstrasi baru, dan keputusan pembaruan status. Jawaban yang baik memungkinkan reviewer menyatakan dengan jelas apa yang berubah, atas bukti apa, dan pada kondisi mana kemampuan itu dapat digunakan kembali.

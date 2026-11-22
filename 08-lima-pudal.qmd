@@ -1,0 +1,67 @@
+# Lima Putaran PUDAL Berjenjang
+
+## Mengapa lima?
+
+Satu siklus PUDAL tidak harus langsung membawa seseorang dari A menuju B. Siklus dapat bekerja pada tingkat meta: mendefinisikan tujuan, menemukan peta, merencanakan, menjalankan, dan belajar. Karena setiap fungsi sendiri memerlukan pengamatan, pemahaman, keputusan, aksi, dan evaluasi, kita menyebutnya **lima PUDAL**.
+
+| Tingkat | Fungsi | Pertanyaan | Output |
+|---|---|---|---|
+| 1 Orientation | Menetapkan A dan B | Ke mana, untuk siapa, standar apa? | Goal Model |
+| 2 Understanding | Menggali peta dan mesin | Jalan apa yang ada, mungkin, atau belum ditemukan? | State–Route & Resource Map |
+| 3 Planning | Memilih rute dan milestone | Mana yang layak, bernilai, dan tepat waktu? | Resource-Aware Route Plan |
+| 4 Execution | Menjalankan stage | Apa yang harus dikerjakan sekarang? | Transisi dan bukti kerja |
+| 5 Learning | Mengubah kemampuan dan strategi | Apa yang perlu dipelajari agar rute membaik? | Updated capabilities & policy |
+
+## PUDAL 1 — Orientation
+
+Perceive kondisi A dan pemangku kepentingan; Understand gap terhadap kebutuhan; Decide definisi B dan indikator; Act menyatakan kontrak tujuan; Learn meninjau konsistensi sasaran. Keluaran mencantumkan batas waktu, mutu, ruang lingkup, dan kriteria penghentian.
+
+## PUDAL 2 — Understanding
+
+Perceive simpul, transisi, dan kekosongan peta; Understand hubungan sebab-akibat serta prasyarat; Decide bagian peta yang perlu dieksplorasi; Act melakukan observasi, simulasi, pencarian, wawancara, dan pengujian; Learn memperbarui status sisi graf serta pilihan engine. **Understanding menemukan pilihan, belum otomatis memilihnya**.
+
+## PUDAL 3 — Planning
+
+Perceive sumber daya serta tenggat; Understand alternatif dan biaya; Decide rute, engine campuran, milestones, urutan dan prioritas; Act menyusun jadwal dan pembagian kerja; Learn mengkalibrasi estimasi ketika informasi baru masuk. Planning juga harus menentukan *fallback routes* dan kondisi revisi.
+
+## PUDAL 4 — Execution
+
+Perceive keadaan aktual; Understand selisih terhadap milestone; Decide tindakan lokal dan engine; Act melakukan pekerjaan; Learn mengevaluasi hasil dan memperbarui state. Satu stage dapat memerlukan banyak putaran Execution PUDAL.
+
+## PUDAL 5 — Learning
+
+Perceive celah kompetensi dan potensi optimasi; Understand kemampuan baru yang diperlukan; Decide eksperimen atau jalur belajar; Act belajar, berlatih, menguji alat; Learn mengukur kenaikan kemampuan. Hasilnya kembali ke Understanding/Planning/Execution. Learning bukan hanya retrospeksi pada fase L biasa, tetapi **siklus mandiri untuk investasi kapasitas**.
+
+## Hubungan antartingkat
+
+Urutan 1→2→3→4→5 adalah susunan logis, bukan pelaksanaan kaku. Ketika perencanaan menemukan sisi yang belum diketahui, ia memanggil Understanding. Ketika eksekusi menemukan celah keterampilan, ia memanggil Learning. Ketika sumber daya runtuh, ia kembali ke Planning. Ketika tujuan tidak lagi relevan, ia kembali ke Orientation.
+
+## Membedakan fungsi dan fase agar hierarki tidak membingungkan
+
+Huruf U pada satu putaran PUDAL berarti memahami pengamatan untuk keputusan lokal. Understanding PUDAL berarti fungsi lebih luas yang membangun dan menguji peta masalah. Keduanya berhubungan, tetapi skala objeknya berbeda. Pada Execution, U dapat menafsirkan satu kegagalan hitung; pada Understanding, seluruh putaran dapat dipakai untuk mencari representasi konsep yang sesuai bagi pengguna.
+
+Lima fungsi tidak harus dijalankan sekali dalam urutan kaku. Execution dapat menemukan bahwa tujuan B tidak konsisten sehingga masalah dikembalikan ke Orientation. Learning dapat menambah kemampuan yang membuat Planning memilih rute baru. Hierarki berguna jika memperjelas siapa menangani masalah dan keluaran apa yang dibutuhkan, bukan jika menambah lapisan administrasi tanpa keputusan.
+
+## Contoh satu masalah ditangani pada lima tingkat
+
+Dalam proyek modul Bayes, Orientation menyepakati bahwa pengguna harus mampu menjelaskan posterior pada kasus baru. Understanding memeriksa kesulitan pengguna dan pilihan representasi: rumus, tabel, atau frekuensi. Planning memilih tabel sebagai jalur awal, menetapkan reviewer, dan menyisihkan waktu uji. Execution membuat contoh, mencoba pada pengguna, dan memperbaiki kesalahan. Learning melatih anggota yang belum dapat memeriksa perhitungan secara mandiri.
+
+Setiap fungsi tetap mempunyai bukti. Goal Model memuat tujuan dan aturan penerimaan. Peta mencatat alternatif serta status kelayakannya. Rencana menyatakan jadwal, sumber daya, dan rute cadangan. Log eksekusi menunjukkan tindakan serta hasil. Bukti belajar menunjukkan kemampuan baru pada tugas yang tidak sekadar disalin. Keluaran tersebut menjadi antarmuka yang menghubungkan fungsi.
+
+## Kontrak serah terima antarlevel
+
+Understanding tidak menyerahkan “banyak ide” kepada Planning, tetapi pilihan yang mempunyai prasyarat dan derajat kepastian. Planning tidak menyerahkan “kerjakan secepatnya” kepada Execution, tetapi stage dengan tujuan, batas, dan bukti penerimaan. Execution tidak menyerahkan seluruh log mentah kepada Learning, tetapi pola kegagalan dan diagnosis sementara. Informasi rinci tetap tersedia untuk audit ketika diperlukan.
+
+Kontrak serah terima mencegah dua fungsi menganggap fungsi lain telah memeriksa hal yang sama. Misalnya, planner mengira rumus sudah diperiksa, sedangkan penulis konsep mengira pemeriksaan akan dilakukan saat eksekusi. Kolom status “belum diverifikasi” lebih baik daripada asumsi diam-diam. Tentukan penanggung jawab untuk setiap keputusan penting dan sumber bukti yang digunakannya.
+
+## Aturan eskalasi berdasarkan jenis hambatan
+
+Jika kode salah membaca persen, Execution memperbaiki implementasi. Jika seluruh pendekatan membutuhkan data yang tidak tersedia, Understanding memperbarui peta dan Planning memilih rute lain. Jika anggota tidak mengetahui cara menguji hasil, Learning menutup kesenjangan tersebut. Jika pengguna sebenarnya membutuhkan tujuan berbeda, Orientation dibuka kembali. Diagnosis ini mengurangi kecenderungan mengulang tahap produksi untuk masalah yang berada di tingkat lain.
+
+Perlu pula batas rekursi. Proyek kecil dapat memakai satu lembar catatan dengan lima fungsi, bukan lima tim atau lima aplikasi. Proyek yang lebih besar memerlukan pemisahan peran lebih tegas. Tingkat formalitas disesuaikan dengan kompleksitas, dampak kesalahan, dan kebutuhan koordinasi.
+
+## Latihan menelusuri satu kegagalan
+
+Gunakan skenario: modul tepat secara hitung, tetapi pengguna baru tidak dapat mengikuti tutorial. Ajukan sedikitnya tiga diagnosis pada tingkat berbeda. Bisa jadi langkah lokal hilang, prasyarat pengguna tidak dipetakan, atau tujuan keterpakaian tidak pernah disepakati. Rancang bukti untuk membedakan diagnosis sebelum memilih perbaikan.
+
+Untuk menguji apakah perbaikan benar-benar membantu belajar, gunakan demonstrasi mandiri dan pengambilan kembali, dengan memperhatikan konteks peserta [@hpl2018; @roediger2006]. Rujukan pembelajaran mendukung perhatian pada bukti penguasaan; pembagian menjadi lima PUDAL tetap merupakan arsitektur konseptual buku ini yang memerlukan pengujian tersendiri.

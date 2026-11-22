@@ -1,0 +1,56 @@
+# Evaluasi Kinerja, Validasi, dan Agenda Riset
+
+## Indikator proses dan hasil
+
+Sebuah engine navigasi dinilai dari *goal attainment* (apakah B tercapai), waktu, biaya sumber daya, kualitas, risiko, kontribusi tiap engine, serta perkembangan kompetensi. Untuk akademik, indikator tambahan meliputi ketepatan sitasi, reproduksibilitas analisis, pemahaman konseptual, dan hasil uji mandiri pada tugas baru.
+
+## Evaluasi di setiap milestone
+
+Milestone memerlukan: keadaan aktual, kesesuaian terhadap acceptance criteria, saldo tiap sumber daya, bukti kerja, keputusan selanjutnya, dan hal yang dipelajari. Jika gagal, klasifikasikan penyebab: kesalahan peta, kesalahan strategi, kurang kemampuan, kurang sumber daya, kegagalan engine, atau perubahan tujuan. Klasifikasi ini menentukan PUDAL mana yang diaktifkan berikutnya.
+
+## Uji perbandingan rute
+
+Dalam pilot akademik, satu kasus dapat diselesaikan melalui natural, instrumental, dan vehicular, lalu dibandingkan pada waktu, mutu, biaya, ketergantungan, kemampuan transfer, dan ketepatan hasil. Perbandingan harus memiliki masukan setara serta definisi yang jelas mengenai kerja yang didelegasikan dan kerja verifikasi manusia.
+
+## Agenda penelitian yang terbuka
+
+1. Formalisasi hubungan *State–Route Graph* dan *Resource–Energy Graph* pada domain kognitif dan sosial.
+2. Pengukuran peningkatan himpunan tindakan yang layak sesudah Learning PUDAL.
+3. Kebijakan pemilihan *mixed engines* dengan biaya, mutu, risiko, serta nilai pembelajaran.
+4. Strategi *rolling-horizon replanning* pada milestones yang tidak pasti.
+5. Desain agen yang mampu menjelaskan alasan rute, memberi sumber dan meminta persetujuan manusia.
+6. Evaluasi kecerdasan kolektif: bagaimana koordinasi dan pembagian kerja meningkatkan kelayakan mencapai B.
+
+## Batasan model
+
+Istilah engine dan energi diperluas secara analogis dalam konteks sosial serta akademik. Perlu pemisahan eksplisit antara energi fisik yang diukur dalam joule dengan uang, perhatian, kemampuan, waktu, dan akses. Fungsi tujuan serta angka ilustratif di dalam buku bukan hasil eksperimen. Klaim optimalitas hanya dapat dibuat setelah kendala, fungsi nilai, dan data terukur ditetapkan.
+
+## Memisahkan pertanyaan kelayakan, efektivitas, dan mekanisme
+
+Kelayakan bertanya apakah workflow dapat dijalankan dalam kondisi kelas. Efektivitas bertanya apakah hasilnya lebih baik daripada pembanding tertentu. Mekanisme bertanya bagian mana yang menjelaskan perubahan. Ketiga pertanyaan memerlukan bukti berbeda. Pilot yang berhasil menerbitkan enam learning paths memberi informasi kelayakan, tetapi belum membuktikan bahwa lima PUDAL meningkatkan kemampuan lebih baik daripada pendekatan lain.
+
+Nyatakan unit penelitian: individu, kelompok, kelas, atau artefak. Jika perlakuan diberikan pada tingkat kelompok, ketergantungan antaranggota perlu diperhatikan. Jika skor produk tim dipakai sebagai hasil individual, penafsiran dapat keliru. Persetujuan, aturan penggunaan data, dan peran penilai ditetapkan sebelum pengumpulan.
+
+## Desain pembanding yang sesuai pertanyaan
+
+Untuk mengevaluasi rute adaptif, pembanding dapat berupa bantuan tetap dengan akses materi dan waktu yang sebanding. Catat apa yang berbeda: aturan pemilihan bantuan, jenis petunjuk, atau kemampuan alat. Jika semua komponen berubah sekaligus, perbedaan hasil sulit dikaitkan dengan satu mekanisme. Desain bertahap dapat lebih informatif daripada perbandingan paket besar yang tidak jelas.
+
+Pengacakan dapat membantu membentuk pembanding, tetapi pelaksanaan perlu memeriksa ketidakpatuhan, kontaminasi, dan kehilangan peserta. Pada desain crossover, belajar pada tahap pertama dapat terbawa ke tahap kedua sehingga urutan memengaruhi hasil. Pertimbangan inferensi kausal menuntut asumsi pembanding dijelaskan, bukan disembunyikan di balik metode statistik [@cunningham2021].
+
+## Mengukur hasil tugas dan kemampuan secara terpisah
+
+Mutu produk dapat dinilai dengan rubrik yang tidak memperlihatkan kelompok perlakuan kepada penilai ketika memungkinkan. Kemampuan diukur melalui tugas mandiri baru, penjelasan, dan tes tertunda yang sesuai. Kepercayaan diri dicatat terpisah dari akurasi. Peserta yang lebih yakin tetapi lebih sering salah membutuhkan intervensi berbeda dari peserta yang benar tetapi kurang yakin.
+
+Jika metrik utama banyak, tentukan prioritas sebelum melihat hasil. Laporkan variasi, ketidakpastian, dan konteks, bukan hanya rerata. Hasil yang menguntungkan pada kecepatan tetapi merugikan transfer perlu ditampilkan sebagai trade-off. Skor gabungan dapat menyembunyikan hasil pendidikan yang paling penting.
+
+## Menguji bagian model melalui studi yang lebih kecil
+
+Agenda pertama dapat menguji apakah kartu keadaan dan milestone meningkatkan kesepakatan reviewer tentang status proyek. Agenda kedua menguji apakah pencatatan prasyarat mengurangi transisi yang ternyata tidak layak. Agenda ketiga membandingkan bantuan tetap dengan bantuan yang berkurang berdasarkan demonstrasi. Setiap studi menargetkan komponen, sehingga kegagalan dapat memberi diagnosis yang lebih jelas.
+
+Studi ablasi dapat menghilangkan satu komponen dengan mempertahankan komponen lain, misalnya rute adaptif tanpa tes transfer atau workflow tanpa checkpoint. Namun perubahan tersebut tetap harus mempertimbangkan tujuan pendidikan dan kelayakan etis. Hasil tidak boleh digeneralisasi melebihi tugas dan populasi yang diuji.
+
+## Preregistrasi, data, dan pelaporan hasil negatif
+
+Simpan pertanyaan, metrik utama, aturan eksklusi, dan rencana analisis sebelum pengujian konfirmatori. Perubahan yang diperlukan selama studi tetap dapat dilakukan, tetapi diberi alasan dan dibedakan dari rencana awal. Sediakan data atau contoh sintetis sesuai izin, serta kode dan metadata yang memungkinkan pemeriksaan. Prinsip FAIR membantu mengatur penggunaan ulang tanpa mengharuskan data sensitif dibuka [@fair2016].
+
+Hasil negatif tetap bernilai jika menunjukkan rute tidak bekerja pada kondisi tertentu atau biaya koordinasi melebihi manfaat. Catat kesalahan peta, strategi, kapasitas, dan pengukuran secara terpisah. Sebagai latihan, susun satu pertanyaan efektivitas dan satu pertanyaan mekanisme untuk kasus Bayes. Tentukan hasil yang akan membuat Anda menolak dugaan awal, bukan hanya hasil yang Anda harapkan.

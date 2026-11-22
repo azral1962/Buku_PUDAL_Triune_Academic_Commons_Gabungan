@@ -1,0 +1,56 @@
+# PUDAL sebagai Siklus Kendali Kecerdasan
+
+## Lima langkah dasar
+
+**P — Perceive** mengamati realitas, kondisi awal, perubahan, kebutuhan, bukti dan keterbatasan. **U — Understand** menafsirkan pengamatan melalui model, pengetahuan, hubungan sebab-akibat dan penjelasan. **D — Decide** merumuskan pilihan, menimbang nilai, biaya, risiko dan menetapkan keputusan. **A — Act** mengaktifkan kemampuan dan alat untuk mengubah keadaan. **L — Learn** menilai hasil tindakan, membandingkan dengan harapan, lalu memperbarui model, keterampilan dan kebijakan keputusan.
+
+Urutan ini merupakan **siklus**, bukan pipa linier: pengamatan dapat diperbaiki selama memahami, keputusan dapat ditinjau saat pelaksanaan, dan pembelajaran dapat menyebabkan redefinisi tujuan. Berulangnya putaran adalah ciri sistem adaptif.
+
+## Controller bukan engine
+
+**PUDAL Controller** memilih tindakan dan mengatur perjalanan. **Engine** menyediakan mekanisme yang menggunakan sumber daya untuk melakukan kerja. Modelnya:
+
+$$
+\text{PUDAL} \rightarrow \text{pemilihan engine} \rightarrow
+\text{kerja} \rightarrow \text{perubahan keadaan} \rightarrow \text{umpan balik PUDAL}.
+$$
+
+Controller dapat berorientasi pada manusia, kolektif, sistem AI, atau kombinasi ketiganya. Engine dapat berupa kekuatan natural, alat instrumental, atau layanan vehicular. PUDAL tidak menciptakan energi hanya melalui keputusan; ia harus mematuhi kendala lingkungan.
+
+## Putaran berjenjang
+
+Siklus yang sama digunakan pada tingkat masalah berbeda: mendefinisikan tujuan, mengembangkan peta, memilih rute, mengeksekusi stage, serta meningkatkan kemampuan. Lima tingkat ini dijelaskan secara terpisah di Bab 8. Tiap tingkat tetap memiliki *Perceive–Understand–Decide–Act–Learn* sendiri.
+
+## Aturan penghentian
+
+Siklus berhenti untuk suatu tujuan bila kriteria B terbukti terpenuhi, batas biaya/waktu tercapai, tindakan aman tidak tersedia, atau tujuan ditinjau ulang oleh pemangku keputusan yang berwenang. Tidak semua tugas dapat atau harus dipaksa sampai B; kondisi berhenti merupakan bagian etika dan desain sistem.
+
+## Memisahkan pengamatan dari penafsiran
+
+Pada Perceive, kelompok mencatat bahwa empat dari enam pengguna salah memilih penyebut. Pada Understand, kelompok mengajukan penjelasan bahwa pengguna mungkin menukar dua probabilitas bersyarat. Penjelasan ini masih hipotesis. Pengguna dapat pula memahami konsep tetapi membaca simbol secara keliru. Pemisahan fakta dan interpretasi memberi ruang untuk menguji penyebab sebelum bertindak.
+
+Dalam modul Bayes, pengujian sederhana adalah meminta pengguna menerangkan kelompok pembanding dengan kata-kata. Jika penjelasan benar tetapi simbol salah, perbaiki notasi dan latihan membaca. Jika kelompok pembanding juga salah, perbaiki konsep ruang sampel. PUDAL menjadi lebih berguna ketika tiap tahap menghasilkan sesuatu yang dapat dipakai tahap berikutnya, bukan sekadar lima label untuk pekerjaan yang sama.
+
+## Menyusun keputusan yang dapat dijalankan
+
+Decide perlu menyatakan tindakan, penanggung jawab, batas, dan bukti yang diharapkan. “Perbaiki pemahaman pengguna” belum merupakan keputusan operasional. “Uji penjelasan tabel pada dua pengguna baru sebelum menambah simulator” memberi langkah dan alasan prioritas. Jika hasilnya membaik, kelompok memperoleh alasan untuk mempertahankan representasi tersebut; jika tidak, ia mempunyai dasar untuk mencoba penjelasan lain.
+
+Act harus menghasilkan perubahan atau informasi baru. Menyusun rencana tambahan dapat menjadi tindakan yang sah ketika kekurangannya memang perencanaan, tetapi tidak menggantikan uji materi. Learn kemudian membandingkan hasil dengan dugaan sebelumnya. Perbaikan tidak selalu berarti keberhasilan: mengetahui bahwa pendekatan tertentu tidak membantu juga memperbarui model jika pengujiannya cukup jelas.
+
+## Loop terbuka, loop tertutup, dan mutu pengukuran
+
+Dalam loop terbuka, kelompok menerbitkan modul sesuai rencana tanpa membaca respons pengguna. Dalam loop tertutup, hasil penggunaan memengaruhi keputusan selanjutnya. Prinsip umpan balik membantu menjelaskan perbedaan ini, tetapi umpan balik yang salah dapat mengarahkan sistem ke tindakan keliru. Banyak klik, misalnya, belum menunjukkan bahwa pembaca memahami Bayes.
+
+NASA membedakan pemeriksaan kesesuaian terhadap persyaratan dan pembuktian kecocokan bagi penggunaan yang dimaksud [@nasa2016]. Dalam adaptasi akademik, memeriksa rumus merupakan satu jenis verifikasi, sedangkan melihat apakah mahasiswa dapat belajar dari modul merupakan pertanyaan validasi penggunaan. Keduanya perlu bukti yang berbeda. PUDAL menyediakan tempat mencatat keduanya tanpa menganggap hasil satu pengujian berlaku untuk semua tujuan.
+
+## Menghindari putaran yang tidak menghasilkan kemajuan
+
+Kelompok dapat terjebak meminta AI memperbaiki penjelasan berkali-kali tanpa menguji pengguna. Teks berubah, tetapi tidak ada bukti bahwa keadaan mendekati B. Tetapkan anggaran eksperimen dan aturan eskalasi: sesudah dua revisi dengan pola kegagalan sama, periksa kembali diagnosis atau minta reviewer lain. Angka dua di sini contoh pengendalian kerja yang dapat disesuaikan, bukan ambang universal.
+
+Aturan berhenti juga melindungi sumber daya. Hentikan kegiatan ketika biaya berikutnya tidak sebanding dengan nilai informasi, ketika kebutuhan berubah, atau ketika tidak ada tindakan sah yang tersedia. “Berhenti” tidak selalu berarti gagal; dapat berarti satu tujuan selesai, hipotesis ditolak, atau lingkup perlu dinegosiasikan. Catat statusnya agar orang lain tidak mengira pekerjaan ditinggalkan tanpa alasan.
+
+## Latihan rekonstruksi satu putaran
+
+Pilih satu kesalahan nyata atau sintetis pada artefak. Tulis lima paragraf pendek: bukti pengamatan, dua kemungkinan penjelasan, keputusan yang dipilih beserta alternatifnya, tindakan yang dilakukan, dan perubahan pemahaman sesudah melihat hasil. Jangan mengisi Learn dengan “kami belajar banyak”; sebut asumsi mana yang berubah dan apa konsekuensinya.
+
+Jawaban yang kuat dapat menunjukkan bahwa tindakan awal ternyata tidak tepat. Nilai analitisnya terletak pada kemampuan mengenali ketidakcocokan dan memperbaiki keputusan. Dengan cara ini, PUDAL membantu membangun kebiasaan kerja yang dapat ditinjau, sekaligus menyediakan bahan untuk pemodelan lebih formal pada bab berikutnya.

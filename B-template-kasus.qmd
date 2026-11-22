@@ -1,0 +1,51 @@
+# Templat Case Study PUDAL
+
+## Identitas dan kebutuhan
+
+**Tema:** …  **Tim:** …  **Pengguna:** …  **Tanggal:** …  **Kasus:** …
+
+**Keadaan A:** deskripsikan kondisi awal dan bukti. **Keadaan B:** hasil akhir dan acceptance criteria. **Tenggat:** …  **Batas etika, akses, dan mutu:** …
+
+## Orientation PUDAL
+
+Apa tujuan? Siapa yang diuntungkan? Apa indikator keberhasilan yang dapat diuji? Apa kondisi berhenti atau eskalasi?
+
+## Understanding PUDAL
+
+Gambarkan graf keadaan yang diketahui. Catat tujuan antara, transisi, rute yang terverifikasi, rute yang belum layak, dan hipotesis. Buat tabel sumber daya: jenis, lokasi, ketersediaan, akses, serta engine yang dapat menggunakan.
+
+## Planning PUDAL
+
+| Stage | Dari → Ke | Engine | Prasyarat | Waktu | Sumber daya | Risiko | Bukti milestone |
+|---|---|---|---|---|---|---|---|
+| 1 | A → M1 | … | … | … | … | … | … |
+| 2 | M1 → M2 | … | … | … | … | … | … |
+| n | Mn → B | … | … | … | … | … | … |
+
+Bandingkan setidaknya dua rute bila tersedia. Jelaskan mengapa rute dan kombinasi engine dipilih.
+
+## Execution PUDAL
+
+Untuk tiap stage: tuliskan pengamatan aktual, analisis gap, keputusan tindakan, catatan kerja, bukti hasil, dan perubahan strategi. Pertahankan log pengujian serta referensi sumber.
+
+## Learning PUDAL
+
+Apa capability gap yang ditemukan? Apa yang dipelajari? Bagaimana penguasaan dibuktikan pada masalah baru? Apakah peta rute, pilihan engine, atau strategi berubah?
+
+## Validasi dan refleksi
+
+Periksa apakah B tercapai; perbandingan waktu/biaya aktual terhadap rencana; audit integritas; peer-review; perbaikan; dan kontribusi individual serta kolektif. Dokumentasikan hal yang gagal secara transparan.
+
+## Contoh singkat pengisian kasus Bayes
+
+**Konteks:** kelompok ingin membantu mahasiswa memahami peluang setelah menerima informasi baru. **A:** pengguna menukar sensitivitas dan posterior. **B:** pengguna dapat menentukan kelompok pembanding dan menyelesaikan kasus spam tanpa petunjuk. **Batas:** waktu latihan 45 menit, tanpa data pribadi, dan penggunaan tutor hanya pada tahap latihan. Angka waktu merupakan rancangan contoh.
+
+Orientation menyepakati tujuan konsep dan tes mandiri. Understanding memetakan miskonsepsi melalui jawaban serta penjelasan pengguna. Planning memilih tabel frekuensi lebih dahulu, kemudian rumus dan soal transfer. Execution menjalankan urutan tersebut sambil mencatat bantuan yang diberikan. Learning memeriksa apakah kemampuan bertahan ketika konteks berubah dan petunjuk dihilangkan.
+
+Jika jawaban awal memakai 90% sebagai posterior, simpan alasan pengguna, bukan hanya tanda salah. Sesudah latihan, minta ia menerangkan mengapa penyebut adalah semua hasil positif. Tes berikutnya menggunakan filter spam dengan parameter berbeda. Perubahan penjelasan menjadi bukti belajar yang lebih relevan daripada jumlah putaran percakapan.
+
+## Menulis refleksi yang dapat ditindaklanjuti
+
+Refleksi menyebut dugaan awal, hasil yang diamati, dan keputusan yang berubah. Contoh: “Kami mengira penjelasan rumus cukup; pengguna tetap memilih penyebut salah; kami menambahkan tabel dan menguji kembali pada pengguna baru.” Pernyataan ini memungkinkan reviewer mengikuti alasan revisi. Kalimat “AI sangat membantu” perlu dilengkapi pekerjaan yang dibantu, biaya pemeriksaan, dan hal yang tetap belum dapat dilakukan mandiri.
+
+Pada penutupan kasus, tandai apakah B tercapai, belum tercapai, atau belum dapat dinilai. Jelaskan bukti dan kekurangan informasi untuk status tersebut. Jangan mengganti tujuan semula hanya agar kasus tampak berhasil. Jika tujuan berubah secara sah, simpan versi sebelumnya dan alasan perubahannya.

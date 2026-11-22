@@ -1,0 +1,92 @@
+# Kerangka Bersama: Rekayasa Perjalanan Tugas
+
+## Perjalanan keadaan $A\rightarrow B$
+
+Rancangan setiap tema diawali dengan definisi entitas dan keadaannya. Misalkan suatu tugas $\mathcal T$ direpresentasikan sebagai
+
+$$
+\mathcal T=(A,B,S,R,C,E,Q),
+$$
+
+dengan $A$ keadaan awal, $B$ keadaan tujuan, $S$ sasaran antara, $R$ alternatif rute, $C$ kapasitas dan sumber daya, $E$ usaha/energi, dan $Q$ kualitas serta kriteria keberhasilan. Untuk setiap rute perlu ditentukan tindakan, prasyarat, risiko, biaya, keluaran, dan cara memeriksa kebenarannya.
+
+::: {.callout-important title="Kualitas tidak hanya berarti cepat"}
+Penyelesaian cepat dapat membantu pekerjaan rutin, tetapi tidak selalu baik untuk tugas belajar yang mensyaratkan usaha penalaran. Rute dipilih berdasarkan tujuan; efisiensi bukan satu-satunya sasaran.
+:::
+
+## Tiga moda: alamiah, chatbot, agen
+
+| Moda | Penanggung jawab utama | Kekuatan | Risiko yang harus dikendalikan |
+|---|---|---|---|
+| Alamiah | Manusia | Eksplorasi dan pembentukan keterampilan | Beban tinggi, kebuntuan |
+| Chatbot | Manusia | Dialog, scaffolding, umpan balik | Jawaban keliru dan ketergantungan |
+| Agen AI | Manusia memberi mandat; agen mengeksekusi subkerja | Otomasi, orkestrasi, skala | Salah tindakan, data, atribusi, otorisasi |
+
+Moda itu dapat dipilih bergantian. Peserta yang kesulitan dapat memperoleh bantuan tambahan; peserta yang semakin mampu perlu berlatih tanpa bantuan (*fading assistance*).
+
+## Sasaran antara dan PUDAL
+
+![Diagram alur; label dan hubungan mengikuti definisi sumber.](images/diagrams/01-kerangka-tise-1.svg){height="150mm"}
+
+PUDAL (*Perceive–Understand–Decide–Act–Learn*) adalah loop operasional: mengamati keadaan, menafsirkan kebutuhan, memilih tindakan, melaksanakan, dan memutakhirkan pemahaman. Sementara itu Q-Cycle bekerja pada persoalan rekayasa yang lebih mendasar: Q1 problem/misi, Q2 fungsi, Q3 arsitektur, Q4 realisasi, lalu bukti yang dapat memperbaiki Q1.
+
+## Arsitektur lima lapisan
+
+| Lapisan | Pertanyaan penuntun | Objek yang dicatat |
+|---|---|---|
+| L5 Ekosistem | Siapa yang dilayani, untuk nilai apa? | Stakeholder, misi, norma, kondisi, keberlanjutan |
+| L4 Rute & kendaraan | Bagaimana berpindah dari A ke B? | Strategi, sasaran antara, layanan/kendaraan |
+| L3 Arsitektur kendaraan | Kendaraan tersusun dari apa? | Subsistem, komponen, antarmuka, peran |
+| L2 Mesin / engine | Mekanisme apa yang menghasilkan perubahan? | Transformasi, algoritma, kontrol, siklus |
+| L1 Energi & teknologi | Apa yang memungkinkan mekanisme bekerja? | Tenaga, waktu, data, komputasi, pengetahuan, instrumen |
+
+Untuk sistem digital, **data dan pengetahuan bukan energi termodinamika**. Keduanya adalah sumber daya informasi yang menggerakkan keputusan melalui mekanisme komputasional dan manusia.
+
+## Dua keluaran dan kontrak evaluasi
+
+Hasil tugas $O_T$ dan hasil belajar $O_L$ harus dinilai terpisah. $O_T$ dapat berupa jawaban benar, esai, notebook, gambar, atau solusi; $O_L$ berupa peningkatan pemahaman, keterampilan, retensi, transfer, kemampuan menjelaskan, dan kemandirian.
+
+Sebuah *Evaluation Contract* menjelaskan: populasi, baseline, metrik primer dan sekunder, instrumen, protokol uji, kriteria lolos, dan batas klaim. Perlu membedakan indikator observasional dari klaim kausal. Instrumen yang belum tervalidasi diberi status eksploratoris.
+
+## Contoh kartu perjalanan tugas
+
+| Field | Contoh isian |
+|---|---|
+| A | Belum memahami teorema Bayes |
+| B | Mampu menyelesaikan kasus baru tanpa AI |
+| Sasaran antara | Mengerti kondisional; memahami prevalensi; membuat tabel; menghitung; menerapkan |
+| Rute | Mandiri → chatbot tutor → agen simulator bila diperlukan |
+| Alat | Kertas, kalkulator, Python, AI |
+| Verifikasi | Soal transfer tanpa AI, penjelasan konsep, perhitungan yang benar |
+
+## Tata kelola AI akademik
+
+Pemakaian AI perlu sesuai aturan tugas atau institusi, menjaga privasi, transparansi penggunaan, atribusi sumber, dan verifikasi. Tugas yang melarang bantuan AI harus dikerjakan tanpa bantuan tersebut; laporan penggunaan AI tidak mengesahkan pelanggaran aturan. Interaksi sensitif tidak semestinya dikirim ke model publik tanpa dasar izin dan perlindungan yang memadai.
+
+## Mengubah tugas yang kabur menjadi perjalanan yang dapat diperiksa
+
+Kalimat “buat laporan yang baik” belum cukup untuk mengarahkan pekerjaan. Kata *baik* dapat berarti rapi bagi penulis, argumentatif bagi dosen, dan berguna bagi pembaca. Karena itu, penetapan B dimulai dengan percakapan tentang pengguna dan bukti penerimaan. Untuk laporan studi literatur, misalnya, B dapat dinyatakan sebagai naskah yang menjawab satu pertanyaan, membandingkan metode dari sumber yang dapat ditelusuri, serta membedakan temuan penulis sumber dari interpretasi penyusun. Jumlah halaman menjadi batas produksi, sedangkan kualitas argumen menjadi kriteria hasil.
+
+Keadaan A juga perlu dibuktikan. Mahasiswa yang menyatakan “belum memahami statistik” mungkin sebenarnya sudah dapat menghitung rata-rata, tetapi belum memahami sampling. Diagnosis singkat berupa satu soal dan penjelasan lisan menghasilkan peta kebutuhan yang lebih berguna daripada label kemampuan umum. Dari diagnosis tersebut, sasaran antara disusun untuk menutup kesenjangan tertentu. Jika kesenjangannya penafsiran, menambah latihan menghitung saja tidak memadai.
+
+Pembedaan tujuan, kegiatan, dan bukti ini sejalan dengan prinsip keselarasan pembelajaran: asesmen perlu menguji kemampuan yang menjadi tujuan, dan kegiatan memberi kesempatan melatihnya [@cmu-alignment]. Dalam rancangan TISE, prinsip tersebut diterjemahkan menjadi hubungan eksplisit A–B–rute–bukti. Terjemahan ini merupakan pilihan desain buku, bukan nama lain dari teori keselarasan.
+
+## Contoh lengkap: menilai penggunaan AI untuk sebuah laporan
+
+Nadia diminta menyusun laporan tentang penggunaan tutor AI di kelas pengantar. Ia mempunyai tiga artikel, tenggat satu minggu, dan pengalaman membaca metode penelitian yang masih terbatas. Tujuan pekerjaannya menghasilkan sintesis yang dapat dipertanggungjawabkan. Tujuan belajarnya mampu menjelaskan mengapa hasil dari dua penelitian belum tentu dapat dibandingkan langsung. Dua tujuan ini menentukan pembagian pekerjaan.
+
+Pada tahap pertama Nadia membaca abstrak dan metode sendiri, lalu mencatat pertanyaan tentang peserta, tugas, dan ukuran hasil. Chatbot kemudian diminta menjelaskan istilah yang belum dipahami berdasarkan potongan sumber yang ia berikan. Setelah Nadia dapat mengisi satu kartu artikel dengan benar, agen boleh membantu menata kartu lain ke dalam matriks. Nadia tetap memeriksa setiap sel terhadap sumber. Dengan urutan ini, delegasi mengikuti pemahaman minimum yang diperlukan untuk mengawasi hasil.
+
+Misalkan matriks selesai lebih cepat, tetapi Nadia masih menyamakan skor tugas berbantuan dengan kemampuan tanpa bantuan. Produk awal dapat dinilai cukup rapi, sementara hasil belajarnya belum mencapai B. Tindakan berikutnya adalah latihan membandingkan desain penelitian, bukan langsung memperindah laporan. Sebaliknya, apabila Nadia sudah memahami metode tetapi kesulitan mengatur daftar pustaka, penggunaan alat pengelola referensi dapat mengurangi pekerjaan administratif tanpa menggantikan sasaran belajar utama.
+
+## Ketidakpastian dan keputusan bantuan
+
+Pemilihan moda memerlukan tiga pertanyaan: apakah kegiatan merupakan sasaran latihan, apakah keluaran dapat diperiksa, dan apa akibat kesalahannya? Untuk latihan konsep dasar, bantuan berupa pertanyaan lebih sesuai daripada jawaban lengkap. Untuk penataan metadata yang dapat diperiksa, delegasi lebih luas mungkin masuk akal. Untuk keputusan yang memengaruhi orang lain, perlu ada penanggung jawab dan batas kewenangan yang jelas. Pedoman UNESCO menempatkan kepentingan manusia dan tujuan pendidikan sebagai pertimbangan penggunaan AI [@unesco-genai]; rincian aturan bantuan di sini merupakan rancangan operasional buku.
+
+Simpan alasan pergantian moda dalam kalimat yang konkret. “Memakai agen karena lebih canggih” tidak membantu evaluasi. “Mendelegasikan pengurutan metadata setelah semua DOI diperiksa karena kegiatan itu bukan target asesmen” menjelaskan keputusan dan memungkinkan orang lain meninjaunya. Jika data tidak lengkap, catat apa yang belum diketahui dan bagaimana kekurangan itu memengaruhi keputusan.
+
+## Latihan analitis dan umpan balik
+
+Pilih satu tugas yang sedang Anda kerjakan. Tulis dua definisi B: produk yang diterima pengguna dan kemampuan yang harus Anda tunjukkan sendiri. Lalu pilih satu kegiatan yang layak didelegasikan dan satu kegiatan yang perlu dilatih mandiri. Jelaskan perbedaannya dengan merujuk pada tujuan dan cara verifikasi.
+
+Jawaban yang baik tidak harus memilih lebih sedikit AI. Jawaban perlu menunjukkan kesesuaian antara bantuan dan tujuan. Jika mahasiswa mendelegasikan seluruh analisis tetapi mengaku belajar analisis, bukti yang diperlukan adalah demonstrasi pada data baru tanpa delegasi. Jika buktinya belum tersedia, status hasil belajar tetap belum diketahui. Ketelitian menyatakan status inilah yang membuat kerangka perjalanan berguna dalam pendidikan.

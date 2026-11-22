@@ -1,0 +1,88 @@
+# Model Matematis Resource-Aware Navigation
+
+## State, engine, dan keputusan
+
+Definisikan keadaan lengkap $x_t=(s_t,\mathbf r_t,\mathbf k_t,\tau_t)$, dengan $s_t$ keadaan pekerjaan, $\mathbf r_t$ vektor cadangan sumber daya, $\mathbf k_t$ model kemampuan, dan $\tau_t$ waktu tersedia. Tindakan $a_t$ dilaksanakan menggunakan engine $m_t\in\{N,I,V\}$ atau suatu kombinasi yang kompatibel. Sistem mengalami transisi:
+
+$$x_{t+1}=F(x_t,a_t,m_t,w_t),$$
+
+di mana $w_t$ mencakup perubahan lingkungan atau ketidakpastian. Fungsi $F$ bersifat spesifik kasus: untuk tugas akademik, transisinya mungkin perubahan keadaan dokumen; untuk perjalanan fisik, perubahan posisi.
+
+## Rute dan kelayakan
+
+Sebuah rute adalah $\pi=(s_0,e_1,s_1,\dots,e_n,s_n)$ dengan $s_0=A$ dan $s_n\in G_{\mathrm{goal}}$. Setiap sisi memiliki waktu $t(e,m)$, biaya sumber daya vektor $\mathbf c(e,m)$, kualitas yang diharapkan, risiko, dan bukti kelayakan. Rute **layak** bila setiap langkah memenuhi prasyarat kemampuan, suplai dan cadangan nonnegatif, serta tenggat:
+
+$$\sum_i t(e_i,m_i) + T_{\mathrm{belajar}} + T_{\mathrm{transisi}} \leq T_{\max}.$$
+
+## Neraca sumber daya
+
+Untuk sumber daya ke-$j$:
+
+$$r^{(j)}_{i+1}=r^{(j)}_i+q^{(j)}_i-c^{(j)}_i,\qquad r^{(j)}_i\geq r^{(j)}_{\min}.$$
+
+Masukan $q$ bisa berupa pembelian, pengisian, bantuan, atau akses, sesuai jenis sumber daya. Menggunakan uang untuk bahan bakar memerlukan **model pertukaran** antara uang dan volume BBM; uang bukan energi fisik.
+
+## Fungsi tujuan multi-kriteria
+
+Contoh fungsi objektif konseptual:
+
+$$J(\pi,\ell)=\alpha T+\beta C+\gamma R-\delta V-\lambda \Delta K.$$
+
+$T$ ialah durasi, $C$ biaya yang dinormalisasi, $R$ risiko, $V$ nilai hasil, $\Delta K$ manfaat peningkatan kemampuan, dan $\ell$ pilihan pembelajaran. Bobot ditetapkan oleh pengambil keputusan. Karena unit berbeda, perlu normalisasi atau *multi-objective optimization* sebelum digunakan numerik. Batas etika dan mutu sering lebih tepat diperlakukan sebagai kendala keras daripada komponen yang dapat ditukar dengan biaya.
+
+## Kebijakan adaptif
+
+Pada milestone $i$, kebijakan $\pi_i$ memilih stage berikutnya dari keadaan aktual. Mekanisme keputusan dapat berupa aturan, matriks skor, optimasi graf, simulasi, atau evaluasi manusia. Jika estimasi berubah, lakukan *replanning*. Jika informasi kurang, jalankan Understanding; jika skill kurang, jalankan Learning.
+
+## Pseudocode
+
+```text
+state ← observe()
+goal ← OrientationPUDAL(state)
+map ← UnderstandingPUDAL(state, goal)
+plan ← PlanningPUDAL(map, resources, capabilities, deadline)
+
+while not accepted(goal, state):
+    next_milestone ← plan.next_milestone()
+    if map_uncertain(next_milestone):
+        map ← UnderstandingPUDAL(state, goal, map)
+    if capability_gap(next_milestone):
+        capabilities ← LearningPUDAL(capabilities, requirements)
+    if not feasible(plan, resources, capabilities):
+        plan ← PlanningPUDAL(map, resources, capabilities, deadline)
+    state, resources, evidence ← ExecutionPUDAL(next_milestone, plan)
+    update_models(evidence)
+    if safety_or_budget_stop(): break
+```
+
+Pseudocode ini skematis; implementasi memerlukan definisi tipe data, kondisi berhenti, dan otorisasi tindakan eksternal.
+
+## Memahami fungsi model sebelum menghitung optimum
+
+Model matematis memaksa penyusun menyebut keadaan, kendala, dan tujuan secara konsisten. Ia tidak membuat nilai yang belum diukur menjadi pasti. Jika mutu, risiko, dan kemampuan hanya perkiraan kasar, keluaran optimasi perlu diperlakukan sebagai bahan analisis skenario. Istilah optimal selalu merujuk pada model, pilihan, data, dan asumsi tertentu.
+
+Bedakan keadaan pekerjaan dari pengamatan. Pengguna mungkin sudah memahami konsep, tetapi satu jawaban salah membuat pengamat menduga sebaliknya. Secara konseptual, tulis $o_t=H(x_t,v_t)$, dengan $o_t$ pengamatan dan $v_t$ ketidakpastian pengukuran. Model keadaan tidak harus diketahui sempurna. Catatan observasi, dugaan, dan keyakinan membantu menjaga ketidakpastian itu terlihat tanpa langsung memerlukan model probabilistik rumit.
+
+## Contoh numerik pemilihan dua rute
+
+Kelompok mempunyai 12 jam dan anggaran Rp100.000. Rute N membutuhkan 10 jam, tanpa biaya layanan, dengan skor mutu perkiraan 80. Rute V membutuhkan empat jam produksi dan tiga jam verifikasi, biaya Rp80.000, serta skor mutu perkiraan 85. Semua angka hipotetis, dan skor mutu dianggap berada pada rubrik yang sama. Kedua rute memenuhi batas waktu dan uang, tetapi kelayakan akademik masih harus diperiksa.
+
+Gunakan $T'=T/12$, $C'=C/100000$, dan $Q'=Q/100$. Untuk ilustrasi fungsi biaya $J=0{,}4T'+0{,}2C'-0{,}4Q'$, rute N menghasilkan sekitar $0{,}0133$ dan rute V sekitar $0{,}0533$. Nilai lebih kecil membuat N dipilih pada bobot itu. Jika bobot waktu dinaikkan menjadi 0,7, biaya diturunkan menjadi 0,1, dan mutu menjadi 0,2, N menghasilkan sekitar 0,4233 sedangkan V sekitar 0,3183; pilihan berbalik.
+
+Perhitungan menunjukkan bahwa kecepatan tidak menentukan pemenang sendirian dan bobot menyatakan preferensi. Ia tidak membuktikan N atau V lebih baik secara universal. Jika V melanggar aturan tugas, ia dikeluarkan sebelum skor dihitung. Kendala keras tidak boleh ditukar dengan keuntungan pada komponen lain.
+
+## Menjaga kelayakan pada setiap langkah
+
+Jumlah total sumber daya belum cukup. Misalkan rute membutuhkan Rp80.000 pada stage pertama tetapi dana baru tersedia pada stage kedua. Total pemasukan mungkin memadai, tetapi rute tidak layak pada urutan tersebut. Periksa saldo sebelum dan sesudah setiap transisi serta waktu masuknya suplai. Waktu belajar, verifikasi, dan perpindahan engine dimasukkan sebagai kegiatan nyata.
+
+Untuk sumber daya yang dapat diisi ulang, batasi kapasitas jika relevan: $r^{(j)}_{i+1}\le r^{(j)}_{\max}$. Untuk kemampuan, hindari asumsi bahwa satu jam latihan selalu meningkatkan skor dengan jumlah yang sama. Perubahan kemampuan dapat bersifat tidak linear dan perlu bukti pengukuran. Formalisasi awal lebih baik sederhana dan jujur daripada rinci dengan parameter yang tidak mempunyai dasar.
+
+## Sensitivitas dan dominasi
+
+Sebelum memakai skor berbobot, periksa apakah satu opsi didominasi: opsi lain setidaknya sama baik pada semua dimensi dan lebih baik pada satu dimensi yang relevan. Opsi yang tidak didominasi masih memerlukan keputusan nilai. Jika peringkat berubah ketika bobot sedikit bergeser atau estimasi mutu berubah kecil, laporkan pilihan sebagai sensitif.
+
+Uji skenario terlambat, biaya meningkat, dan mutu lebih rendah daripada dugaan. Tampilkan kondisi ketika rute tidak lagi layak. Hasil ini membantu merancang cadangan dengan lebih langsung daripada satu angka objektif. Untuk pertanyaan dampak pendidikan, estimasi model keputusan tidak menggantikan desain inferensi kausal [@cunningham2021].
+
+## Latihan pemeriksaan model
+
+Hitung ulang kedua fungsi di atas dan ubah waktu verifikasi V dari tiga menjadi enam jam. Rute V kini membutuhkan sepuluh jam dan perlu dibandingkan kembali. Jelaskan variabel yang diukur, yang diperkirakan, dan yang dipilih sebagai preferensi. Model dianggap dapat ditinjau jika pembaca lain dapat mengulang hitungan serta memahami mengapa keputusan berubah.

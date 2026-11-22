@@ -1,0 +1,54 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Belajar, Meneliti, Berkarya, dan Memecahkan Masalah dengan AI"
+  subtitle: "Enam Tema Kompetensi Akademik Berbasis TISE"
+  author: "Armein Z. R. Langi — kompilasi dan pengembangan materi diskusi"
+  date: "2026-11-22"
+  language: id
+  search: true
+  repo-actions: []
+  sidebar:
+    style: docked
+    collapse-level: 1
+  chapters:
+    - index.qmd
+    - 01-kerangka-tise.qmd
+    - 02-tema1-learning.qmd
+    - 03-tema2-literature.qmd
+    - 04-tema3-writing.qmd
+    - 05-tema4-data.qmd
+    - 06-tema5-visualisasi.qmd
+    - 07-tema6-problem-solving.qmd
+    - 08-implementasi-asesmen.qmd
+    - 09-template-kerja.qmd
+    - references.qmd
+  appendices:
+    - appendix-tools.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles/book.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-copy: true
+    highlight-style: github
+    fig-responsive: true
+    lightbox: true
+    callout-appearance: simple
+    mermaid:
+      theme: neutral
+  epub:
+    toc: true
+    cover-image: images/tema-0-pola-dasar.png
+
+execute:
+  freeze: auto

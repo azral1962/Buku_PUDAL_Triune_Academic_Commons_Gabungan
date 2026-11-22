@@ -1,0 +1,51 @@
+# Mengapa Perjalanan dari A ke B?
+
+## Masalah sebagai perubahan keadaan
+
+Persoalan akademik, perjalanan fisik, proyek kelompok, maupun kehidupan profesional dapat dijelaskan sebagai upaya mengubah **keadaan awal** menjadi **keadaan tujuan**. Seseorang berada pada A, membayangkan B, tetapi belum tentu mengetahui jalan menuju B. Bahkan jika rute diketahui, kemampuan, waktu, energi, uang, atau akses terhadap layanan belum tentu mencukupi.
+
+Misalnya mahasiswa menghadapi lembar jawaban kosong (A) dan perlu menghasilkan jawaban yang benar serta dapat dipertanggungjawabkan (B). Antara keduanya ada kegiatan memahami soal, memilih rumus atau metode, mengerjakan, memeriksa, merevisi, dan menyimpulkan. Tiap kegiatan mengubah keadaan pekerjaan. Dengan demikian, penyelesaian tidak cukup dipahami sebagai satu tindakan tunggal; ia merupakan **perjalanan melalui rangkaian keadaan antara**.
+
+## Tiga masalah yang berbeda
+
+1. **Masalah pengetahuan:** peta atau rute belum diketahui. Dibutuhkan eksplorasi dan pengembangan representasi persoalan.
+2. **Masalah keputusan:** banyak rute tersedia tetapi belum diketahui mana yang layak dan bernilai. Dibutuhkan evaluasi waktu, biaya, risiko, serta hasil.
+3. **Masalah kapasitas:** rute dipahami dan dipilih, tetapi belum tersedia kemampuan atau sumber daya untuk menjalankannya. Dibutuhkan engine, suplai, pengembangan skills, atau rute alternatif.
+
+Perbedaan itu menghasilkan kebutuhan terhadap *Orientation, Understanding, Planning, Execution,* dan *Learning* sebagai lima fungsi PUDAL berjenjang.
+
+## Dari jalan ke strategi
+
+Perjalanan yang sulit dapat dipecah menjadi **stages**, masing-masing berakhir pada **milestones** terukur. Milestone bukan hanya tanda kemajuan: ia adalah titik pemeriksaan sumber daya, pergantian engine, perundingan ulang strategi, atau aktivasi siklus pembelajaran. Ketika realitas tidak sesuai rencana, agen perlu melakukan *replanning*, bukan memaksakan rute lama.
+
+## Pertanyaan besar buku
+
+Bagaimana tujuan ditentukan? Bagaimana peta masalah dibangun? Bagaimana rute dan engine dipilih? Bagaimana sumber daya luar diperoleh dan dikonversi menjadi kerja? Bagaimana milestone dipakai untuk pengendalian adaptif? Dan bagaimana proses belajar mengubah himpunan rute yang dapat ditempuh? Kelima pertanyaan menuntun keseluruhan pembahasan.
+
+## Membaca persoalan melalui keadaan, tindakan, dan bukti
+
+Perubahan keadaan menjadi berguna sebagai model ketika kita menyebut apa yang berubah dan siapa yang menilainya. “Mahasiswa sudah mengerjakan tugas” menyatakan aktivitas, sedangkan “mahasiswa dapat menjelaskan dua alasan dan mempertahankannya dengan sumber” menyatakan kemampuan yang bisa diuji. Perbedaan ini menentukan apakah B benar-benar tercapai. Sebuah berkas selesai tidak selalu berarti kebutuhan pengguna terpenuhi.
+
+Dalam rekayasa sistem, kebutuhan pemangku kepentingan perlu diturunkan menjadi persyaratan dan cara pemeriksaan [@nasa2016]. Buku ini memakai gagasan keterlacakan itu untuk perjalanan akademik. PUDAL merupakan kerangka usulan proyek yang mengorganisasi pengamatan, pemahaman, pilihan, tindakan, dan pembelajaran; rujukan rekayasa tidak berarti NASA menggunakan atau memvalidasi istilah PUDAL.
+
+Keadaan juga lebih kaya daripada produk. Dua mahasiswa dapat sama-sama mempunyai laporan selesai, tetapi yang satu memahami metode dan yang lain belum. Karena itu, deskripsi keadaan perlu mencakup mutu artefak, kemampuan pelaku, sumber daya yang tersisa, serta kewajiban yang masih terbuka. Jika hanya artefak yang dicatat, biaya tersembunyi dan kebutuhan belajar mudah luput.
+
+## Kasus pengikat: membangun modul Bayes bersama
+
+Sepanjang beberapa bab, gunakan kelompok fiktif yang ingin membuat modul Bayes untuk mahasiswa baru. Pada A, kelompok mempunyai infografik awal, beberapa catatan, kemampuan statistik yang beragam, dan waktu 21 hari. B terdiri dari modul yang isinya benar, tutorial yang dapat dijalankan pengguna baru, prompt tutor yang teruji, serta demonstrasi bahwa anggota kelompok memahami konsep tanpa bantuan. Angka jadwal ini skenario perancangan, bukan laporan pelaksanaan kelas.
+
+Masalah pengetahuannya ialah menentukan konsep dan miskonsepsi yang perlu diajarkan. Masalah keputusannya ialah memilih pendekatan penjelasan dan bentuk latihan. Masalah kapasitasnya ialah membuat simulator dan menyunting modul dalam waktu tersedia. Ketiganya tidak dapat diperbaiki dengan tindakan yang sama. Mengulang prompt tidak menutup kekurangan pemahaman; menambah referensi tidak otomatis menyelesaikan pembagian kerja.
+
+Kelompok pertama-tama meminta anggota mengerjakan satu kasus Bayes. Kesalahan penyebut muncul pada sebagian jawaban, sehingga sasaran belajar dipertegas. Kelompok lalu membuat satu contoh lengkap sebelum membangun banyak latihan. Pengguna lain diminta mencoba contoh itu. Ketika pengguna masih salah menafsirkan probabilitas, kelompok memperbaiki representasi frekuensi dan menunda perluasan fitur. Perjalanan ini memperlihatkan bagaimana bukti mengubah urutan tindakan.
+
+## Batas metafora perjalanan
+
+Jalan fisik biasanya mempunyai lokasi dan jarak yang relatif jelas. Pekerjaan akademik dapat mengubah tujuan ketika pemahaman berkembang. Kebutuhan pengguna juga dapat saling bertentangan, dan mutu tidak selalu dapat dipadatkan menjadi satu angka. Oleh sebab itu, graf dan rute dipakai untuk memperjelas hubungan, bukan untuk menganggap semua persoalan mempunyai solusi terpendek yang objektif.
+
+Perencanaan tetap memerlukan penilaian manusia. Sebuah rute cepat yang membuat peserta tidak belajar dapat sesuai untuk pekerjaan administrasi, tetapi gagal untuk tugas pendidikan. Sebaliknya, rute belajar yang sangat panjang dapat melewati tenggat pelayanan pengguna. Model perlu memperlihatkan trade-off tersebut, lalu membantu pihak berwenang memilih dengan alasan yang terbuka.
+
+## Memulai dari kasus pembaca
+
+Ambil satu tugas yang belum selesai. Deskripsikan A dengan bukti yang sudah tersedia, lalu B dengan cara penerimaan yang jelas. Sebut satu hal yang belum diketahui, satu keputusan yang belum dibuat, dan satu kemampuan yang belum cukup. Susun tindakan pertama untuk masing-masing masalah. Jika ketiga tindakan identik, periksa kembali diagnosis Anda.
+
+Pada akhir latihan, pembaca seharusnya dapat menjelaskan mengapa hambatan tertentu memerlukan pencarian informasi, perundingan tujuan, perubahan rute, atau latihan. Keterampilan diagnosis ini menjadi prasyarat penggunaan istilah yang lebih formal pada bab berikutnya.

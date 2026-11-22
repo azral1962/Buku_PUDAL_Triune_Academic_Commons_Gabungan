@@ -1,0 +1,55 @@
+# Natural, Instrumental, dan Vehicular Engine
+
+## Tiga sumber kemampuan penggerak
+
+**Natural Engine** menggunakan kemampuan dan tenaga intrinsik pelaku, seperti berjalan kaki, bernalar, membaca atau menghitung sendiri. **Instrumental Engine** menggunakan instrumen yang memperbesar atau memperbaiki efektivitas kemampuan pelaku, seperti sepeda, kalkulator, spreadsheet, atau Python. **Vehicular Engine** mengakses sistem penggerak eksternal yang melakukan sebagian besar kerja yang didelegasikan, seperti mobil, transportasi publik, layanan komputasi, atau layanan AI.
+
+| Aspek | Natural | Instrumental | Vehicular |
+|---|---|---|---|
+| Penggerak utama | Diri sendiri | Diri sendiri dengan instrumen | Mesin/layanan eksternal |
+| Contoh mobilitas | Berjalan | Bersepeda | Mobil, kereta |
+| Contoh akademik | Membaca/menghitung manual | Python, pengelola referensi | Layanan AI/cloud terdelegasi |
+| Kendala pokok | Daya/kecakapan/waktu | Kecakapan mengoperasikan alat | Akses, keandalan, biaya, kontrol |
+| Tanggung jawab | Pelaku | Pelaku | Tetap perlu pengawasan/persetujuan manusia |
+
+## Kategori bersifat fungsional
+
+Satu perangkat dapat berperan instrumental atau vehicular tergantung penggunaan. AI yang memberi petunjuk langkah sambil mahasiswa bekerja merupakan instrumen belajar; AI yang diberi tugas menghasilkan draf atau analisis lebih otonom berperan sebagai layanan vehicular. Keputusan penggunaan harus sesuai batas integritas akademik.
+
+## Rute campuran
+
+Perjalanan $A\rightarrow M_1\rightarrow M_2\rightarrow B$ dapat menggunakan natural pada segmen pertama, instrumental pada segmen kedua, dan vehicular pada segmen akhir. Bahkan satu stage dapat menggabungkan beberapa engine, misalnya mahasiswa menyusun pertanyaan, AI melakukan ekstraksi awal, mahasiswa memvalidasi sumber, lalu perangkat lunak membuat matriks.
+
+## Engine, operator, dan sumber daya
+
+Engine tidak beroperasi di ruang kosong. Harus ada operator, prasyarat keterampilan, sumber daya input, aturan konversi, kapasitas kerja, serta umpan balik. Untuk penggunaan AI, kuota komputasi, listrik, koneksi, data, dan pemeriksaan manusia menjadi bagian kelayakan—meski bukan semuanya setara energi fisik.
+
+## Klasifikasi berdasarkan pekerjaan yang dilakukan
+
+Nama perangkat tidak cukup menentukan kategori engine. Spreadsheet yang menghitung sesuai rumus yang dirancang mahasiswa berperan sebagai instrumen. Layanan yang diberi mandat memilih analisis dan menyusun laporan mengerjakan bagian keputusan dan produksi yang lebih luas. Perbedaannya terletak pada fungsi, tingkat delegasi, dan pengawasan. Sebut unit tugasnya sebelum menetapkan kategori agar klasifikasi tidak berubah menjadi perdebatan merek alat.
+
+Pada modul Bayes, peserta menghitung satu contoh sendiri untuk menguasai penyebut. Ia memakai Python untuk memeriksa banyak kombinasi parameter. Ia lalu meminta layanan AI mengusulkan soal transfer, dengan syarat semua soal diperiksa. Natural, instrumental, dan vehicular hadir dalam satu perjalanan. Pembagian ini dirancang untuk memelihara penguasaan konsep sekaligus memanfaatkan alat pada pekerjaan yang sesuai.
+
+## Biaya penuh mencakup pengawasan
+
+Waktu delegasi tidak hanya waktu layanan menghasilkan jawaban. Hitung juga penyiapan input, penjelasan konteks, pemeriksaan, perbaikan, dan perpindahan format. Jika agen menulis contoh Bayes dalam satu menit tetapi kelompok memerlukan satu jam untuk memperbaiki soal yang salah, keuntungan produksi awal dapat hilang. Hal yang sama berlaku pada alat manual yang memerlukan pelatihan sebelum dipakai.
+
+Sebagai ilustrasi, rute manual membutuhkan enam jam. Rute berbantuan membutuhkan satu jam persiapan, satu jam produksi, dua jam verifikasi, dan satu jam revisi: total lima jam. Ia masih menghemat satu jam, tetapi klaim “enam kali lebih cepat” berdasarkan waktu produksi saja tidak benar. Angka-angka ini sintetis untuk menunjukkan cara pencatatan, bukan hasil perbandingan alat.
+
+## Memeriksa kesesuaian engine dengan tujuan belajar
+
+Jika sasaran belajar adalah menafsirkan probabilitas, mengotomasi perkalian dapat diterima setelah peserta memahami tabel. Jika sasarannya menulis program, menerima seluruh kode tanpa mampu menjelaskan alur tidak cukup. Karena itu, engine dipilih setelah menentukan kemampuan yang akan diuji. Kebijakan bantuan dapat berubah antarstage walaupun peserta dan perangkatnya sama.
+
+Penilaian kemampuan perlu mempertimbangkan pengetahuan awal dan umpan balik. Sintesis *How People Learn II* membahas pembelajaran sebagai proses yang dipengaruhi peserta, konteks, dan pengaturan pembelajaran [@hpl2018]. Buku ini menerjemahkan perhatian tersebut menjadi diagnosis dan pengurangan bantuan ketika penguasaan meningkat; efektivitas kebijakan spesifiknya masih perlu diuji.
+
+## Mengelola ketergantungan dan rute cadangan
+
+Engine eksternal dapat tidak tersedia karena koneksi, kuota, perubahan layanan, atau masalah input. Rute cadangan sebaiknya menjaga fungsi minimum. Untuk modul Bayes, simulator dapat diganti lembar perhitungan dan beberapa tabel contoh. Untuk pencarian literatur, metadata yang telah disimpan memungkinkan pembacaan berlanjut ketika layanan pencarian terganggu.
+
+Cadangan tidak perlu menggandakan seluruh sistem. Tentukan keluaran minimum yang tetap harus dihasilkan dan kemampuan inti yang harus dimiliki manusia. Jika tim tidak dapat memeriksa satu hasil tanpa layanan yang sama yang membuatnya, independensi verifikasi lemah. Gunakan hitung manual, sumber primer, atau alat pembanding pada bagian kritis.
+
+## Batas kendali dan latihan pemilihan
+
+Untuk layanan AI, mandat menyatakan input yang boleh digunakan, tindakan yang boleh dilakukan, batas biaya, format bukti, dan kondisi eskalasi. NIST AI RMF memberi kerangka umum untuk mengelola risiko sistem AI [@nist2023]; daftar mandat ini merupakan adaptasi praktis bagi tugas akademik. Skala pengawasan mengikuti dampak dan kesulitan memeriksa hasil.
+
+Pilih dua engine untuk tugas yang sama. Bandingkan biaya penuh, prasyarat keterampilan, mutu yang dapat diperiksa, risiko, serta hasil belajar. Jelaskan kondisi yang akan mengubah pilihan. Keputusan yang matang bersifat bersyarat: engine tertentu sesuai untuk stage dan batas tertentu, bukan pemenang universal untuk semua pekerjaan.

@@ -1,0 +1,45 @@
+# TAIDA, Komunikasi, dan Triune Intelligence
+
+## TAIDA sebagai strategi komunikasi menuju tindakan
+
+Dalam KIPP, **TAIDA** digunakan sebagai platform untuk merancang pesan dan perubahan yang hendak dicapai: **Target, Attention, Interest, Desire, Action**. Target menentukan kepada siapa komunikasi diarahkan dan perubahan apa yang diharapkan. Attention memperoleh perhatian; Interest menunjukkan relevansi; Desire membangun motivasi; Action menggerakkan pelaksanaan. TAIDA adalah strategi hubungan manusia menuju aksi, bukan pengganti PUDAL yang menangani navigasi dan pengendalian pekerjaan.
+
+Penerapan TAIDA untuk UAS: sasaran mahasiswa yang ingin menjadi mampu; perhatian dibangun dengan pertanyaan mengapa tugas berharga; minat muncul melalui enam agen yang berguna; hasrat diperkuat dengan portofolio dan kontribusi nyata; aksi diwujudkan melalui pembagian tugas, GitHub, peer review, dan showcase.
+
+## Triune Intelligence
+
+**Individual Intelligence** adalah kemampuan memahami, memutuskan, bertindak, bertanggung jawab, dan belajar sebagai individu. **Collective Intelligence** muncul dari komunikasi, koordinasi, pembagian pengetahuan, evaluasi silang, dan kolaborasi. **Artificial Intelligence** membantu mencari alternatif, menjelaskan, mengolah, merancang, dan memberi umpan balik. Komunikasi menghubungkan ketiganya agar kekuatan masing-masing saling melengkapi.
+
+AI tidak dianggap otoritas epistemik otomatis. Referensi, hasil analisis, dan keputusan bernilai atau berisiko harus diverifikasi oleh manusia yang bertanggung jawab. Begitu pula kecerdasan kolektif tidak menggantikan kontribusi individual; ia memerlukan akuntabilitas peran.
+
+## Dari domain komunikasi menuju artefak
+
+Komunikasi dengan diri sendiri mengembangkan refleksi; dengan teman dan keluarga menumbuhkan kepercayaan; dengan rekan profesional melatih koordinasi; pada komunitas membangun aksi bersama; dan pada publik menghasilkan pesan yang dapat dipahami serta diuji. Dalam proyek bersama, komunikasi dipraktikkan pada seluruh domain ini sesuai konteks kasus.
+
+Prinsip pembelajarannya adalah **person-before-message**: mulai dari manusia dan keadaan yang ingin diperbaiki, lalu tentukan isi pesan, tools, dan strategi yang sesuai. Keberhasilan proyek berarti penerima manfaat menjadi lebih mampu, bukan sekadar memperoleh lebih banyak konten.
+
+## Menghubungkan komunikasi dengan perubahan yang bernilai
+
+Pesan yang memperoleh perhatian belum tentu menggerakkan tindakan yang tepat. Mahasiswa dapat tertarik pada demo AI, tetapi belum mengetahui bagaimana ia harus memulai atau mengapa kegiatan itu relevan. TAIDA dalam buku ini membantu memisahkan sasaran penerima, cara menarik perhatian, relevansi, motivasi, dan tindakan berikutnya. Kerangka tersebut dipakai sebagai alat desain komunikasi proyek; efektivitasnya pada konteks kelas tetap perlu diperiksa.
+
+Untuk modul Bayes, Target bukan “semua mahasiswa”, melainkan peserta yang sudah mengenal persentase tetapi kesulitan menafsirkan probabilitas bersyarat. Attention dapat dibuka dengan dua peluang yang sering tertukar. Interest tumbuh ketika peserta mengenali bahwa perbedaan itu juga muncul pada filter spam. Desire dikembangkan melalui kesempatan menjelaskan kasus dengan benar. Action harus konkret: kerjakan satu soal diagnosis dan bandingkan alasan Anda dengan pembahasan.
+
+Hubungan ini perlu diuji dari respons penerima, bukan hanya niat penyusun. Jika peserta membuka modul tetapi tidak memulai latihan, masalahnya mungkin instruksi awal terlalu berat. Jika peserta menyelesaikan latihan tanpa memahami alasan, ajakan tindakan berhasil secara prosedural tetapi tujuan pendidikan belum tercapai. Data tersebut dikembalikan ke PUDAL untuk memperbaiki materi dan pesan.
+
+## Pembagian kerja antara individu, kelompok, dan AI
+
+Dalam skenario modul, satu anggota memeriksa perhitungan, anggota lain menguji tutorial, dan anggota lain menyunting penjelasan. AI membantu mengusulkan variasi soal, tetapi setiap soal diperiksa dengan hitung ulang. Kecerdasan individual terlihat dari penalaran dan tanggung jawab anggota; kecerdasan kolektif terlihat dari cara perbedaan penilaian diselesaikan; bantuan artifisial terlihat dari pekerjaan tertentu yang dipercepat atau diperluas.
+
+Kerja kelompok tidak otomatis menghasilkan kecerdasan kolektif. Jika semua anggota menerima keluaran AI yang sama tanpa pemeriksaan, kesalahan bersama justru dapat menguat. Sediakan ruang penilaian awal yang independen, lalu diskusikan perbedaan. Reviewer yang berbeda pendapat diminta menunjukkan bukti, bukan mengikuti anggota yang paling percaya diri. Catatan keputusan menyebut alasan yang akhirnya diterima.
+
+## Commons memerlukan aturan pemeliharaan
+
+Academic Commons berarti materi disusun untuk dipakai dan diperbaiki bersama. Portal yang penuh berkas belum tentu menjadi sumber bersama yang sehat apabila tidak ada kurasi, penanggung jawab, dan mekanisme koreksi. Kajian Ostrom tentang tata kelola polisentris menunjukkan pentingnya memperhatikan institusi dan pengaturan yang sesuai konteks [@ostrom2009]. Penerapannya pada repositori pendidikan merupakan analogi desain buku ini, bukan hasil uji langsung dari kajian tersebut.
+
+Aturan sederhana dapat menetapkan siapa mengusulkan perubahan, siapa meninjau sumber, bagaimana ketidaksepakatan diselesaikan, dan siapa merawat materi setelah mata kuliah berakhir. Keputusan tentang lisensi dan atribusi juga perlu jelas. Materi yang dapat dibaca bebas belum tentu boleh disalin atau diubah tanpa batas.
+
+## Menjaga motivasi tanpa manipulasi
+
+Keinginan menggunakan karya sendiri sebagai portofolio merupakan motivasi yang wajar. Namun pesan proyek harus jujur tentang waktu, kesulitan, dan bentuk penilaian. Jangan menjanjikan kompetensi otomatis hanya karena peserta menggunakan AI. Pedoman UNESCO mendukung pendekatan yang berpusat pada manusia [@unesco-genai]; dalam konteks ini, peserta perlu memahami pilihan dan konsekuensinya.
+
+Sebagai latihan, susun dua versi undangan belajar: untuk mahasiswa yang khawatir statistik dan untuk mahasiswa yang sudah mampu menghitung tetapi belum dapat menjelaskan. Pertahankan tujuan yang sama, lalu ubah pembukaan, contoh, dan langkah awal sesuai kebutuhan. Uji apakah penerima dapat menyebut apa yang akan dipelajari dan tindakan pertama yang harus dilakukan. Kejelasan itu menjadi ukuran komunikasi yang lebih berguna daripada kesan bahwa pesan terlihat menarik.

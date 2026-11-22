@@ -1,0 +1,64 @@
+# Lampiran: Menjalankan dan Mengembangkan Buku
+
+## Persyaratan
+
+Instal Quarto dari [quarto.org](https://quarto.org/docs/get-started/). Proyek ini menggunakan **format buku bawaan** Quarto; tidak memerlukan ekstensi eksternal untuk HTML maupun EPUB. Dokumen `.qmd`, aset gambar, CSS, serta file pengaturan disertakan.
+
+## Render
+
+Dari folder proyek:
+
+```bash
+quarto preview
+quarto render --to html
+quarto render --to epub
+quarto render --to typst
+```
+
+PDF edisi ini dibuat melalui `quarto render --to typst`, menggunakan mesin Typst bawaan Quarto. Alternatif LaTeX tersedia melalui `quarto render --to pdf` jika sistem menyediakan XeLaTeX. Diagram buku memakai aset vektor SVG/PDF dengan sumber Mermaid dan DOT yang dapat diedit di `images/diagrams/`, sehingga hasil cetak tidak memerlukan proses screenshot browser.
+
+## Pilihan ekstensi
+
+Tautan katalog ekstensi format yang menjadi awal permintaan adalah [Quarto Extensions — Custom Formats](https://quarto.org/docs/extensions/listing-formats.html). Beberapa ekstensi memiliki dukungan untuk buku, tetapi memerlukan instalasi, kompatibilitas versi dan lisensi yang perlu diperiksa. Edisi ini memilih buku bawaan agar portabel. Setelah instalasi Quarto tersedia, pembaca dapat mengganti tema atau memasang ekstensi dengan mengikuti petunjuk masing-masing.
+
+## Struktur direktori
+
+```text
+tise-six-themes-book/
+├── _quarto.yml
+├── index.qmd
+├── 01-kerangka-tise.qmd
+├── 02-tema1-learning.qmd
+├── 03-tema2-literature.qmd
+├── 04-tema3-writing.qmd
+├── 05-tema4-data.qmd
+├── 06-tema5-visualisasi.qmd
+├── 07-tema6-problem-solving.qmd
+├── 08-implementasi-asesmen.qmd
+├── 09-template-kerja.qmd
+├── references.qmd
+├── appendix-tools.qmd
+├── images/
+├── styles/
+└── templates/
+```
+
+## Infografik
+
+Seluruh gambar infografik Tema 0–6 disertakan sebagai PNG dan diletakkan pada awal pembahasan masing-masing tema. Gambar dibuat sebagai alat bantu komunikasi; **angka, label, serta hubungan dalam infografik perlu diperiksa terhadap naskah** bila digunakan untuk pengajaran formal.
+
+## Integritas data dan versi
+
+Jangan membagikan dataset yang tidak diizinkan lisensinya. Simpan sumber data, versi, tanggal unduh, langkah transformasi, dan konfigurasi analisis; untuk publikasi ilmiah, pisahkan ilustrasi atau data simulasi dari hasil pengukuran nyata.
+
+## Pemeriksaan sebelum membagikan hasil render
+
+Periksa daftar isi, tautan antarbab, tampilan rumus, lebar tabel, keterangan gambar, dan bibliografi pada format yang akan dibagikan. HTML yang terlihat baik belum menjamin PDF mempunyai pemenggalan halaman yang baik. Setelah mengubah isi, bangun ulang format keluaran agar pembaca tidak menerima versi lama.
+
+Contoh Python di buku ditandai `eval: false` ketika merupakan pola yang membutuhkan input atau penyesuaian. Status itu berarti kode ditampilkan dan tidak dijalankan oleh Quarto; jangan menafsirkan hasil render sebagai bukti eksekusi analisis dataset. Jika contoh akan dijalankan, siapkan data yang sah, dependensi, dan pemeriksaan hasil secara terpisah.
+
+## Menambah bab tanpa memutus keterlacakan
+
+Buat sumber `.qmd`, daftarkan pada `_quarto.yml`, lalu gunakan ID gambar dan kunci sitasi yang unik. Tambahkan metadata sumber pada `references.bib` dan sitasi pada klaim yang memerlukannya. Jangan menambahkan daftar pustaka yang tidak terkait pembahasan hanya untuk memperpanjang referensi.
+
+Saat merevisi angka contoh, periksa seluruh tempat pemakaiannya: narasi, persamaan, tabel, soal, dan kunci. Simpan catatan perubahan yang memengaruhi hasil atau penafsiran. Pemeliharaan buku merupakan bagian dari mutu ilmiah karena pembaca perlu mengetahui bahwa contoh dan bukti tetap selaras pada versi yang dibagikan.

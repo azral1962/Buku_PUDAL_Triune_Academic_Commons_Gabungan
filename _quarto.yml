@@ -1,0 +1,83 @@
+project:
+  type: book
+  output-dir: docs
+  resources:
+    - images/**
+    - data/**
+    - tise-six-themes/images/**
+    - tise-six-themes/templates/**
+
+book:
+  title: "PUDAL: Navigasi Cerdas, Engine, dan Pembelajaran Adaptif"
+  subtitle: "Dari Titik A ke B melalui Graf, Milestones, Energi, Mixed Engines, dan Triune Academic Commons"
+  author: "Pengembangan konseptual dari diskusi KIPP — naskah kerja"
+  date: "2026-11-22"
+  language: id
+  search: true
+  cover-image: images/overview.png
+  chapters:
+    - index.qmd
+    - part: "BAGIAN I — KERANGKA DASAR"
+      chapters:
+        - 01-pendahuluan.qmd
+        - 02-taida-triune.qmd
+        - 03-empat-artefak.qmd
+    - part: "BAGIAN II — ENGINE NAVIGASI PUDAL"
+      chapters:
+        - 04-pudal-dasar.qmd
+        - 05-graf-model-masalah.qmd
+        - 06-tiga-engine.qmd
+        - 07-energi-kerja-sumberdaya.qmd
+        - 08-lima-pudal.qmd
+        - 09-milestone-replanning.qmd
+        - 10-learning-exploration.qmd
+        - 11-model-formal.qmd
+    - part: "BAGIAN III — IMPLEMENTASI ACADEMIC COMMONS"
+      chapters:
+        - 12-arsitektur-agen.qmd
+        - 13-enam-learning-paths.qmd
+        - 14-proyek-uas.qmd
+        - 15-implementasi-teknis.qmd
+        - 16-evaluasi-dan-agenda-riset.qmd
+    - part: "BAGIAN IV — ENAM TEMA KOMPETENSI AKADEMIK TISE"
+      chapters:
+        - tise-six-themes/00-pengantar-enam-tema.qmd
+        - tise-six-themes/01-kerangka-tise.qmd
+        - tise-six-themes/02-tema1-learning.qmd
+        - tise-six-themes/03-tema2-literature.qmd
+        - tise-six-themes/04-tema3-writing.qmd
+        - tise-six-themes/05-tema4-data.qmd
+        - tise-six-themes/06-tema5-visualisasi.qmd
+        - tise-six-themes/07-tema6-problem-solving.qmd
+        - tise-six-themes/08-implementasi-asesmen.qmd
+        - tise-six-themes/09-template-kerja.qmd
+        - tise-six-themes/references.qmd
+    - 17-penutup.qmd
+  appendices:
+    - A-register-42-artefak.qmd
+    - B-template-kasus.qmd
+    - C-glosarium.qmd
+    - D-sumber-dan-gambar.qmd
+    - tise-six-themes/appendix-tools.qmd
+
+lang: id
+execute:
+  echo: false
+  freeze: auto
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: tise-six-themes/styles/book.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-copy: true
+    smooth-scroll: true
+    fig-responsive: true
+bibliography: tise-six-themes/references.bib
+
+crossref:
+  fig-title: "Gambar"
+  tbl-title: "Tabel"
