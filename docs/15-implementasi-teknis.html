@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -574,11 +609,31 @@ div.csl-indent {
   <ul>
   <li><a href="#satu-portal-satu-repositori-bersama" id="toc-satu-portal-satu-repositori-bersama" class="nav-link active" data-scroll-target="#satu-portal-satu-repositori-bersama"><span class="header-section-number">15.1</span> Satu portal, satu repositori bersama</a></li>
   <li><a href="#penomoran-artefak" id="toc-penomoran-artefak" class="nav-link" data-scroll-target="#penomoran-artefak"><span class="header-section-number">15.2</span> Penomoran artefak</a></li>
-  <li><a href="#struktur-folder-rekomendasi" id="toc-struktur-folder-rekomendasi" class="nav-link" data-scroll-target="#struktur-folder-rekomendasi"><span class="header-section-number">15.3</span> Struktur folder rekomendasi</a></li>
-  <li><a href="#github-collaboration" id="toc-github-collaboration" class="nav-link" data-scroll-target="#github-collaboration"><span class="header-section-number">15.4</span> GitHub collaboration</a></li>
+  <li><a href="#struktur-folder-repositori-portal" id="toc-struktur-folder-repositori-portal" class="nav-link" data-scroll-target="#struktur-folder-repositori-portal"><span class="header-section-number">15.3</span> Struktur folder repositori portal</a></li>
+  <li><a href="#kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi" id="toc-kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi" class="nav-link" data-scroll-target="#kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi"><span class="header-section-number">15.4</span> Kolaborasi GitHub: dari tugas sampai artefak terverifikasi</a>
+  <ul class="collapse">
+  <li><a href="#memahami-git-github-dan-istilah-dasarnya" id="toc-memahami-git-github-dan-istilah-dasarnya" class="nav-link" data-scroll-target="#memahami-git-github-dan-istilah-dasarnya"><span class="header-section-number">15.4.1</span> Memahami Git, GitHub, dan istilah dasarnya</a></li>
+  <li><a href="#persiapan-akun-repositori-dan-pembagian-peran" id="toc-persiapan-akun-repositori-dan-pembagian-peran" class="nav-link" data-scroll-target="#persiapan-akun-repositori-dan-pembagian-peran"><span class="header-section-number">15.4.2</span> Persiapan akun, repositori, dan pembagian peran</a></li>
+  <li><a href="#merumuskan-pekerjaan-melalui-issue" id="toc-merumuskan-pekerjaan-melalui-issue" class="nav-link" data-scroll-target="#merumuskan-pekerjaan-melalui-issue"><span class="header-section-number">15.4.3</span> Merumuskan pekerjaan melalui Issue</a></li>
+  <li><a href="#jalur-pemula-menyunting-melalui-browser" id="toc-jalur-pemula-menyunting-melalui-browser" class="nav-link" data-scroll-target="#jalur-pemula-menyunting-melalui-browser"><span class="header-section-number">15.4.4</span> Jalur pemula: menyunting melalui browser</a></li>
+  <li><a href="#jalur-github-desktop" id="toc-jalur-github-desktop" class="nav-link" data-scroll-target="#jalur-github-desktop"><span class="header-section-number">15.4.5</span> Jalur GitHub Desktop</a></li>
+  <li><a href="#jalur-lokal-clone-branch-commit-dan-push" id="toc-jalur-lokal-clone-branch-commit-dan-push" class="nav-link" data-scroll-target="#jalur-lokal-clone-branch-commit-dan-push"><span class="header-section-number">15.4.6</span> Jalur lokal: clone, branch, commit, dan push</a></li>
+  <li><a href="#menulis-pull-request-yang-dapat-diperiksa" id="toc-menulis-pull-request-yang-dapat-diperiksa" class="nav-link" data-scroll-target="#menulis-pull-request-yang-dapat-diperiksa"><span class="header-section-number">15.4.7</span> Menulis Pull Request yang dapat diperiksa</a></li>
+  <li><a href="#melakukan-peer-review-revisi-dan-merge" id="toc-melakukan-peer-review-revisi-dan-merge" class="nav-link" data-scroll-target="#melakukan-peer-review-revisi-dan-merge"><span class="header-section-number">15.4.8</span> Melakukan peer review, revisi, dan merge</a></li>
+  <li><a href="#menyinkronkan-pekerjaan-dan-menyelesaikan-konflik" id="toc-menyinkronkan-pekerjaan-dan-menyelesaikan-konflik" class="nav-link" data-scroll-target="#menyinkronkan-pekerjaan-dan-menyelesaikan-konflik"><span class="header-section-number">15.4.9</span> Menyinkronkan pekerjaan dan menyelesaikan konflik</a></li>
+  <li><a href="#menjaga-berkas-data-dan-bukti-kontribusi" id="toc-menjaga-berkas-data-dan-bukti-kontribusi" class="nav-link" data-scroll-target="#menjaga-berkas-data-dan-bukti-kontribusi"><span class="header-section-number">15.4.10</span> Menjaga berkas, data, dan bukti kontribusi</a></li>
+  <li><a href="#latihan-satu-siklus-dan-diagnosis-masalah-umum" id="toc-latihan-satu-siklus-dan-diagnosis-masalah-umum" class="nav-link" data-scroll-target="#latihan-satu-siklus-dan-diagnosis-masalah-umum"><span class="header-section-number">15.4.11</span> Latihan satu siklus dan diagnosis masalah umum</a></li>
+  </ul></li>
   <li><a href="#panduan-pengguna-portal" id="toc-panduan-pengguna-portal" class="nav-link" data-scroll-target="#panduan-pengguna-portal"><span class="header-section-number">15.5</span> Panduan pengguna portal</a></li>
-  <li><a href="#penerbitan-quarto" id="toc-penerbitan-quarto" class="nav-link" data-scroll-target="#penerbitan-quarto"><span class="header-section-number">15.6</span> Penerbitan Quarto</a></li>
-  <li><a href="#menetapkan-satu-sumber-kebenaran-untuk-registri" id="toc-menetapkan-satu-sumber-kebenaran-untuk-registri" class="nav-link" data-scroll-target="#menetapkan-satu-sumber-kebenaran-untuk-registri"><span class="header-section-number">15.7</span> Menetapkan satu sumber kebenaran untuk registri</a></li>
+  <li><a href="#membangun-dan-menerbitkan-portal-yang-sebenarnya" id="toc-membangun-dan-menerbitkan-portal-yang-sebenarnya" class="nav-link" data-scroll-target="#membangun-dan-menerbitkan-portal-yang-sebenarnya"><span class="header-section-number">15.6</span> Membangun dan menerbitkan portal yang sebenarnya</a>
+  <ul class="collapse">
+  <li><a href="#preview-lengkap-pada-komputer" id="toc-preview-lengkap-pada-komputer" class="nav-link" data-scroll-target="#preview-lengkap-pada-komputer"><span class="header-section-number">15.6.1</span> Preview lengkap pada komputer</a></li>
+  <li><a href="#pemeriksaan-pr-yang-sudah-tersedia" id="toc-pemeriksaan-pr-yang-sudah-tersedia" class="nav-link" data-scroll-target="#pemeriksaan-pr-yang-sudah-tersedia"><span class="header-section-number">15.6.2</span> Pemeriksaan PR yang sudah tersedia</a></li>
+  <li><a href="#publikasi-setelah-merge-ke-main" id="toc-publikasi-setelah-merge-ke-main" class="nav-link" data-scroll-target="#publikasi-setelah-merge-ke-main"><span class="header-section-number">15.6.3</span> Publikasi setelah merge ke main</a></li>
+  <li><a href="#catatan-keadaan-publikasi-saat-pemeriksaan" id="toc-catatan-keadaan-publikasi-saat-pemeriksaan" class="nav-link" data-scroll-target="#catatan-keadaan-publikasi-saat-pemeriksaan"><span class="header-section-number">15.6.4</span> Catatan keadaan publikasi saat pemeriksaan</a></li>
+  <li><a href="#membedakan-portal-proyek-dan-buku-ini" id="toc-membedakan-portal-proyek-dan-buku-ini" class="nav-link" data-scroll-target="#membedakan-portal-proyek-dan-buku-ini"><span class="header-section-number">15.6.5</span> Membedakan portal proyek dan buku ini</a></li>
+  </ul></li>
+  <li><a href="#registri-metadata-dan-perubahan-status" id="toc-registri-metadata-dan-perubahan-status" class="nav-link" data-scroll-target="#registri-metadata-dan-perubahan-status"><span class="header-section-number">15.7</span> Registri, metadata, dan perubahan status</a></li>
   <li><a href="#memisahkan-sumber-dan-hasil-terbitan" id="toc-memisahkan-sumber-dan-hasil-terbitan" class="nav-link" data-scroll-target="#memisahkan-sumber-dan-hasil-terbitan"><span class="header-section-number">15.8</span> Memisahkan sumber dan hasil terbitan</a></li>
   <li><a href="#contoh-alur-review-satu-perubahan" id="toc-contoh-alur-review-satu-perubahan" class="nav-link" data-scroll-target="#contoh-alur-review-satu-perubahan"><span class="header-section-number">15.9</span> Contoh alur review satu perubahan</a></li>
   <li><a href="#pemeriksaan-otomatis-dan-batasnya" id="toc-pemeriksaan-otomatis-dan-batasnya" class="nav-link" data-scroll-target="#pemeriksaan-otomatis-dan-batasnya"><span class="header-section-number">15.10</span> Pemeriksaan otomatis dan batasnya</a></li>
@@ -611,7 +666,8 @@ div.csl-indent {
 
 <section id="satu-portal-satu-repositori-bersama" class="level2" data-number="15.1">
 <h2 data-number="15.1" class="anchored" data-anchor-id="satu-portal-satu-repositori-bersama"><span class="header-section-number">15.1</span> Satu portal, satu repositori bersama</h2>
-<p>Proyek dirancang sebagai website/portal terintegrasi dengan enam tema, indeks 42 artefak, enam Learning Paths, Cases, panduan kontribusi, serta GitHub Issues dan Pull Requests. Repositori dapat diperluas menjadi portal untuk beberapa mata kuliah, tetapi tahap UAS berfokus pada pilot yang dapat diuji.</p>
+<p>Portal proyek disimpan di repositori publik <a href="https://github.com/azral1962/kipp-triune-academic-commons">azral1962/kipp-triune-academic-commons</a>, dengan branch utama <code>main</code>. Repositori ini menjadi sumber bersama untuk beranda portal, enam tema, katalog 42 artefak, enam learning path, panduan proyek, dan otomatisasi penerbitan. Mahasiswa mengerjakan sumber yang tersedia melalui Issue dan Pull Request; forum akademik menggunakan GitHub Discussions.</p>
+<p>Uraian implementasi pada bab ini mengacu pada pemeriksaan <strong>23 November 2026</strong>, terhadap commit <a href="https://github.com/azral1962/kipp-triune-academic-commons/tree/c591a6a2dd1084063b049189d20e34a0ad3dda94"><code>c591a6a</code></a>. Saat diperiksa, seluruh 42 artefak masih berstatus <code>draft</code> dan memiliki penanda <code>[ISI]</code>; enam learning path juga masih berupa kerangka. Karena itu, jumlah berkas menunjukkan kesiapan wadah kerja, belum membuktikan penyelesaian materi akademik. Lingkup pilot, aturan kontribusi, dan keadaan awal dijelaskan dalam <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/README.md">README portal</a>.</p>
 <div id="fig-repository-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-repository-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -625,12 +681,27 @@ Gambar&nbsp;15.1: Contoh struktur portal dan repositori, termasuk penomoran arte
 </section>
 <section id="penomoran-artefak" class="level2" data-number="15.2">
 <h2 data-number="15.2" class="anchored" data-anchor-id="penomoran-artefak"><span class="header-section-number">15.2</span> Penomoran artefak</h2>
-<p>Kode konseptual <strong>TT.JJ.NN</strong>: dua digit tema, dua digit jenis, dua digit urutan. JJ = 01 Knowledge, 02 Skills, 03 Prompts, 04 Case Study. Contoh <code>02.03.01</code> adalah Prompt pertama Tema 02. Beberapa dokumen lama memakai ID asal seperti <code>P-R01</code>; hubungan ke ID baru perlu dipertahankan pada metadata/registri, bukan dihapus tanpa jejak.</p>
+<p>Repositori menggunakan dua penanda yang saling melengkapi: <strong>ID tetap</strong>, seperti <code>P-R01</code>, dan <strong>kode hierarkis TT.JJ.NN</strong>, seperti <code>02.03.01</code>. TT menyatakan tema, JJ menyatakan jenis (01 Knowledge, 02 Skills, 03 AI Prompts, 04 Case Studies), dan NN menyatakan urutan. ID tetap dipakai untuk melacak tugas, diskusi, dan kontribusi; kode hierarkis menjelaskan susunan artefak. Keduanya tetap disimpan pada metadata dan registri.</p>
+<p>Contoh nyata adalah <strong>Critical Paper Reader</strong>, milik Tim 03: ID <code>P-R01</code>, kode <code>02.03.01</code>, dan path <code>topics/02-literature-research/03-ai-prompts/02-03-01-p-r01.qmd</code>. ID tersebut tidak diganti menjadi kode numerik. Standar serta aturan pemindahan berkas tersedia pada <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/docs/INDEX-CODING-STANDARD.md">standar indeks repositori</a>.</p>
 </section>
-<section id="struktur-folder-rekomendasi" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="struktur-folder-rekomendasi"><span class="header-section-number">15.3</span> Struktur folder rekomendasi</h2>
-<pre class="text"><code>kipp-academic-commons/
+<section id="struktur-folder-repositori-portal" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="struktur-folder-repositori-portal"><span class="header-section-number">15.3</span> Struktur folder repositori portal</h2>
+<pre class="text"><code>kipp-triune-academic-commons/
+  README.md
+  CONTRIBUTING.md
+  PROJECT_CHARTER.md
+  GOVERNANCE.md
+  QUALITY_GATE.md
+  LICENSE-DECISION.md
   _quarto.yml
+  index.qmd
+  catalog.qmd
+  ARTIFACT_REGISTER.csv
+  portal/
+    index.html
+    assets/
+      app.js
+      style.css
   topics/
     01-ai-learning/
       01-knowledge/
@@ -642,15 +713,34 @@ Gambar&nbsp;15.1: Contoh struktur portal dan repositori, termasuk penomoran arte
     04-coding-data/
     05-visualization-presentation/
     06-academic-problem-solving/
-  agents/
-  docs/
+  learning-paths/
+  forum/
+  docs/                     # panduan proyek dan Git/GitHub
   templates/
-  ARTIFACT_REGISTER.csv
-  .github/workflows/</code></pre>
-<p>Penataan nyata repositori prototipe mungkin memakai folder <code>topics/learning/...</code>; lakukan migrasi terencana menggunakan registri, agar tautan tidak putus. Pada buku ini, daftar asli CSV disertakan untuk pelacakan.</p>
+  assessments/
+  governance/
+  datasets/
+  notebooks/
+  visuals/
+  scripts/
+    check_artifacts.py
+    check_portal.py
+    build_catalog.py
+    build_portal.py
+  .github/
+    CODEOWNERS
+    ISSUE_TEMPLATE/
+    pull_request_template.md
+    workflows/
+      validate.yml
+      publish.yml
+  _site/                    # dihasilkan oleh Quarto
+  _public/                  # paket akhir hasil build portal</code></pre>
+<p>Folder tema dan jenis sudah memakai penomoran pada struktur di atas. <code>_site/</code> dan <code>_public/</code> merupakan keluaran build, bukan tempat mahasiswa mengisi materi. Folder <code>agents/</code> belum ada pada versi yang diperiksa; gagasan enam agen pada rancangan proyek tidak boleh dibaca sebagai enam implementasi perangkat lunak yang sudah tersedia.</p>
+<p>Setiap tema memiliki tujuh artefak: dua Knowledge, dua Skills, dua Prompts, dan satu Case Study. Pasangan Tim 01–02 sampai Tim 11–12 mengembangkan enam tema secara berurutan. Pembagian ID, prioritas, dan penanggung jawab dibaca dari <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/ARTIFACT_REGISTER.csv">ARTIFACT_REGISTER.csv</a>; daftar asli dalam buku tetap menjadi jejak historis, sedangkan pekerjaan portal mengikuti registri portal terkini.</p>
 </section>
-<section id="github-collaboration" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="github-collaboration"><span class="header-section-number">15.4</span> GitHub collaboration</h2>
+<section id="kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi"><span class="header-section-number">15.4</span> Kolaborasi GitHub: dari tugas sampai artefak terverifikasi</h2>
 <div id="fig-github-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-github-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -661,7 +751,307 @@ Gambar&nbsp;15.2: Panduan penggunaan Git dan GitHub untuk pengembangan serta rev
 </figcaption>
 </figure>
 </div>
-<p><strong>Issue → Branch → Edit → Commit → Push → Pull Request → Peer Review → Revisi → Merge → Publish.</strong> Issue menyatakan tujuan dan acceptance criteria; PR membuktikan perubahan serta pengujian; reviewer memeriksa isi, referensi, dan keterpakaian. Status bukan sekadar <em>done</em>, tetapi <em>verified</em> saat standar mutu terpenuhi.</p>
+<p><strong>Issue → Branch → Edit dan Uji → Commit → Push → Pull Request → Peer Review lintas tim → Revisi → Merge → Publish.</strong> Issue menyatakan tujuan dan kriteria penerimaan; PR membuktikan perubahan serta pengujian; reviewer memeriksa isi, referensi, dan keterpakaian. Dalam konvensi metadata repositori, hasil yang sudah melewati review serta uji dicatat sebagai <code>reviewed</code>. Istilah <em>terverifikasi</em> pada pembahasan mutu menjelaskan proses pemeriksaan, bukan nilai metadata baru bernama <code>verified</code>.</p>
+<p>Dalam Academic Commons, alur tersebut menghubungkan pekerjaan 12 kelompok dengan mutu 42 artefak. Satu perubahan sebaiknya cukup kecil untuk diperiksa secara utuh. Langkah di bawah menerapkan <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/CONTRIBUTING.md">panduan kontribusi portal</a> dengan contoh <code>P-R01</code>. Nomor Issue pada contoh tetap ilustratif. Panduan mahasiswa yang lebih rinci tersedia di <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/docs/student-workflow.md">docs/student-workflow.md</a>, sedangkan pola branch mengikuti <a href="https://docs.github.com/en/get-started/using-github/github-flow">GitHub flow</a>.</p>
+<section id="memahami-git-github-dan-istilah-dasarnya" class="level3" data-number="15.4.1">
+<h3 data-number="15.4.1" class="anchored" data-anchor-id="memahami-git-github-dan-istilah-dasarnya"><span class="header-section-number">15.4.1</span> Memahami Git, GitHub, dan istilah dasarnya</h3>
+<p><strong>Git</strong> mencatat versi berkas dan riwayat perubahan pada komputer. <strong>GitHub</strong> menyediakan tempat menyimpan repositori secara daring, membahas pekerjaan, meninjau perubahan, dan menerbitkan portal. Menyimpan berkas di komputer belum berarti perubahan tersebut sudah tersedia bagi anggota lain.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Istilah</th>
+<th>Arti praktis dalam proyek</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repository atau repositori</td>
+<td>Wadah sumber portal, artefak, registri, dan riwayat perubahan</td>
+</tr>
+<tr class="even">
+<td>Clone</td>
+<td>Membuat salinan lokal repositori beserta riwayat Git</td>
+</tr>
+<tr class="odd">
+<td>Branch</td>
+<td>Jalur kerja untuk mengembangkan perubahan sebelum digabung</td>
+</tr>
+<tr class="even">
+<td>Commit</td>
+<td>Rekaman perubahan terpilih dengan pesan dan identitas penulis</td>
+</tr>
+<tr class="odd">
+<td>Push</td>
+<td>Mengirim commit lokal ke repositori daring</td>
+</tr>
+<tr class="even">
+<td>Pull</td>
+<td>Mengambil dan mengintegrasikan perubahan dari repositori daring</td>
+</tr>
+<tr class="odd">
+<td>Issue</td>
+<td>Catatan masalah atau tugas, beserta pembahasan dan kriteria penerimaannya</td>
+</tr>
+<tr class="even">
+<td>Pull Request atau PR</td>
+<td>Usulan menggabungkan perubahan antarbranch untuk ditinjau</td>
+</tr>
+<tr class="odd">
+<td>Merge</td>
+<td>Menggabungkan perubahan suatu branch ke branch tujuan</td>
+</tr>
+<tr class="even">
+<td>Fork</td>
+<td>Salinan repositori di akun lain untuk kontribusi tanpa akses tulis ke repositori asal</td>
+</tr>
+</tbody>
+</table>
+<p>Branch utama portal bernama <code>main</code>. Mengunggah berkas, menggabungkan PR, dan menerbitkan portal adalah tiga kejadian berbeda; keberhasilan salah satunya tidak membuktikan dua lainnya berhasil. Discussions digunakan untuk pertanyaan atau pembahasan akademik, Issues untuk pekerjaan konkret, dan PR untuk perubahan berkas yang akan diintegrasikan.</p>
+</section>
+<section id="persiapan-akun-repositori-dan-pembagian-peran" class="level3" data-number="15.4.2">
+<h3 data-number="15.4.2" class="anchored" data-anchor-id="persiapan-akun-repositori-dan-pembagian-peran"><span class="header-section-number">15.4.2</span> Persiapan akun, repositori, dan pembagian peran</h3>
+<p>Gunakan repositori <code>azral1962/kipp-triune-academic-commons</code> yang sudah tersedia. Koordinator mengatur akses anggota, mengisi <code>governance/team-roster.csv</code>, dan mencatat keputusan dalam <code>governance/decision-log.md</code>. <code>PROJECT_CHARTER.md</code> masih ditandai draf dan <code>LICENSE-DECISION.md</code> menyatakan lisensi belum dipilih pada versi yang diperiksa. Pengampu dan perwakilan mahasiswa perlu mengesahkan kesepakatan proyek serta hak publikasi karya.</p>
+<p>Setiap anggota perlu dapat masuk ke GitHub, menerima undangan akses, menemukan repositori, dan membuka Issue. Aktifkan autentikasi dua faktor serta simpan kode pemulihan dengan aman. Jalur lokal memerlukan Git, editor, Python 3.10 atau lebih baru, serta Quarto untuk preview lengkap; workflow CI memakai Python 3.12. GitHub Desktop dapat menjadi pilihan antarmuka grafis. Akses Git melalui HTTPS menggunakan mekanisme kredensial seperti token atau pengelola kredensial; kata sandi akun bukan pengganti token untuk operasi Git. Alternatifnya adalah SSH. Ikuti <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github">dokumentasi autentikasi GitHub</a> sesuai metode yang dipilih.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Peran kerja</th>
+<th>Tanggung jawab utama</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Koordinator repositori</td>
+<td>Mengatur akses, aturan branch, dan penyelesaian hambatan integrasi</td>
+</tr>
+<tr class="even">
+<td>Kontributor</td>
+<td>Mengembangkan sumber, menguji perubahan, dan menanggapi review</td>
+</tr>
+<tr class="odd">
+<td>Reviewer lintas kelompok</td>
+<td>Memeriksa ketepatan isi dan mencoba artefak dari sudut pengguna</td>
+</tr>
+<tr class="even">
+<td>Integrator/pengelola rilis</td>
+<td>Memastikan perubahan yang diterima dapat dibangun dan diterbitkan bersama</td>
+</tr>
+</tbody>
+</table>
+<p>Peran kerja ini tidak otomatis sama dengan nama tingkat izin GitHub. Berikan hak akses sesuai kebutuhan; seluruh anggota tidak perlu menjadi administrator. Kontributor sebaiknya tidak menjadi satu-satunya penilai perubahan sendiri. Sepakati minimal satu reviewer dari luar penyusun artefak sebelum merge.</p>
+<p><code>README.md</code>, <code>CONTRIBUTING.md</code>, <code>GOVERNANCE.md</code>, dan <code>QUALITY_GATE.md</code> sudah tersedia sebagai panduan kerja. Aturan kontribusi menggunakan pola branch <code>tim-XX/ID-deskripsi</code> dan meminta satu reviewer dari tim lain. <code>.github/CODEOWNERS</code> masih berisi contoh akun yang dikomentari; keberadaannya belum berarti reviewer otomatis telah ditetapkan. Pengelola perlu memeriksa akun pemilik, izin, serta kewajiban review pada pengaturan branch. Mekanisme pembatasannya dijelaskan dalam <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches">aturan protected branches</a>.</p>
+</section>
+<section id="merumuskan-pekerjaan-melalui-issue" class="level3" data-number="15.4.3">
+<h3 data-number="15.4.3" class="anchored" data-anchor-id="merumuskan-pekerjaan-melalui-issue"><span class="header-section-number">15.4.3</span> Merumuskan pekerjaan melalui Issue</h3>
+<p>Di repositori, buka <strong>Issues → New issue</strong>. Cari dahulu apakah masalah yang sama sudah dilaporkan. Pilih formulir <strong>Tugas artefak</strong>, yang disediakan dalam <code>.github/ISSUE_TEMPLATE/artifact-task.yml</code>. Formulir meminta ID artefak, tim, sasaran pengguna dan ukuran sukses, serta pekerjaan dan bukti uji. Untuk laporan masalah mutu, tersedia formulir <code>quality-report.yml</code>. Contoh pengisian tugas berikut memakai artefak yang benar-benar tersedia; isi pekerjaan merupakan rancangan latihan.</p>
+<pre class="text"><code>Judul: [P-R01 | 02.03.01] Isi dan uji Critical Paper Reader
+
+Masalah pengguna:
+Mahasiswa memerlukan bantuan membaca paper tanpa menerima sumber karangan AI.
+
+Lingkup perubahan:
+Isi prompt, contoh aktual, pengujian, batasan, dan catatan review.
+
+Lokasi:
+topics/02-literature-research/03-ai-prompts/02-03-01-p-r01.qmd
+
+Kriteria penerimaan:
+- [ ] Tujuan, pengguna, dan bahan masukan prompt dinyatakan.
+- [ ] Dua contoh normal dan satu contoh bermasalah dicoba.
+- [ ] Klaim keluaran diperiksa terhadap paper sumber.
+- [ ] Reviewer lintas tim dan pengguna uji memberi umpan balik.
+- [ ] Halaman dapat dirender dan tautan terkait berfungsi.
+
+Tim penanggung jawab: Tim 03; tetapkan satu anggota koordinator tugas
+Reviewer: anggota dari kelompok lain
+Bukti yang diminta: input-output aktual, sumber, catatan uji, dan hasil render</code></pre>
+<p>Formulir tugas mencantumkan label <code>artifact</code>; pengelola memastikan label tersebut tersedia. Label tambahan, milestone minggu 1–3, dan papan Projects dapat disepakati untuk koordinasi. Jika dipakai, kolom seperti <strong>Direncanakan → Dikerjakan → Direview → Perlu revisi → Diterima</strong> merupakan alat perencanaan tim. Kolom itu tidak otomatis mengubah nilai <code>status</code> pada YAML dan CSV.</p>
+</section>
+<section id="jalur-pemula-menyunting-melalui-browser" class="level3" data-number="15.4.4">
+<h3 data-number="15.4.4" class="anchored" data-anchor-id="jalur-pemula-menyunting-melalui-browser"><span class="header-section-number">15.4.4</span> Jalur pemula: menyunting melalui browser</h3>
+<p>Untuk koreksi teks singkat, anggota yang memiliki akses tulis dapat bekerja tanpa memasang Git lokal:</p>
+<ol type="1">
+<li>Buka repositori dan pastikan branch awal adalah <code>main</code> yang terbaru.</li>
+<li>Buat branch dengan nama yang menjelaskan tugas, misalnya <code>tim-03/P-R01-critical-reader</code>.</li>
+<li>Pada branch tersebut, buka <code>topics/02-literature-research/03-ai-prompts/02-03-01-p-r01.qmd</code> dan pilih penyuntingan. Isi bagian <code>[ISI]</code>, pertahankan metadata, lalu periksa diff, yaitu perbandingan sebelum dan sesudah perubahan.</li>
+<li>Simpan sebagai commit pada branch kerja dengan pesan yang spesifik, misalnya <code>docs(P-R01): isi dan uji Critical Paper Reader</code>.</li>
+<li>Buka PR menuju <code>main</code>, hubungkan Issue, dan minta review. Jika belum siap, gunakan draft PR.</li>
+<li>Jika reviewer meminta revisi, sunting dan commit kembali pada branch yang sama agar PR memuat revisi tersebut.</li>
+</ol>
+<p>Jika tidak memiliki akses tulis, gunakan fork sesuai kebijakan pengelola, lalu ajukan PR dari branch pada fork ke repositori asal. Pemilihan branch sumber dan tujuan dijelaskan dalam <a href="https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request">panduan membuat Pull Request</a>.</p>
+<p>Pratinjau Markdown di GitHub belum membuktikan bahwa sitasi, penomoran gambar, dan navigasi Quarto bekerja. Untuk perubahan melalui browser, minta anggota yang mempunyai lingkungan lokal atau pipeline otomatis melakukan render sebelum PR diterima.</p>
+</section>
+<section id="jalur-github-desktop" class="level3" data-number="15.4.5">
+<h3 data-number="15.4.5" class="anchored" data-anchor-id="jalur-github-desktop"><span class="header-section-number">15.4.5</span> Jalur GitHub Desktop</h3>
+<p>Panduan portal juga menyediakan jalur tanpa perintah terminal. Di GitHub Desktop, pilih <strong>File → Clone repository</strong> untuk repositori proyek, perbarui <code>main</code> melalui <strong>Fetch origin/Pull origin</strong>, lalu buat branch lewat <strong>Current Branch → New Branch</strong>. Sunting <code>.qmd</code> pada editor, periksa perubahan di Desktop, tulis pesan commit, kemudian pilih <strong>Publish branch</strong> atau <strong>Push origin</strong>. Lanjutkan melalui <strong>Preview Pull Request/Create Pull Request</strong>. Revisi tetap dikirim dari branch PR yang sama; render dan pemeriksaan Python dilakukan oleh anggota yang menyiapkan lingkungan lokal.</p>
+</section>
+<section id="jalur-lokal-clone-branch-commit-dan-push" class="level3" data-number="15.4.6">
+<h3 data-number="15.4.6" class="anchored" data-anchor-id="jalur-lokal-clone-branch-commit-dan-push"><span class="header-section-number">15.4.6</span> Jalur lokal: clone, branch, commit, dan push</h3>
+<p>Jalur lokal cocok untuk perubahan banyak berkas, gambar, atau contoh yang perlu dijalankan. Contoh berikut menggunakan terminal PowerShell dan akses tulis ke repositori portal. Jalankan di salinan <strong>repo portal</strong>, yang terpisah dari repo sumber buku ini.</p>
+<p>Tetapkan identitas commit sekali pada komputer yang digunakan. Alamat surel dapat memakai alamat privat <code>noreply</code> yang disediakan dalam pengaturan akun GitHub.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>git config <span class="op">--</span>global user<span class="op">.</span><span class="fu">name</span> <span class="st">"Nama Mahasiswa"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>git config <span class="op">--</span>global user<span class="op">.</span><span class="fu">email</span> <span class="st">"ALAMAT-EMAIL-COMMIT"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>git clone https<span class="op">://</span>github<span class="op">.</span><span class="fu">com</span><span class="op">/</span>azral1962<span class="op">/</span>kipp-triune-academic-commons<span class="op">.</span><span class="fu">git</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cd</span> kipp-triune-academic-commons</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>git status</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>clone</code> cukup dilakukan sekali untuk satu salinan lokal. Pada pekerjaan berikutnya, masuk ke folder repositori yang sudah ada. Sebelum memulai tugas baru, pastikan <code>git status</code> menunjukkan tidak ada perubahan lokal yang belum diselesaikan, kemudian perbarui <code>main</code> dan buat branch:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>git <span class="cf">switch</span> main</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>git pull <span class="op">--</span>ff-only origin main</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>git <span class="cf">switch</span> <span class="op">-</span>c tim-03<span class="op">/</span>P-R01-critical-reader</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Sunting sumber <code>P-R01</code> yang ditunjuk registri. Pertahankan <code>id</code>, <code>index_code</code>, <code>type</code>, <code>theme</code>, <code>owner</code>, dan <code>priority</code>; jelaskan bantuan AI pada <code>ai_usage</code>. Saat artefak belum disetujui, pertahankan <code>status: draft</code>. Setelah menyimpan, jalankan pemeriksaan yang tersedia:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>git status</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>git <span class="fu">diff</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>check_artifacts<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>check_portal<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>build_catalog<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>git <span class="fu">diff</span> <span class="op">--</span> catalog<span class="op">.</span><span class="fu">qmd</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>quarto render</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Periksa halaman hasil di <code>_site/</code>; untuk menguji beranda bersama seluruh materi, ikuti langkah perakitan <code>_public/</code> pada bagian penerbitan. Periksa sumber, contoh keluaran AI, tautan, dan navigasi. Perintah render tidak otomatis menguji kebenaran isi atau kegunaan prompt. Jika satu perintah gagal, perbaiki kegagalannya sebelum menganggap rangkaian pemeriksaan selesai.</p>
+<p>Pilih hanya berkas yang terkait tugas. Untuk contoh <code>P-R01</code>, gunakan path yang benar-benar ada pada repo portal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>git add topics<span class="op">/</span><span class="dv">02</span><span class="op">-</span>literature-research<span class="op">/</span><span class="dv">03</span><span class="op">-</span>ai-prompts<span class="op">/</span><span class="dv">02</span><span class="op">-</span><span class="dv">03</span><span class="op">-</span><span class="dv">01</span><span class="op">-</span>p-r01<span class="op">.</span><span class="fu">qmd</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>git <span class="fu">diff</span> <span class="op">--</span>staged</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>git commit <span class="op">-</span>m <span class="st">"docs(P-R01): isi dan uji Critical Paper Reader"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>git push <span class="op">-</span>u origin tim-03<span class="op">/</span>P-R01-critical-reader</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>git add</code> memilih perubahan yang akan direkam; <code>git diff --staged</code> memeriksa pilihan itu sebelum commit. Jika status atau data registri berubah dengan persetujuan koordinator, sertakan pula <code>ARTIFACT_REGISTER.csv</code> dan hasil pembaruan <code>catalog.qmd</code>. <code>_site/</code> serta <code>_public/</code> dihasilkan ulang untuk penerbitan. <code>push</code> mengirim branch kerja; perubahan belum masuk <code>main</code> sampai PR digabung.</p>
+</section>
+<section id="menulis-pull-request-yang-dapat-diperiksa" class="level3" data-number="15.4.7">
+<h3 data-number="15.4.7" class="anchored" data-anchor-id="menulis-pull-request-yang-dapat-diperiksa"><span class="header-section-number">15.4.7</span> Menulis Pull Request yang dapat diperiksa</h3>
+<p>Di GitHub, pilih <strong>Compare &amp; pull request</strong>, atau buat PR dari menu <strong>Pull requests</strong>. Pastikan <strong>base</strong> adalah <code>main</code> dan <strong>compare</strong> adalah branch kerja. Template <code>.github/pull_request_template.md</code> sudah meminta ID, tim, prioritas, pemeriksaan mutu, temuan, dan tautan terkait. Lengkapi template tersebut dengan bukti yang konkret, misalnya:</p>
+<pre class="text"><code>Artefak: P-R01 | 02.03.01 | Critical Paper Reader
+Tim pembuat: Tim 03
+Prioritas: P1
+
+Masalah dan perubahan:
+Kerangka awal belum memuat contoh penggunaan dan hasil uji.
+PR mengisi prompt, dua uji normal, satu uji bermasalah, dan batasan.
+
+Artefak dan berkas:
+Cantumkan ID registri, path sumber, dan halaman yang terdampak.
+
+Pemeriksaan:
+- [ ] check_artifacts.py dan check_portal.py berhasil.
+- [ ] Katalog diperbarui bila data registri berubah.
+- [ ] Render HTML berhasil; perintah dan versi Quarto dicatat.
+- [ ] Klaim keluaran diperiksa terhadap paper sumber.
+- [ ] Tautan, gambar, sitasi, dan tampilan diperiksa.
+- [ ] Uji pembaca dicatat, termasuk kekurangan yang ditemukan.
+
+Bukti:
+Cantumkan tautan preview atau lokasi catatan hasil uji.
+
+Keterbatasan:
+Tuliskan hal yang belum diuji atau masih membutuhkan tindak lanjut.
+
+Closes #27</code></pre>
+<p>Ganti <code>#27</code> dengan Issue sebenarnya. Kata kunci <code>Closes</code> dapat menutup Issue terkait ketika PR masuk ke branch default; gunakan <code>Refs #27</code> jika PR baru menyelesaikan sebagian pekerjaan. Jangan mencentang pemeriksaan yang belum dijalankan. Bedakan hasil yang diamati dari rencana pengujian.</p>
+</section>
+<section id="melakukan-peer-review-revisi-dan-merge" class="level3" data-number="15.4.8">
+<h3 data-number="15.4.8" class="anchored" data-anchor-id="melakukan-peer-review-revisi-dan-merge"><span class="header-section-number">15.4.8</span> Melakukan peer review, revisi, dan merge</h3>
+<p>Reviewer membaca tujuan Issue, memeriksa <strong>Files changed</strong>, lalu mencoba hasil perubahan. Untuk artefak akademik, gunakan checklist berikut sebagai bukti penerimaan:</p>
+<ul>
+<li><strong>Ketepatan:</strong> konsep, angka, contoh, dan kesimpulan konsisten.</li>
+<li><strong>Sumber:</strong> rujukan dapat ditelusuri dan mendukung klaim yang dibuat.</li>
+<li><strong>Keterpakaian:</strong> langkah dapat diikuti pembaca yang tidak ikut menyusunnya.</li>
+<li><strong>Integrasi:</strong> ID, registri, prasyarat, dan tautan antarartefak sesuai.</li>
+<li><strong>Tampilan:</strong> rumus, tabel, gambar, dan navigasi terbaca pada halaman hasil.</li>
+<li><strong>Integritas:</strong> hak penggunaan materi jelas dan bantuan AI diungkap sesuai ketentuan kelas.</li>
+</ul>
+<p>Komentar review menyebut lokasi, masalah, dan hasil yang diharapkan, misalnya: “Pada contoh keluaran P-R01, simpulan ini belum dirujuk ke bagian paper. Tunjukkan bagian sumber atau tandai klaim sebagai belum terverifikasi.” Pisahkan koreksi yang harus diselesaikan dari saran pengayaan. Gunakan <code>templates/peer-review.md</code> dan <code>templates/user-test.md</code> untuk menyimpan bukti. Kontributor memperbaiki branch yang sama; reviewer memeriksa revisi sebelum menyatakan persetujuan.</p>
+<p>Koordinator melakukan merge setelah kriteria penerimaan, review lintas tim, uji pengguna, dan pemeriksaan yang diwajibkan terpenuhi. Perubahan status mengikuti prosedur YAML–CSV–katalog pada bagian registri. Sesudah merge, perbarui salinan lokal dengan <code>git switch main</code> lalu <code>git pull --ff-only origin main</code>. Catat tautan PR pada bagian peer review artefak dan laporan kontribusi; registri saat ini tidak mempunyai kolom khusus URL PR.</p>
+</section>
+<section id="menyinkronkan-pekerjaan-dan-menyelesaikan-konflik" class="level3" data-number="15.4.9">
+<h3 data-number="15.4.9" class="anchored" data-anchor-id="menyinkronkan-pekerjaan-dan-menyelesaikan-konflik"><span class="header-section-number">15.4.9</span> Menyinkronkan pekerjaan dan menyelesaikan konflik</h3>
+<p>Konflik dapat terjadi ketika dua branch mengubah bagian berkas yang sama. Kurangi risikonya dengan pembagian lingkup, PR berukuran kecil, dan pembaruan dari <code>main</code>. Sebelum sinkronisasi, selesaikan atau simpan perubahan lokal dan periksa <code>git status</code>. Pada branch kerja, integrasikan versi terbaru:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>git <span class="cf">switch</span> tim-03<span class="op">/</span>P-R01-critical-reader</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>git fetch origin</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>git merge origin<span class="op">/</span>main</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Jika Git melaporkan konflik, buka berkas yang disebut oleh <code>git status</code>. Kenali tiga penanda berikut:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Penanda dalam berkas</th>
+<th>Makna pada contoh merge ini</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code></td>
+<td>Awal bagian isi dari branch kerja</td>
+</tr>
+<tr class="even">
+<td><code>=======</code></td>
+<td>Pemisah antara isi branch kerja dan isi dari <code>main</code></td>
+</tr>
+<tr class="odd">
+<td><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main</code></td>
+<td>Akhir bagian isi dari <code>main</code> yang sedang digabungkan</td>
+</tr>
+</tbody>
+</table>
+<p>Diskusikan makna perubahan dengan penyusunnya, susun isi akhir yang benar, lalu hapus seluruh penanda konflik. Jangan sekadar memilih satu sisi jika kedua sisi memuat informasi penting. Setelah itu, pilih berkas yang telah diselesaikan dengan <code>git add NAMA-BERKAS</code>, jalankan render dan pemeriksaan isi, selesaikan merge dengan <code>git commit</code>, lalu <code>git push</code>. Jika perlu membatalkan proses merge yang sedang berkonflik untuk meninjau ulang, gunakan <code>git merge --abort</code>. Langkah teknisnya tersedia dalam <a href="https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-using-the-command-line">panduan penyelesaian konflik GitHub</a>.</p>
+<p>Jika <code>push</code> ditolak karena branch daring telah berubah, ambil dan periksa perubahan rekan sebelum mengintegrasikannya. Hindari <code>push --force</code> pada branch bersama. Untuk keluaran HTML yang berkonflik, selesaikan sumber lebih dahulu lalu render ulang agar hasil mengikuti sumber yang telah disepakati.</p>
+</section>
+<section id="menjaga-berkas-data-dan-bukti-kontribusi" class="level3" data-number="15.4.10">
+<h3 data-number="15.4.10" class="anchored" data-anchor-id="menjaga-berkas-data-dan-bukti-kontribusi"><span class="header-section-number">15.4.10</span> Menjaga berkas, data, dan bukti kontribusi</h3>
+<p>Simpan sumber, gambar yang diperlukan, bibliografi, dan data yang boleh dibagikan. Gunakan <code>.gitignore</code> untuk berkas sementara, lingkungan lokal, atau kredensial seperti <code>.env</code>. Berkas yang sudah dilacak Git tetap terlacak meskipun kemudian dimasukkan ke <code>.gitignore</code>; periksa riwayat dan daftar perubahan sebelum mengunggah.</p>
+<p>Jangan menaruh token, kata sandi, data pribadi mahasiswa, atau dokumen berlisensi terbatas di repositori publik. Jika token terlanjur terbuka, segera cabut atau rotasi token tersebut; menghapusnya dari versi terbaru saja tidak menghapus riwayat. Untuk materi pihak ketiga, catat sumber dan izin penggunaan. Lisensi repositori tidak otomatis memberikan hak atas seluruh materi yang dikutip.</p>
+<p>Kontribusi individu ditunjukkan melalui Issue, commit yang bermakna, review, hasil uji, dan refleksi keputusan. Banyaknya commit bukan ukuran tunggal kualitas. Jika anggota mengerjakan analisis atau uji pengguna secara bersama, catat nama, tugas, serta buktinya dalam PR atau laporan agar pekerjaan yang tidak berupa penulisan berkas tetap terlihat.</p>
+</section>
+<section id="latihan-satu-siklus-dan-diagnosis-masalah-umum" class="level3" data-number="15.4.11">
+<h3 data-number="15.4.11" class="anchored" data-anchor-id="latihan-satu-siklus-dan-diagnosis-masalah-umum"><span class="header-section-number">15.4.11</span> Latihan satu siklus dan diagnosis masalah umum</h3>
+<p>Sebagai latihan awal, setiap anggota memilih satu koreksi kecil, membuka Issue, membuat branch, mengajukan PR, dan memberi review pada PR anggota lain. Latihan selesai setelah koreksi diterima dan tampak pada portal yang diterbitkan. Bukti minimum berupa tautan Issue, PR, catatan review/uji, serta alamat halaman hasil.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gejala</th>
+<th>Pemeriksaan dan tindak lanjut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repositori tidak dapat diakses</td>
+<td>Periksa akun yang aktif, URL, undangan, dan izin akses</td>
+</tr>
+<tr class="even">
+<td>Perubahan tidak terlihat di GitHub</td>
+<td>Periksa apakah berkas sudah disimpan, di-commit, dan di-push ke branch yang benar</td>
+</tr>
+<tr class="odd">
+<td>PR tidak menampilkan perubahan</td>
+<td>Periksa base/compare dan apakah commit sudah ada di branch sumber</td>
+</tr>
+<tr class="even">
+<td>Pemeriksaan otomatis gagal</td>
+<td>Baca log pada tab Actions, perbaiki penyebab, lalu commit revisi</td>
+</tr>
+<tr class="odd">
+<td>PR sudah merge tetapi portal masih lama</td>
+<td>Periksa hasil render, sumber penerbitan Pages, dan status deployment</td>
+</tr>
+<tr class="even">
+<td>Halaman lokal baik tetapi tautan publik rusak</td>
+<td>Periksa huruf besar/kecil nama berkas, path relatif, dan keberadaan aset pada hasil terbitan</td>
+</tr>
+</tbody>
+</table>
+<p>Panduan ini berfokus pada pola kerja yang dapat dipraktikkan. Nama menu, ketersediaan fitur, dan kebijakan akses dapat berubah; periksa dokumentasi resmi yang ditautkan ketika menyiapkan repositori kelas.</p>
+</section>
 </section>
 <section id="panduan-pengguna-portal" class="level2" data-number="15.5">
 <h2 data-number="15.5" class="anchored" data-anchor-id="panduan-pengguna-portal"><span class="header-section-number">15.5</span> Panduan pengguna portal</h2>
@@ -675,35 +1065,233 @@ Gambar&nbsp;15.3: Navigasi portal akademik untuk memilih tema, menelusuri artefa
 </figcaption>
 </figure>
 </div>
-<p>Pengguna sebaiknya mulai dari pertanyaan atau kasus, bukan membaca seluruh artefak secara berurutan. Portal mengarahkan ke learning path, knowledge yang relevan, tutorial skills, prompt, lalu penilaian kemampuan mandiri. Untuk produk akademik yang berdampak, selalu tampilkan sumber, batasan dan cara verifikasi.</p>
+<p>Beranda bersumber dari <code>portal/index.html</code>. Katalog interaktif pada beranda membaca data registri yang dibentuk saat build, dengan pencarian dan filter tema, prioritas, serta jenis artefak. Tautan katalog membuka materi Quarto pada <code>/learn/topics/.../*.html</code>. Enam learning path tersedia melalui <code>/learn/learning-paths/index.html</code>, dan panduan Git/GitHub melalui <code>/learn/docs/student-workflow.html</code>. Path tersebut berada di bawah akar situs proyek; alamat situs final mengikuti URL yang ditampilkan GitHub Pages.</p>
+<p>Pengguna sebaiknya mulai dari pertanyaan atau kasus, lalu memilih tema dan learning path. Knowledge memberi landasan, Skills memandu praktik, Prompts membantu eksplorasi, dan Cases mengintegrasikan penerapan. Halaman forum memberikan petunjuk; diskusi aktual dilakukan di GitHub Discussions. Berkas di <code>/repository/</code> adalah salinan dokumen sumber untuk diunduh, dibentuk saat build dari repositori yang sama.</p>
+<p>Karena materi masih draf pada versi yang diperiksa, pembaca perlu memperhatikan bagian yang belum terisi sebelum memakai isinya. <code>portal/assets/app.js</code> saat ini menampilkan keterangan katalog “seluruhnya berstatus draf” secara tetap. Ketika status artefak mulai berubah, pengelola perlu menyesuaikan keterangan tersebut dengan data registri agar tampilan tidak tertinggal dari sumber.</p>
 </section>
-<section id="penerbitan-quarto" class="level2" data-number="15.6">
-<h2 data-number="15.6" class="anchored" data-anchor-id="penerbitan-quarto"><span class="header-section-number">15.6</span> Penerbitan Quarto</h2>
-<p>Sumber <code>.qmd</code> disimpan dalam GitHub, konfigurasi <code>_quarto.yml</code> memakai proyek <code>book</code> untuk buku ini dan dapat memakai proyek <code>website</code> untuk portal belajar. GitHub Actions dapat membangun versi HTML ketika PR telah ditelaah. Proyek buku dapat dijalankan dengan <code>quarto render --to html</code> dan hasilnya berada di folder <code>_book/</code>.</p>
+<section id="membangun-dan-menerbitkan-portal-yang-sebenarnya" class="level2" data-number="15.6">
+<h2 data-number="15.6" class="anchored" data-anchor-id="membangun-dan-menerbitkan-portal-yang-sebenarnya"><span class="header-section-number">15.6</span> Membangun dan menerbitkan portal yang sebenarnya</h2>
+<p>Portal memakai proyek Quarto <code>website</code> dengan <code>output-dir: _site</code>. Beranda akhir bersumber dari HTML pada <code>portal/</code>; halaman materi dirender dengan Quarto. <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/docs/integration-architecture.md">Arsitektur integrasi portal</a> menghubungkan kedua bagian tersebut melalui perakitan berikut:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tahap</th>
+<th>Sumber atau perintah</th>
+<th>Hasil</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Membentuk katalog Quarto</td>
+<td><code>python scripts/build_catalog.py</code></td>
+<td><code>catalog.qmd</code> dari registri CSV</td>
+</tr>
+<tr class="even">
+<td>Merender materi belajar</td>
+<td><code>quarto render</code></td>
+<td>Halaman HTML di <code>_site/</code></td>
+</tr>
+<tr class="odd">
+<td>Merakit portal terpadu</td>
+<td><code>python scripts/build_portal.py</code></td>
+<td>Paket situs di <code>_public/</code></td>
+</tr>
+<tr class="even">
+<td>Menyediakan beranda dan aset</td>
+<td><code>portal/</code> serta registri CSV</td>
+<td><code>_public/index.html</code>, CSS/JS, <code>assets/artifacts.json</code>, dan <code>assets/artifacts-data.js</code></td>
+</tr>
+<tr class="odd">
+<td>Menyertakan materi dan dokumen</td>
+<td><code>_site/</code> serta dokumen sumber terpilih</td>
+<td><code>_public/learn/</code> dan <code>_public/repository/</code></td>
+</tr>
+<tr class="even">
+<td>Menerbitkan</td>
+<td>Workflow <code>publish.yml</code></td>
+<td>Artefak <code>_public/</code> dikirim ke GitHub Pages</td>
+</tr>
+</tbody>
+</table>
+<section id="preview-lengkap-pada-komputer" class="level3" data-number="15.6.1">
+<h3 data-number="15.6.1" class="anchored" data-anchor-id="preview-lengkap-pada-komputer"><span class="header-section-number">15.6.1</span> Preview lengkap pada komputer</h3>
+<p>Sesudah clone dan memasang prasyarat, jalankan perintah berikut dari akar repo portal. Hentikan rangkaian dan perbaiki masalah jika salah satu pemeriksaan gagal.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>check_artifacts<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>check_portal<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>build_catalog<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>quarto render</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>build_portal<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>python <span class="op">-</span>m http<span class="op">.</span><span class="fu">server</span> <span class="dv">8000</span> <span class="op">--</span>directory _public</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Buka <code>http://localhost:8000/</code>, lalu coba katalog, satu artefak, satu learning path, dan satu unduhan dokumen. Hentikan server dengan <code>Ctrl+C</code>. <code>build_portal.py</code> membentuk ulang folder <code>_public/</code>; simpan perubahan pada sumber agar tidak hilang saat build berikutnya. Folder <code>_site/</code> dan <code>_public/</code> tidak perlu di-commit sebagai sumber kontribusi.</p>
+<p>Jika Quarto belum tersedia, <code>python scripts/build_portal.py --allow-missing-quarto</code> dapat dipakai untuk preview terbatas beranda. Tanpa hasil render Quarto yang valid, materi belajar belum tersedia lengkap. Mode tersebut bukan bukti bahwa paket siap dipublikasikan.</p>
 </section>
-<section id="menetapkan-satu-sumber-kebenaran-untuk-registri" class="level2" data-number="15.7">
-<h2 data-number="15.7" class="anchored" data-anchor-id="menetapkan-satu-sumber-kebenaran-untuk-registri"><span class="header-section-number">15.7</span> Menetapkan satu sumber kebenaran untuk registri</h2>
-<p>Registri artefak sebaiknya menjadi tempat utama menyimpan ID, judul, tema, jenis, penanggung jawab, status, dan lokasi berkas. Halaman indeks dapat disusun dari informasi tersebut agar tidak ada daftar yang saling berbeda. Ketika file dipindah, perbarui path dan pertahankan hubungan dengan ID lama. ID menyatakan identitas artefak, sedangkan lokasi dapat berubah mengikuti organisasi proyek.</p>
-<p>Status dapat dibedakan menjadi direncanakan, draf, direview, diuji, dan diterima. “Diuji” perlu mengacu pada bukti, misalnya laporan pengujian pengguna atau log eksekusi. Jangan mengubah status hanya karena berkas telah diunggah. Pada rilis, periksa bahwa seluruh artefak yang dinyatakan diterima memang tersedia pada versi yang sama.</p>
+<section id="pemeriksaan-pr-yang-sudah-tersedia" class="level3" data-number="15.6.2">
+<h3 data-number="15.6.2" class="anchored" data-anchor-id="pemeriksaan-pr-yang-sudah-tersedia"><span class="header-section-number">15.6.2</span> Pemeriksaan PR yang sudah tersedia</h3>
+<p>Workflow <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/.github/workflows/validate.yml">.github/workflows/validate.yml</a>, bernama <strong>Validate source artifacts</strong>, berjalan pada <code>push</code> dan <code>pull_request</code>. Workflow menggunakan Python 3.12 untuk:</p>
+<ol type="1">
+<li>Menjalankan <code>scripts/check_artifacts.py</code> terhadap struktur dan metadata artefak.</li>
+<li>Menjalankan <code>scripts/build_catalog.py</code>, lalu <code>git diff --exit-code -- catalog.qmd</code> untuk memastikan katalog yang di-commit sesuai registri.</li>
+<li>Menjalankan <code>scripts/check_portal.py</code> untuk memeriksa pengikatan data katalog dan path sumber portal.</li>
+</ol>
+<p>Workflow PR tersebut <strong>belum menjalankan <code>quarto render</code></strong>. Karena itu, status pemeriksaan berhasil belum membuktikan seluruh halaman dapat dirender atau tampil dengan benar. Penulis atau koordinator perlu memberikan bukti render lokal sebelum merge. Penambahan render ke pemeriksaan PR dapat menjadi pengembangan berikutnya; fitur itu belum menjadi perilaku workflow saat bab ini diperbarui.</p>
+</section>
+<section id="publikasi-setelah-merge-ke-main" class="level3" data-number="15.6.3">
+<h3 data-number="15.6.3" class="anchored" data-anchor-id="publikasi-setelah-merge-ke-main"><span class="header-section-number">15.6.3</span> Publikasi setelah merge ke main</h3>
+<p>Workflow <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/.github/workflows/publish.yml">.github/workflows/publish.yml</a>, bernama <strong>Publish unified KIPP portal</strong>, berjalan pada <code>push</code> ke <code>main</code> dan dapat dijalankan manual melalui <code>workflow_dispatch</code>. Job <code>build</code> menyiapkan Python dan Quarto, memvalidasi artefak, membentuk katalog, menjalankan <code>quarto render</code>, lalu merakit <code>_public/</code>. Setelah konfigurasi Pages berhasil, folder <code>_public/</code> diunggah sebagai artefak. Job <code>deploy</code> menerbitkannya melalui lingkungan <code>github-pages</code>.</p>
+<p>Koordinator perlu mengatur <strong>Settings → Pages → Build and deployment → Source → GitHub Actions</strong> sesuai rancangan ini. Pilihan branch dengan folder <code>/docs</code> tidak mengikuti alur build portal yang tersedia. Pengaturan sumber Pages dijelaskan dalam <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">dokumentasi GitHub Pages</a>; integrasi Quarto tersedia pada <a href="https://quarto.org/docs/publishing/github-pages.html">panduan Quarto untuk GitHub Pages</a>.</p>
+<p>Sesudah merge, periksa workflow bernama <strong>Publish unified KIPP portal</strong>, keberhasilan job <code>deploy</code>, URL keluaran, dan isi halaman publik. Periksa beranda serta satu halaman <code>/learn/</code>; keberhasilan beranda saja belum membuktikan materi Quarto ikut terbit.</p>
+</section>
+<section id="catatan-keadaan-publikasi-saat-pemeriksaan" class="level3" data-number="15.6.4">
+<h3 data-number="15.6.4" class="anchored" data-anchor-id="catatan-keadaan-publikasi-saat-pemeriksaan"><span class="header-section-number">15.6.4</span> Catatan keadaan publikasi saat pemeriksaan</h3>
+<p>Riwayat Actions yang tersedia pada 23 November 2026 memuat tiga proses dari commit yang diperiksa:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Proses pada 17 November 2026</th>
+<th>Hasil tercatat</th>
+<th>Makna pemeriksaan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/azral1962/kipp-triune-academic-commons/actions/runs/44003700715">Validate source artifacts</a></td>
+<td>Berhasil</td>
+<td>Pemeriksaan struktur, katalog, dan pengikatan portal lulus</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/azral1962/kipp-triune-academic-commons/actions/runs/44003700872">Publish unified KIPP portal</a></td>
+<td>Gagal</td>
+<td>Validasi, render, dan perakitan berhasil; <code>actions/configure-pages</code> gagal dengan pesan <code>Not Found</code>, sehingga deploy terpadu tidak dijalankan</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/azral1962/kipp-triune-academic-commons/actions/runs/44004372496">pages build and deployment</a></td>
+<td>Berhasil</td>
+<td>Proses Pages lain berhasil sesudahnya; hasil ini tidak membuktikan workflow publikasi terpadu sudah berhasil dijalankan ulang</td>
+</tr>
+</tbody>
+</table>
+<p>Pesan kegagalan meminta pemeriksaan apakah Pages sudah aktif dan menggunakan GitHub Actions. Tindak lanjut koordinator adalah memeriksa pengaturan Pages, menjalankan ulang workflow publikasi terpadu setelah konfigurasi sesuai, lalu memeriksa hasil publik. Catatan ini merekam keadaan saat pemeriksaan, bukan menyatakan bahwa situs pasti masih gagal atau konfigurasi sekarang sudah benar.</p>
+</section>
+<section id="membedakan-portal-proyek-dan-buku-ini" class="level3" data-number="15.6.5">
+<h3 data-number="15.6.5" class="anchored" data-anchor-id="membedakan-portal-proyek-dan-buku-ini"><span class="header-section-number">15.6.5</span> Membedakan portal proyek dan buku ini</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek</th>
+<th>Repo portal proyek</th>
+<th>Repo buku gabungan ini</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jenis Quarto</td>
+<td><code>website</code></td>
+<td><code>book</code></td>
+</tr>
+<tr class="even">
+<td>Hasil render</td>
+<td><code>_site/</code></td>
+<td><code>docs/</code></td>
+</tr>
+<tr class="odd">
+<td>Paket situs akhir</td>
+<td><code>_public/</code>, dirakit oleh skrip</td>
+<td>Hasil buku berada di <code>docs/</code></td>
+</tr>
+<tr class="even">
+<td>Fungsi folder <code>docs/</code></td>
+<td>Panduan dan dokumentasi sumber portal</td>
+<td>Hasil render HTML buku</td>
+</tr>
+<tr class="odd">
+<td>Sumber perubahan kontribusi</td>
+<td>Artefak di <code>topics/</code> dan sumber portal terkait</td>
+<td>Bab dan lampiran <code>.qmd</code> buku</td>
+</tr>
+</tbody>
+</table>
+<p>Contoh Git pada bab ini ditujukan ke repo portal. Perubahan naskah buku tetap dilakukan pada repo buku, kemudian dirender dengan konfigurasi buku. Pemisahan konteks ini mencegah mahasiswa mencari <code>15-implementasi-teknis.qmd</code> di repo portal atau menganggap <code>docs/</code> portal sebagai hasil render.</p>
+</section>
+</section>
+<section id="registri-metadata-dan-perubahan-status" class="level2" data-number="15.7">
+<h2 data-number="15.7" class="anchored" data-anchor-id="registri-metadata-dan-perubahan-status"><span class="header-section-number">15.7</span> Registri, metadata, dan perubahan status</h2>
+<p><code>ARTIFACT_REGISTER.csv</code> merupakan sumber utama katalog. Kolomnya adalah <code>id</code>, <code>theme_slug</code>, <code>theme_title</code>, <code>type</code>, <code>title</code>, <code>owner</code>, <code>priority</code>, <code>status</code>, <code>file</code>, <code>index_code</code>, <code>theme_code</code>, dan <code>artifact_type_code</code>. Nilai prioritas awal adalah P0 untuk Knowledge, P1 untuk Skills dan Prompts, serta P2 untuk Cases. Prioritas membantu mengatur urutan kerja; prioritas tidak menyatakan bahwa materi telah selesai.</p>
+<p>Setiap artefak memiliki metadata yang harus konsisten dengan registri. Contoh awal nyata pada <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/topics/02-literature-research/03-ai-prompts/02-03-01-p-r01.qmd">P-R01</a>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Critical Paper Reader"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">id</span><span class="kw">:</span><span class="at"> </span><span class="st">"P-R01"</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">index_code</span><span class="kw">:</span><span class="at"> </span><span class="st">"02.03.01"</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> </span><span class="st">"prompts"</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="st">"research"</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">owner</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tim 03"</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="fu">priority</span><span class="kw">:</span><span class="at"> P1</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">status</span><span class="kw">:</span><span class="at"> draft</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ai_usage</span><span class="kw">:</span><span class="at"> </span><span class="st">"Belum diisi; wajib dijelaskan sebelum review"</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/docs/change-status.md">Panduan perubahan status</a> menetapkan konvensi berikut. Makna kerja di tabel menjelaskan penerapannya bersama aturan kontribusi dan quality gate.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nilai metadata</th>
+<th>Penggunaan dalam proses</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>draft</code></td>
+<td>Isi awal atau pekerjaan yang belum memenuhi kriteria penerimaan</td>
+</tr>
+<tr class="even">
+<td><code>in-review</code></td>
+<td>Sedang diajukan untuk peninjauan</td>
+</tr>
+<tr class="odd">
+<td><code>needs-revision</code></td>
+<td>Memerlukan perbaikan berdasarkan temuan review atau uji</td>
+</tr>
+<tr class="even">
+<td><code>reviewed</code></td>
+<td>Bukti review lintas tim, uji pengguna, dan tindak lanjut telah dicatat serta disetujui</td>
+</tr>
+</tbody>
+</table>
+<p>Sesudah penerimaan disetujui, ubah status pada <strong>YAML artefak dan baris CSV dengan ID yang sama</strong>, melalui koordinasi pengelola registri. Jalankan <code>python scripts/check_artifacts.py</code> dan <code>python scripts/build_catalog.py</code>, periksa diff, lalu sertakan artefak, CSV, dan <code>catalog.qmd</code> yang berubah dalam PR. Jika kontributor belum berwenang mengubah registri, minta koordinator menyiapkan perubahan tersebut pada proses review. Jangan menambahkan kolom baru atau mengganti ID untuk memperbarui status.</p>
+<p>Nilai <code>reviewed</code> menyatakan penerimaan prosedur internal pilot, bukan sertifikasi kebenaran ilmiah. Bukti uji dan komentar reviewer disimpan pada bagian artefak serta PR, bukan digantikan oleh status saja. README memakai istilah umum “Verified”; untuk nilai yang ditulis ke YAML dan CSV, ikuti <code>docs/change-status.md</code> dan <code>CONTRIBUTING.md</code> agar konsisten.</p>
 </section>
 <section id="memisahkan-sumber-dan-hasil-terbitan" class="level2" data-number="15.8">
 <h2 data-number="15.8" class="anchored" data-anchor-id="memisahkan-sumber-dan-hasil-terbitan"><span class="header-section-number">15.8</span> Memisahkan sumber dan hasil terbitan</h2>
-<p>Sumber <code>.qmd</code>, gambar asli, bibliografi, dan data yang boleh dibagikan merupakan input penerbitan. Folder <code>_book/</code> berisi hasil render. Mengedit HTML keluaran secara langsung membuat perbaikan hilang pada render berikutnya. Lakukan perubahan pada sumber, kemudian bangun ulang. Dokumentasi Quarto menjelaskan penggunaan proyek buku dan struktur bab <span class="citation" data-cites="quarto-book">(<a href="#ref-quarto-book" role="doc-biblioref">Quarto Project, t.t.</a>)</span>.</p>
+<p>Sumber <code>.qmd</code>, gambar, referensi, dan data yang boleh dibagikan merupakan input penerbitan. Pada repo portal, <code>catalog.qmd</code> dibentuk dari CSV, halaman Quarto di <code>_site/</code> dibentuk dari sumber, dan <code>_public/</code> dirakit untuk publikasi. Perbaiki sumber lalu jalankan generator yang sesuai agar perubahan tidak hilang pada build berikutnya. Pada repo buku ini, hasil render berada di <code>docs/</code>; struktur proyek buku dijelaskan dalam dokumentasi Quarto <span class="citation" data-cites="quarto-book">(<a href="#ref-quarto-book" role="doc-biblioref">Quarto Project, t.t.</a>)</span>.</p>
 <p>Simpan informasi lingkungan yang cukup untuk menjalankan contoh: bahasa, dependensi, versi penting, dan cara memperoleh data. Contoh yang hanya ilustratif diberi penanda tidak dieksekusi; contoh yang disebut telah diuji perlu benar-benar dijalankan pada input yang dicatat. Praktik ini membantu membedakan materi pengantar dari hasil komputasi yang dapat direproduksi <span class="citation" data-cites="wilson2017">(<a href="#ref-wilson2017" role="doc-biblioref">Wilson dkk. 2017</a>)</span>.</p>
 </section>
 <section id="contoh-alur-review-satu-perubahan" class="level2" data-number="15.9">
 <h2 data-number="15.9" class="anchored" data-anchor-id="contoh-alur-review-satu-perubahan"><span class="header-section-number">15.9</span> Contoh alur review satu perubahan</h2>
-<p>Sebuah Issue menyatakan bahwa tutorial Bayes tidak menjelaskan format persentase. Kriteria penerimaannya: format input dinyatakan, contoh 1% menghasilkan posterior yang benar, dan pengguna baru dapat mengikutinya. Kontributor membuat branch, memperbaiki sumber, menjalankan render, dan mencatat pemeriksaan. Pull Request memuat masalah, perubahan perilaku, serta bukti yang relevan.</p>
-<p>Reviewer mencoba langkah yang sebelumnya gagal, memeriksa angka, dan melihat halaman hasil. Jika ada kesalahan sumber dan kesalahan tampilan, keduanya dicatat terpisah agar perbaikannya tepat. Sesudah revisi diterima, perubahan digabung dan rilis diperbarui. Penjelasan ini merupakan pola kolaborasi yang disarankan; rincian fitur GitHub dapat berubah dan perlu merujuk dokumentasi resmi saat implementasi.</p>
+<p>Sebagai simulasi, Tim 03 mengisi artefak <code>P-R01 — Critical Paper Reader</code>. Issue menetapkan bahwa prompt harus membantu membaca paper tanpa mengarang sumber. Kontributor mengisi kerangka pada branch <code>tim-03/P-R01-critical-reader</code>, mencoba dua masukan normal dan satu masukan bermasalah, lalu menyimpan input-output aktual serta hasil pemeriksaan terhadap sumber paper. Artefak tetap berstatus <code>draft</code> selama bukti penerimaan belum lengkap.</p>
+<p>Reviewer dari tim lain mencoba prompt dan menandai klaim yang tidak didukung paper. Kontributor merevisi instruksi, mengulang contoh yang gagal, dan memperbarui catatan uji. Sesudah kriteria <code>QUALITY_GATE.md</code> terpenuhi, perubahan status dikoordinasikan pada YAML dan CSV, katalog dibentuk ulang, dan bukti dicantumkan dalam PR. Koordinator memeriksa hasil CI, bukti render, dan persetujuan review sebelum merge.</p>
+<p>Workflow publikasi kemudian membangun <code>_site/</code>, merakit <code>_public/</code>, dan mencoba deploy ke Pages. Pengelola memeriksa keluaran publik serta halaman artefak. Simulasi ini menunjukkan proses yang perlu dijalankan mahasiswa; contoh ini bukan klaim bahwa P-R01 sudah terisi atau telah lulus review pada commit yang diperiksa.</p>
 </section>
 <section id="pemeriksaan-otomatis-dan-batasnya" class="level2" data-number="15.10">
 <h2 data-number="15.10" class="anchored" data-anchor-id="pemeriksaan-otomatis-dan-batasnya"><span class="header-section-number">15.10</span> Pemeriksaan otomatis dan batasnya</h2>
-<p>Pipeline dapat memeriksa bahwa proyek dapat dirender, tautan internal mengarah ke berkas yang ada, ID tidak ganda, dan bibliografi menyelesaikan kunci sitasi. Pemeriksaan isi tetap memerlukan manusia: sumber dapat ada tetapi tidak mendukung klaim; tutorial dapat dirender tetapi tidak dapat diikuti; gambar dapat muncul tetapi menyesatkan. Otomasi mengurangi kesalahan mekanis dan menyediakan waktu untuk review substantif.</p>
-<p>Pisahkan proses membangun artefak dari proses memublikasikannya. Preview membantu reviewer menilai hasil sebelum perubahan menjadi versi publik. Simpan versi rilis agar halaman yang dipakai untuk penilaian dapat diketahui. Jika kesalahan penting ditemukan sesudah publikasi, sediakan catatan koreksi dan perbarui sumber terkait.</p>
+<p>Pemeriksaan yang sudah tersedia mempunyai lingkup tertentu. <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/scripts/check_artifacts.py">check_artifacts.py</a> memeriksa jumlah 42 entri, keunikan ID, keberadaan berkas, kesesuaian metadata tertentu dengan CSV, bentuk kode hierarkis dan nama berkas, tautan dari indeks tema serta learning path, dan keberadaan judul bagian wajib. <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/scripts/check_portal.py">check_portal.py</a> memeriksa berkas portal, penyertaan aset manifest, pola tautan menuju materi Quarto, dan keberadaan path artefak.</p>
+<p>Kedua skrip tersebut bukan pemeriksaan menyeluruh semua tautan situs atau seluruh aturan metadata. Keduanya juga tidak membuktikan bahwa penanda <code>[ISI]</code> sudah dilengkapi, sitasi mendukung klaim, prompt menghasilkan jawaban benar, atau pengguna dapat mengikuti tutorial. Hal ini menjelaskan mengapa pemeriksaan struktur dapat lulus ketika semua artefak masih draf. Pemeriksaan substansi tetap menggunakan <code>QUALITY_GATE.md</code>, review lintas tim, dan uji pengguna.</p>
+<p>Pisahkan tiga bukti: <strong>struktur valid</strong>, <strong>materi diterima</strong>, dan <strong>publikasi berhasil</strong>. Status CI PR hanya mendukung bukti yang benar-benar diuji; persetujuan manusia harus didukung catatan review; deployment harus dibuktikan dengan hasil workflow dan halaman publik. Untuk penilaian, catat commit atau versi yang dipakai bersama tautan PR dan hasil uji agar karya dapat ditelusuri pada keadaan yang sama.</p>
 </section>
 <section id="merawat-portal-setelah-tenggat" class="level2" data-number="15.11">
 <h2 data-number="15.11" class="anchored" data-anchor-id="merawat-portal-setelah-tenggat"><span class="header-section-number">15.11</span> Merawat portal setelah tenggat</h2>
-<p>Tentukan pemilik pemeliharaan, cara melaporkan kesalahan, dan masa tinjau sumber yang mudah berubah. Tutorial layanan daring lebih cepat kedaluwarsa daripada penjelasan dasar probabilitas. Penandaan tanggal pemeriksaan membantu pengguna menilai apakah langkah teknis masih sesuai. Materi yang belum diperiksa ulang dapat diberi status arsip tanpa menghapus sejarahnya.</p>
+<p>Tentukan pemilik pemeliharaan, cara melaporkan kesalahan, dan masa tinjau sumber yang mudah berubah. Tutorial layanan daring lebih cepat kedaluwarsa daripada penjelasan dasar probabilitas. Penandaan tanggal pemeriksaan membantu pengguna menilai apakah langkah teknis masih sesuai. Jika suatu materi perlu diarsipkan, catat keputusan dan alasannya tanpa menghapus sejarah. Penambahan nilai status metadata untuk arsip memerlukan kesepakatan baru; konvensi saat ini tetap memakai empat nilai pada panduan perubahan status.</p>
 <p>Sebagai latihan, pilih satu artefak dan lakukan audit dari registri sampai halaman hasil. Periksa identitas, lokasi, sumber, tampilan, serta bukti penerimaan. Lalu simulasikan pemindahan file dan jelaskan apa yang perlu diperbarui. Tujuannya agar struktur repositori mendukung pengguna dan reviewer, bukan hanya terlihat teratur bagi penyusunnya.</p>
 
 
