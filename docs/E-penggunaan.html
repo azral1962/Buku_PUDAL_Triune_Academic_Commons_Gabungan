@@ -633,7 +633,7 @@ window.Quarto = {
   <li><a href="#bukti-usulan-rubrik-penilaian-proyek-pamungkas" id="toc-bukti-usulan-rubrik-penilaian-proyek-pamungkas" class="nav-link" data-scroll-target="#bukti-usulan-rubrik-penilaian-proyek-pamungkas"><span class="header-section-number">E.3</span> 4. Bukti &amp; Usulan Rubrik Penilaian Proyek Pamungkas</a></li>
   <li><a href="#mengapa-desain-ini-kuat-secara-pedagogis" id="toc-mengapa-desain-ini-kuat-secara-pedagogis" class="nav-link" data-scroll-target="#mengapa-desain-ini-kuat-secara-pedagogis"><span class="header-section-number">E.4</span> 5. Mengapa Desain Ini Kuat Secara Pedagogis?</a>
   <ul class="collapse">
-  <li><a href="#berkas-baru-yang-dibuat" id="toc-berkas-baru-yang-dibuat" class="nav-link" data-scroll-target="#berkas-baru-yang-dibuat"><span class="header-section-number">E.4.1</span> 1. Berkas Baru yang Dibuat</a></li>
+  <li><a href="#berkas-baru-perlu-dibuat" id="toc-berkas-baru-perlu-dibuat" class="nav-link" data-scroll-target="#berkas-baru-perlu-dibuat"><span class="header-section-number">E.4.1</span> 1. Berkas Baru perlu Dibuat</a></li>
   <li><a href="#pembaruan-navigasi-isolasi-privasi-dokumentasi" id="toc-pembaruan-navigasi-isolasi-privasi-dokumentasi" class="nav-link" data-scroll-target="#pembaruan-navigasi-isolasi-privasi-dokumentasi"><span class="header-section-number">E.4.2</span> 2. Pembaruan Navigasi, Isolasi Privasi, &amp; Dokumentasi</a></li>
   <li><a href="#hasil-verifikasi" id="toc-hasil-verifikasi" class="nav-link" data-scroll-target="#hasil-verifikasi"><span class="header-section-number">E.4.3</span> 3. Hasil Verifikasi</a></li>
   <li><a href="#cara-pakai-untuk-setiap-mahasiswa-setelah-git-clone" id="toc-cara-pakai-untuk-setiap-mahasiswa-setelah-git-clone" class="nav-link" data-scroll-target="#cara-pakai-untuk-setiap-mahasiswa-setelah-git-clone"><span class="header-section-number">E.4.4</span> Cara Pakai untuk Setiap Mahasiswa Setelah <code>git clone</code></a></li>
@@ -912,18 +912,22 @@ window.Quarto = {
 <li><strong>Menghubungkan fase kolektif dan fase individual:</strong> Fase kelompok (Minggu 1–3) memaksa kelas membangun <strong>Collective Intelligence yang bermutu</strong>; Proyek Pamungkas membuat setiap mahasiswa merasakan langsung <strong>manfaat nyata CI yang mereka bangun bersama</strong> untuk melahirkan karya individu terbaiknya.</li>
 </ol>
 <hr>
-<p>Jika usulan ini sudah sesuai dengan visi Anda, saya dapat membantu menurunkannya langsung ke dalam berkas repositori, misalnya: 1. Menulis dokumen panduan resmi di <code>docs/individual-capstone.md</code> (atau <code>.qmd</code> agar tampil di website Quarto), 2. Membuat <strong>template starter</strong> untuk <code>brief-pudal.md</code>, <code>delta-triune.md</code>, <code>ai-ledger.md</code>, dan <code>karya-final.qmd</code> di <code>templates/</code>, serta 3. Menyediakan skrip kecil (mis. <code>scripts/init_personal_capstone.py</code>) agar setiap mahasiswa setelah <code>git clone</code> cukup menjalankan satu perintah untuk membangkitkan seluruh struktur <code>personal/capstone/</code> siap pakai di komputernya.</p>
-<p>Analyzed check_portal.py:L1-20 Analyzed build_catalog.py:L1-11 Analyzed reflection.md:L1-10 Analyzed peer-review.md:L1-10 Analyzed user-test.md:L1-10 Analyzed change-status.md:L1-10 Created individual-capstone.qmd Created brief-pudal.md Created stage-1-log.md Created stage-2-enhancement.md Created delta-triune.md Created ai-ledger.md Created karya-final.qmd Created presentasi-taida.qmd Created init_personal_capstone.py Edited _quarto.yml Edited README.md Edited index.qmd Edited rubric.md Ran validate repo checks and test capstone initializer Ran run Quarto render and portal build check · Exited with code 1 Ran render Quarto site and build portal · Exited with code 1</p>
-<p>Sedang menjalankan verifikasi <code>quarto render</code> (91 berkas) dan <code>build_portal.py</code> untuk memastikan seluruh panduan, templat baru, dan isolasi folder <code>personal/</code> terbangun tanpa error.</p>
-<p>Implementasi <strong>Proyek Pamungkas Individual (<em>Triune Academic Capstone</em>)</strong> selesai dan seluruh validasi repositori serta build Quarto/portal telah lolos.</p>
-<section id="berkas-baru-yang-dibuat" class="level3" data-number="E.4.1">
-<h3 data-number="E.4.1" class="anchored" data-anchor-id="berkas-baru-yang-dibuat"><span class="header-section-number">E.4.1</span> 1. Berkas Baru yang Dibuat</h3>
+<p>Agar sesuai dengan visi ini, kita dapat menurunkannya langsung ke dalam berkas repositori, misalnya:</p>
+<ol type="1">
+<li>Menulis dokumen panduan resmi di <code>docs/individual-capstone.md</code> (atau <code>.qmd</code> agar tampil di website Quarto),</li>
+<li>Membuat <strong>template starter</strong> untuk <code>brief-pudal.md</code>, <code>delta-triune.md</code>, <code>ai-ledger.md</code>, dan <code>karya-final.qmd</code> di <code>templates/</code>, serta</li>
+<li>Menyediakan skrip kecil (mis. <code>scripts/init_personal_capstone.py</code>) agar setiap mahasiswa setelah <code>git clone</code> cukup menjalankan satu perintah untuk membangkitkan seluruh struktur <code>personal/capstone/</code> siap pakai di komputernya.</li>
+</ol>
+<p>Jalankan verifikasi <code>quarto render</code> (91 berkas) dan <code>build_portal.py</code> untuk memastikan seluruh panduan, templat baru, dan isolasi folder <code>personal/</code> terbangun tanpa error.</p>
+<p>Implementasi <strong>Proyek Pamungkas Individual (<em>Triune Academic Capstone</em>)</strong> selesai dan pastikan seluruh validasi repositori serta build Quarto/portal telah lolos.</p>
+<section id="berkas-baru-perlu-dibuat" class="level3" data-number="E.4.1">
+<h3 data-number="E.4.1" class="anchored" data-anchor-id="berkas-baru-perlu-dibuat"><span class="header-section-number">E.4.1</span> 1. Berkas Baru perlu Dibuat</h3>
 <ul>
-<li><strong>Panduan Resmi Proyek Pamungkas:</strong>
+<li><p><strong>Panduan Resmi Proyek Pamungkas:</strong></p>
 <ul>
 <li><a href="file:///c:/github/kipp-triune-academic-commons-main/docs/individual-capstone.qmd">docs/individual-capstone.qmd</a> — panduan lengkap arsitektur <strong>Collective Intelligence (CI) + Artificial Intelligence (AI) + Personal Intelligence (PI)</strong>, pemetaan integrasi seluruh <strong>6 tema</strong>, alur wajib <strong>3 tahap</strong> (<code>v0.1 → v0.2 → v1.0</code>), checklist mutu, dan usulan rubrik penilaian.</li>
 </ul></li>
-<li><strong>Templat Proyek Pamungkas (<code>templates/capstone/</code>):</strong>
+<li><p><strong>Templat Proyek Pamungkas (<code>templates/capstone/</code>):</strong></p>
 <ul>
 <li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/brief-pudal.md">brief-pudal.md</a> — Orientation PUDAL (<span class="math inline">\(A \to B\)</span>), rencana 6 tema, dan batasan privasi.</li>
 <li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/stage-1-log.md">stage-1-log.md</a> — log Tahap 1 (<code>CI + AI → Draft Awal v0.1</code>) &amp; audit kelemahan awal.</li>
@@ -933,7 +937,7 @@ window.Quarto = {
 <li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/karya-final.qmd">karya-final.qmd</a> — templat naskah Quarto 6 bab terpadu (dipakai untuk <code>draft-v0.1.qmd</code>, <code>draft-v0.2.qmd</code>, dan <code>karya-final-v1.0.qmd</code>).</li>
 <li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/presentasi-taida.qmd">presentasi-taida.qmd</a> — templat slide presentasi 5 menit berbasis TAIDA (<code>revealjs</code>).</li>
 </ul></li>
-<li><strong>Skrip Inisialisasi Ruang Kerja Personal:</strong>
+<li><p><strong>Skrip Inisialisasi Ruang Kerja Personal:</strong></p>
 <ul>
 <li><a href="file:///c:/github/kipp-triune-academic-commons-main/scripts/init_personal_capstone.py">scripts/init_personal_capstone.py</a> — skrip Python (tanpa dependensi eksternal) untuk membangkitkan struktur privat <code>personal/00-personal-context/</code> dan <code>personal/capstone/</code> (17 berkas siap pakai, termasuk notebook <code>t04-analysis.ipynb</code>), mengecek <code>.gitignore</code>, dan aman karena tidak menimpa berkas yang sudah ada kecuali memakai <code>--force</code>.</li>
 </ul></li>
