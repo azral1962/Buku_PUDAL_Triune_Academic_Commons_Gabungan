@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>22&nbsp; Tema 4 — Computational and Data Literacy – PUDAL: Navigasi Cerdas, Engine, dan Pembelajaran Adaptif</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../tise-six-themes/06-tema5-visualisasi.html" rel="next">
+<link href="../tise-six-themes/04-tema3-writing.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5630e6732664d48c7cde3b526013eeb9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-85797823d13c074f06d599944906f588.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5630e6732664d48c7cde3b526013eeb9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Tidak ada hasil",
+    "search-matching-documents-text": "dokumen cocok",
+    "search-copy-link-title": "Salin tautan untuk mencari",
+    "search-hide-matches-text": "Sembunyikan kecocokan lainnya",
+    "search-more-match-text": "kecocokan lainnya di dokumen ini",
+    "search-more-matches-text": "kecocokan lainnya di dokumen ini",
+    "search-clear-button-title": "Hapus",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Batal",
+    "search-submit-button-title": "Kirim",
+    "search-label": "Mencari"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../tise-six-themes/styles/book.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tise-six-themes/00-pengantar-enam-tema.html">BAGIAN IV — ENAM TEMA KOMPETENSI AKADEMIK TISE</a></li><li class="breadcrumb-item"><a href="../tise-six-themes/05-tema4-data.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Tema 4 — Computational and Data Literacy</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">PUDAL: Navigasi Cerdas, Engine, dan Pembelajaran Adaptif</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alihkan mode gelap"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Mencari"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prakata</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">BAGIAN I — KERANGKA DASAR</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-pendahuluan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Mengapa Perjalanan dari A ke B?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-taida-triune.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">TAIDA, Komunikasi, dan Triune Intelligence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03-empat-artefak.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Empat Jenis Artefak dan Empat Cara Belajar</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">BAGIAN II — ENGINE NAVIGASI PUDAL</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04-pudal-dasar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">PUDAL sebagai Siklus Kendali Kecerdasan</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05-graf-model-masalah.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Graf Keadaan, Peta Masalah, dan Penemuan Rute</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06-tiga-engine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Natural, Instrumental, dan Vehicular Engine</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07-energi-kerja-sumberdaya.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Energi, Kerja, dan Ekosistem Sumber Daya</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../08-lima-pudal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Lima Putaran PUDAL Berjenjang</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../09-milestone-replanning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Intermediate Goals, Stages, Milestones, dan Replanning</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../10-learning-exploration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Learning PUDAL dan Penemuan Rute yang Lebih Optimal</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../11-model-formal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Model Matematis Resource-Aware Navigation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">BAGIAN III — IMPLEMENTASI ACADEMIC COMMONS</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../12-arsitektur-agen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dari Model PUDAL menuju Arsitektur Agen Akademik</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../13-enam-learning-paths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Enam Learning Paths Berbasis PUDAL</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../14-proyek-uas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">UAS sebagai Proyek Triune Academic Commons</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../15-implementasi-teknis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Repositori, Portal, dan Workflow Kolaboratif</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../16-evaluasi-dan-agenda-riset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Evaluasi Kinerja, Validasi, dan Agenda Riset</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">BAGIAN IV — ENAM TEMA KOMPETENSI AKADEMIK TISE</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/00-pengantar-enam-tema.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pengantar Enam Tema Kompetensi Akademik Berbasis TISE</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/01-kerangka-tise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Kerangka Bersama: Rekayasa Perjalanan Tugas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/02-tema1-learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Tema 1 — Learning: Probabilitas Bersyarat dan Bayes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/03-tema2-literature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Tema 2 — Literature Study dan State of the Art Lima Lapisan</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/04-tema3-writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Tema 3 — Academic Writing: Esai Berbasis Gagasan dan Bukti</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/05-tema4-data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Tema 4 — Computational and Data Literacy</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/06-tema5-visualisasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Tema 5 — Visualization: Visual Knowledge Engineering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/07-tema6-problem-solving.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tema 6 — Problem Solving: Mahasiswa, Akademik, dan Industri</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/08-implementasi-asesmen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Implementasi Program dan Evaluasi Lintas Tema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/09-template-kerja.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Template Kerja dan Formulir Praktikum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Referensi dan Sumber Pengembangan</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../17-penutup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Penutup: Sistem Cerdas yang Mencerdaskan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lampiran</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../A-register-42-artefak.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Register 42 Artefak</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../B-template-kasus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Templat Case Study PUDAL</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../C-glosarium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glosarium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../D-sumber-dan-gambar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Sumber Bahan, Dokumentasi Visual, dan Catatan Editorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../E-penggunaan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">E-penggunaan.html</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tise-six-themes/appendix-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Lampiran: Menjalankan dan Mengembangkan Buku</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#data-sebagai-cara-melihat-dunia" id="toc-data-sebagai-cara-melihat-dunia" class="nav-link active" data-scroll-target="#data-sebagai-cara-melihat-dunia"><span class="header-section-number">22.1</span> Data sebagai cara melihat dunia</a></li>
+  <li><a href="#kasus-ai-dan-kemampuan-kognitif-mahasiswa" id="toc-kasus-ai-dan-kemampuan-kognitif-mahasiswa" class="nav-link" data-scroll-target="#kasus-ai-dan-kemampuan-kognitif-mahasiswa"><span class="header-section-number">22.2</span> Kasus: AI dan kemampuan kognitif mahasiswa</a></li>
+  <li><a href="#delapan-sasaran-antara" id="toc-delapan-sasaran-antara" class="nav-link" data-scroll-target="#delapan-sasaran-antara"><span class="header-section-number">22.3</span> Delapan sasaran antara</a></li>
+  <li><a href="#sumber-dataset-dan-kecocokan" id="toc-sumber-dataset-dan-kecocokan" class="nav-link" data-scroll-target="#sumber-dataset-dan-kecocokan"><span class="header-section-number">22.4</span> Sumber dataset dan kecocokan</a></li>
+  <li><a href="#pipeline-data" id="toc-pipeline-data" class="nav-link" data-scroll-target="#pipeline-data"><span class="header-section-number">22.5</span> Pipeline data</a></li>
+  <li><a href="#pengukuran-kemampuan-kognitif" id="toc-pengukuran-kemampuan-kognitif" class="nav-link" data-scroll-target="#pengukuran-kemampuan-kognitif"><span class="header-section-number">22.6</span> Pengukuran kemampuan kognitif</a></li>
+  <li><a href="#desain-eksperimen-lanjutan" id="toc-desain-eksperimen-lanjutan" class="nav-link" data-scroll-target="#desain-eksperimen-lanjutan"><span class="header-section-number">22.7</span> Desain eksperimen lanjutan</a></li>
+  <li><a href="#produk-dan-rubrik" id="toc-produk-dan-rubrik" class="nav-link" data-scroll-target="#produk-dan-rubrik"><span class="header-section-number">22.8</span> Produk dan rubrik</a></li>
+  <li><a href="#mendefinisikan-observasi-sebelum-menulis-kode" id="toc-mendefinisikan-observasi-sebelum-menulis-kode" class="nav-link" data-scroll-target="#mendefinisikan-observasi-sebelum-menulis-kode"><span class="header-section-number">22.9</span> Mendefinisikan observasi sebelum menulis kode</a></li>
+  <li><a href="#contoh-kecil-yang-memperlihatkan-masalah-perancu" id="toc-contoh-kecil-yang-memperlihatkan-masalah-perancu" class="nav-link" data-scroll-target="#contoh-kecil-yang-memperlihatkan-masalah-perancu"><span class="header-section-number">22.10</span> Contoh kecil yang memperlihatkan masalah perancu</a></li>
+  <li><a href="#pembersihan-sebagai-keputusan-ilmiah" id="toc-pembersihan-sebagai-keputusan-ilmiah" class="nav-link" data-scroll-target="#pembersihan-sebagai-keputusan-ilmiah"><span class="header-section-number">22.11</span> Pembersihan sebagai keputusan ilmiah</a></li>
+  <li><a href="#validasi-model-dan-pelaporan-ketidakpastian" id="toc-validasi-model-dan-pelaporan-ketidakpastian" class="nav-link" data-scroll-target="#validasi-model-dan-pelaporan-ketidakpastian"><span class="header-section-number">22.12</span> Validasi model dan pelaporan ketidakpastian</a></li>
+  <li><a href="#latihan-yang-dapat-direproduksi" id="toc-latihan-yang-dapat-direproduksi" class="nav-link" data-scroll-target="#latihan-yang-dapat-direproduksi"><span class="header-section-number">22.13</span> Latihan yang dapat direproduksi</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tise-six-themes/00-pengantar-enam-tema.html">BAGIAN IV — ENAM TEMA KOMPETENSI AKADEMIK TISE</a></li><li class="breadcrumb-item"><a href="../tise-six-themes/05-tema4-data.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Tema 4 — Computational and Data Literacy</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Tema 4 — Computational and Data Literacy</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="fig-t4" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%" data-fig-cap="Infografik Tema 4: kasus AI dan kemampuan kognitif, pencarian dataset, pipeline data, simulasi, dan penilaian.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-t4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/tema-4-komputasi-data.png" id="fig-t4" class="img-fluid figure-img" style="width:100.0%" data-fig-cap="Infografik Tema 4: kasus AI dan kemampuan kognitif, pencarian dataset, pipeline data, simulasi, dan penilaian.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-t4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;22.1
+</figcaption>
+</figure>
+</div>
+<section id="data-sebagai-cara-melihat-dunia" class="level2" data-number="22.1">
+<h2 data-number="22.1" class="anchored" data-anchor-id="data-sebagai-cara-melihat-dunia"><span class="header-section-number">22.1</span> Data sebagai cara melihat dunia</h2>
+<p>Tema ini membangun kemampuan memandang fenomena melalui representasi pengukuran. Proses epistemiknya adalah</p>
+<p><span class="math display">\[
+\text{Fenomena}\rightarrow\text{Pengukuran}\rightarrow\text{Data}\rightarrow
+\text{Model}\rightarrow\text{Bukti}\rightarrow\text{Pengetahuan}.
+\]</span></p>
+<p><strong>A:</strong> mahasiswa mempunyai pertanyaan dan akses data tetapi belum mampu memeriksa makna variabel, mempersiapkan data, menganalisis, melakukan simulasi, atau menilai klaim. <strong>B:</strong> mahasiswa membuat analisis yang dapat direproduksi dan dapat menjelaskan hubungan antara realitas, data, model serta keterbatasan inferensinya.</p>
+</section>
+<section id="kasus-ai-dan-kemampuan-kognitif-mahasiswa" class="level2" data-number="22.2">
+<h2 data-number="22.2" class="anchored" data-anchor-id="kasus-ai-dan-kemampuan-kognitif-mahasiswa"><span class="header-section-number">22.2</span> Kasus: AI dan kemampuan kognitif mahasiswa</h2>
+<p><strong>Pertanyaan eksploratoris:</strong> apakah intensitas dan cara mahasiswa menggunakan AI berhubungan dengan hasil akademik dan indikator penalaran? <strong>Pertanyaan kausal yang lebih kuat:</strong> apakah strategi AI tertentu menyebabkan peningkatan kemampuan kognitif yang bertahan tanpa AI?</p>
+<p>Nilai ujian, jumlah percakapan, atau frekuensi penggunaan AI <strong>bukan pengukuran langsung tunggal</strong> atas kemampuan kognitif. Dibutuhkan tes konsep, kualitas penalaran, transfer, retensi, kemampuan tanpa AI, atau instrumen lain yang tervalidasi.</p>
+</section>
+<section id="delapan-sasaran-antara" class="level2" data-number="22.3">
+<h2 data-number="22.3" class="anchored" data-anchor-id="delapan-sasaran-antara"><span class="header-section-number">22.3</span> Delapan sasaran antara</h2>
+<p>S1 rumuskan pertanyaan dan definisi variabel; S2 cari dataset dan baca lisensinya; S3 periksa unit observasi, skala dan data dictionary; S4 bersihkan dan gabungkan data; S5 EDA; S6 model dan simulasi; S7 validasi dan interpretasi; S8 laporan serta notebook reproduktif.</p>
+</section>
+<section id="sumber-dataset-dan-kecocokan" class="level2" data-number="22.4">
+<h2 data-number="22.4" class="anchored" data-anchor-id="sumber-dataset-dan-kecocokan"><span class="header-section-number">22.4</span> Sumber dataset dan kecocokan</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Sumber</th>
+<th>Tipe data</th>
+<th>Bisa dipakai untuk</th>
+<th>Keterbatasan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://huggingface.co/datasets/wmcnicho/StudyChat">StudyChat (Hugging Face)</a></td>
+<td>Dialog mahasiswa dengan tutor AI</td>
+<td>Strategi bertanya, pola percakapan</td>
+<td>Interaksi tidak otomatis mengukur peningkatan kognitif</td>
+</tr>
+<tr class="even">
+<td><a href="https://huggingface.co/datasets/aiboxlab/edu-interactions">EDU Interactions</a></td>
+<td>Interaksi dan nilai akademik</td>
+<td>Analisis relasional penggunaan AI–nilai</td>
+<td>Bersifat observasional, akses dan skema perlu diperiksa</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.kaggle.com/competitions/map-charting-student-math-misunderstandings">MAP Student Math Misunderstandings (Kaggle)</a></td>
+<td>Jawaban/miskonsepsi matematis</td>
+<td>Analisis kualitas penalaran</td>
+<td>Tidak mengukur efek penggunaan AI secara langsung</td>
+</tr>
+</tbody>
+</table>
+<p>Periksa kembali lisensi, nama file, izin, serta versi dataset ketika praktikum dimulai. Tidak semua dataset mengizinkan pengunduhan atau redistribusi tanpa syarat. <strong>Buku tidak menyertakan data mentah berlisensi pihak ketiga.</strong></p>
+</section>
+<section id="pipeline-data" class="level2" data-number="22.5">
+<h2 data-number="22.5" class="anchored" data-anchor-id="pipeline-data"><span class="header-section-number">22.5</span> Pipeline data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/diagrams/05-tema4-data-1.svg" style="height:150mm" class="figure-img"></p>
+<figcaption>Diagram alur; label dan hubungan mengikuti definisi sumber.</figcaption>
+</figure>
+</div>
+<p>Unit analisis perlu ditentukan terlebih dahulu. Misalnya jika satu mahasiswa memiliki banyak interaksi pada satu mata kuliah, agregasikan per mahasiswa–mata kuliah sebelum bergabung dengan tabel nilai satu baris per unit. Perbedaan level agregasi dapat menyebabkan <em>many-to-many join</em> yang salah.</p>
+<div id="28336874" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> spearmanr</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh mengandaikan CSV sudah diunduh sesuai izin dataset.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>grades <span class="op">=</span> pd.read_csv(<span class="st">"grades.csv"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>interaction <span class="op">=</span> pd.read_csv(<span class="st">"interactions.csv"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(grades.columns.tolist(), interaction.columns.tolist())</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Verifikasi nama kolom terhadap data dictionary sebelum mengubah kode.</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>keys <span class="op">=</span> [<span class="st">"id_aluno"</span>, <span class="st">"disciplina"</span>]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>usage <span class="op">=</span> interaction.groupby(keys, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">"qtd_mensagensaluno"</span>].<span class="bu">sum</span>()</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="kw">not</span> usage.duplicated(keys).<span class="bu">any</span>()</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="kw">not</span> grades.duplicated(keys).<span class="bu">any</span>()</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> grades.merge(usage, on<span class="op">=</span>keys, how<span class="op">=</span><span class="st">"left"</span>, validate<span class="op">=</span><span class="st">"one_to_one"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Periksa makna NaN: tidak ada interaksi atau informasi tidak tercatat?</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.isna().<span class="bu">sum</span>())</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>clean <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">"nota_final"</span>, <span class="st">"qtd_mensagensaluno"</span>])</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(spearmanr(clean[<span class="st">"qtd_mensagensaluno"</span>], clean[<span class="st">"nota_final"</span>]))</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><strong>Penting:</strong> skrip tersebut adalah pola kerja untuk disesuaikan, belum hasil yang dijalankan dan diverifikasi terhadap versi dataset spesifik. Korelasi tidak membuktikan kausalitas; kemampuan awal, intensitas tugas, motivasi, dan seleksi penggunaan AI dapat menjadi pengganggu (<em>confounders</em>).</p>
+</section>
+<section id="pengukuran-kemampuan-kognitif" class="level2" data-number="22.6">
+<h2 data-number="22.6" class="anchored" data-anchor-id="pengukuran-kemampuan-kognitif"><span class="header-section-number">22.6</span> Pengukuran kemampuan kognitif</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Konstruk</th>
+<th>Indikator/instrumen</th>
+<th>Catatan validitas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pemahaman</td>
+<td>Tes konsep tanpa AI</td>
+<td>Butir mewakili konsep yang dilatih</td>
+</tr>
+<tr class="even">
+<td>Penalaran</td>
+<td>Rubrik argumentasi</td>
+<td>Penilai harus konsisten</td>
+</tr>
+<tr class="odd">
+<td>Transfer</td>
+<td>Soal baru</td>
+<td>Tidak sekadar mengulang soal latihan</td>
+</tr>
+<tr class="even">
+<td>Retensi</td>
+<td>Tes tertunda</td>
+<td>Waktu dan tingkat kesulitan setara</td>
+</tr>
+<tr class="odd">
+<td>Metakognisi</td>
+<td>Estimasi yakin vs kinerja</td>
+<td>Bedakan kalibrasi dari rasa percaya diri</td>
+</tr>
+<tr class="even">
+<td>Otonomi</td>
+<td>Kinerja saat bantuan dihentikan</td>
+<td>Ukur di luar lingkungan AI</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="desain-eksperimen-lanjutan" class="level2" data-number="22.7">
+<h2 data-number="22.7" class="anchored" data-anchor-id="desain-eksperimen-lanjutan"><span class="header-section-number">22.7</span> Desain eksperimen lanjutan</h2>
+<p>Bandingkan G1 mandiri, G2 chatbot, G3 agen, G4 AI adaptif. Gunakan pretest, posttest, tes tertunda, dan soal transfer; kelompok harus sebanding. Jika memungkinkan, lakukan randomisasi dan cegah kebocoran antara kelompok. Nilai simulasi, bila digunakan untuk belajar pemodelan, <strong>harus diberi label simulasi</strong> dan tidak boleh ditafsirkan sebagai temuan nyata.</p>
+</section>
+<section id="produk-dan-rubrik" class="level2" data-number="22.8">
+<h2 data-number="22.8" class="anchored" data-anchor-id="produk-dan-rubrik"><span class="header-section-number">22.8</span> Produk dan rubrik</h2>
+<p>Dataset beserta provenance, notebook pembersihan dan EDA, model/simulasi, grafik, interpretasi, pemeriksaan asumsi, laporan, dan jurnal bantuan AI.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Komponen</th>
+<th style="text-align: right;">Bobot</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pemahaman data dan pengukuran</td>
+<td style="text-align: right;">20%</td>
+</tr>
+<tr class="even">
+<td>Persiapan data</td>
+<td style="text-align: right;">15%</td>
+</tr>
+<tr class="odd">
+<td>Analisis dan model</td>
+<td style="text-align: right;">20%</td>
+</tr>
+<tr class="even">
+<td>Validasi dan interpretasi</td>
+<td style="text-align: right;">20%</td>
+</tr>
+<tr class="odd">
+<td>Reproduksibilitas dan komunikasi</td>
+<td style="text-align: right;">15%</td>
+</tr>
+<tr class="even">
+<td>Refleksi AI dan kemandirian</td>
+<td style="text-align: right;">10%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mendefinisikan-observasi-sebelum-menulis-kode" class="level2" data-number="22.9">
+<h2 data-number="22.9" class="anchored" data-anchor-id="mendefinisikan-observasi-sebelum-menulis-kode"><span class="header-section-number">22.9</span> Mendefinisikan observasi sebelum menulis kode</h2>
+<p>Data bukan salinan realitas yang bebas keputusan. Ketika satu baris disebut “penggunaan AI mahasiswa”, peneliti perlu menentukan apakah baris itu sesi, pesan, hari, mata kuliah, atau individu. Seratus pesan dari satu orang tidak sama dengan seratus mahasiswa. Mengabaikan unit observasi dapat membuat hasil tampak jauh lebih pasti daripada informasi yang sebenarnya tersedia.</p>
+<p>Buat kamus data sebelum analisis: nama variabel, definisi, satuan, tipe, nilai yang diizinkan, makna kosong, sumber, dan waktu pengukuran. Untuk frekuensi penggunaan, angka nol perlu dibedakan dari data yang tidak tercatat. Untuk skor penalaran, dokumentasikan tugas dan rubrik yang menghasilkannya. Definisi ini menentukan apakah operasi seperti menjumlahkan, merata-ratakan, atau menggabungkan tabel masuk akal.</p>
+</section>
+<section id="contoh-kecil-yang-memperlihatkan-masalah-perancu" class="level2" data-number="22.10">
+<h2 data-number="22.10" class="anchored" data-anchor-id="contoh-kecil-yang-memperlihatkan-masalah-perancu"><span class="header-section-number">22.10</span> Contoh kecil yang memperlihatkan masalah perancu</h2>
+<p>Tabel berikut sepenuhnya sintetis dan hanya dipakai untuk menjelaskan analisis. Skor adalah angka ilustrasi pada skala 0–100.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Mahasiswa</th>
+<th>Kemampuan awal</th>
+<th style="text-align: right;">Pesan AI</th>
+<th style="text-align: right;">Skor akhir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>Rendah</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>Rendah</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Tinggi</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">85</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>Tinggi</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">90</td>
+</tr>
+</tbody>
+</table>
+<p>Pada keseluruhan tabel, mahasiswa yang lebih sering memakai AI cenderung mempunyai skor akhir lebih rendah. Namun di dalam setiap kategori kemampuan awal, pemakai yang lebih banyak justru mempunyai skor lebih tinggi. Contoh ini tidak membuktikan manfaat maupun kerugian AI. Ia menunjukkan bahwa hubungan agregat dapat berubah ketika komposisi kelompok diperhatikan. Kemampuan awal dapat memengaruhi penggunaan dan hasil sekaligus.</p>
+<p>Dalam inferensi kausal, pertanyaan utamanya bukan hanya apakah dua kolom bergerak bersama, melainkan bagaimana kelompok pembanding dapat mewakili keadaan tanpa perlakuan. Cunningham memberikan pengantar metode dan asumsi untuk pertanyaan sebab-akibat <span class="citation" data-cites="cunningham2021">(<a href="#ref-cunningham2021" role="doc-biblioref">Cunningham 2021</a>)</span>. Untuk praktikum ini, tuliskan jalur yang diduga menghubungkan kemampuan awal, penggunaan AI, motivasi, dan skor sebelum memilih model statistik. Menambahkan banyak variabel ke regresi tidak otomatis menyelesaikan bias; pemilihan penyesuaian harus sesuai pertanyaan dan urutan waktunya.</p>
+</section>
+<section id="pembersihan-sebagai-keputusan-ilmiah" class="level2" data-number="22.11">
+<h2 data-number="22.11" class="anchored" data-anchor-id="pembersihan-sebagai-keputusan-ilmiah"><span class="header-section-number">22.11</span> Pembersihan sebagai keputusan ilmiah</h2>
+<p>Jangan menghapus baris hanya karena nilainya mengganggu grafik. Periksa apakah nilai itu kesalahan input, pengukuran yang sah, atau kasus di luar populasi penelitian. Setiap aturan pembersihan dicatat dalam log beserta banyaknya baris yang terpengaruh. Simpan data mentah agar keputusan dapat ditinjau ulang. Praktik komputasi ilmiah yang baik menekankan pengorganisasian data, skrip, dan riwayat perubahan yang dapat dipahami kolaborator <span class="citation" data-cites="wilson2017">(<a href="#ref-wilson2017" role="doc-biblioref">Wilson dkk. 2017</a>)</span>.</p>
+<p>Setelah penggabungan tabel, periksa jumlah baris, keunikan kunci, dan kecocokan total yang seharusnya tetap. Jika tabel nilai mempunyai 80 mahasiswa tetapi hasil gabungan menjadi 480 baris, analisis harus berhenti sampai kardinalitas hubungan dipahami. Banyak baris dapat sah untuk analisis per pesan, tetapi tidak boleh langsung digunakan sebagai 480 observasi individu yang independen.</p>
+</section>
+<section id="validasi-model-dan-pelaporan-ketidakpastian" class="level2" data-number="22.12">
+<h2 data-number="22.12" class="anchored" data-anchor-id="validasi-model-dan-pelaporan-ketidakpastian"><span class="header-section-number">22.12</span> Validasi model dan pelaporan ketidakpastian</h2>
+<p>Jika tujuannya prediksi, pisahkan data pelatihan dan pengujian pada unit yang sesuai. Pesan dari mahasiswa yang sama tidak sebaiknya tersebar ke dua bagian ketika targetnya memprediksi pada mahasiswa baru, karena model mungkin mengenali ciri orang tersebut. Pemrosesan yang belajar dari data, seperti imputasi berbasis rata-rata, harus dipasang pada data pelatihan terlebih dahulu. Ini mengurangi kebocoran informasi dari pengujian.</p>
+<p>Jika tujuannya membandingkan kelompok, tampilkan ukuran sampel, sebaran, besar perbedaan, dan ketidakpastian yang sesuai desain. Hasil yang tidak menunjukkan perbedaan jelas bukan bukti bahwa kedua strategi identik. Pertimbangkan apakah studi cukup informatif untuk mendeteksi perubahan yang bernilai secara pendidikan. Hindari menerjemahkan setiap angka desimal menjadi kesimpulan praktis.</p>
+</section>
+<section id="latihan-yang-dapat-direproduksi" class="level2" data-number="22.13">
+<h2 data-number="22.13" class="anchored" data-anchor-id="latihan-yang-dapat-direproduksi"><span class="header-section-number">22.13</span> Latihan yang dapat direproduksi</h2>
+<p>Gunakan tabel sintetis di atas untuk membuat scatterplot, kemudian beri penanda kemampuan awal. Jelaskan mengapa dua pembacaan dapat muncul. Tambahkan satu observasi sintetis dengan penggunaan AI tinggi dan kemampuan awal tinggi, lalu periksa apakah kesimpulan agregat berubah. Simpan seluruh versi data dan sebutkan bahwa perubahan tersebut merupakan eksperimen pemodelan.</p>
+<p>Laporan akhir harus memisahkan apa yang dihitung, bagaimana hitungan diperoleh, dan apa yang dapat disimpulkan. Reproduksibilitas berarti orang lain dapat menghasilkan hitungan yang sama dari input dan prosedur yang sama. Validitas berarti hitungan tersebut benar-benar mendukung pertanyaan yang diajukan. Notebook yang berjalan tanpa kesalahan belum menjamin keduanya sekaligus.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-cunningham2021" class="csl-entry" role="listitem">
+Cunningham, Scott. 2021. <em>Causal Inference: The Mixtape</em>. Yale University Press. <a href="https://www.scunning.com/mixtape">https://www.scunning.com/mixtape</a>.
+</div>
+<div id="ref-wilson2017" class="csl-entry" role="listitem">
+Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, dan Tracy K. Teal. 2017. <span>“Good Enough Practices in Scientific Computing.”</span> <em>PLOS Computational Biology</em> 13 (6): e1005510. <a href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Disalin!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Disalin!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../tise-six-themes/04-tema3-writing.html" class="pagination-link" aria-label="Tema 3 — Academic Writing: Esai Berbasis Gagasan dan Bukti">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Tema 3 — Academic Writing: Esai Berbasis Gagasan dan Bukti</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../tise-six-themes/06-tema5-visualisasi.html" class="pagination-link" aria-label="Tema 5 — Visualization: Visual Knowledge Engineering">
+        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Tema 5 — Visualization: Visual Knowledge Engineering</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -58,6 +58,7 @@ book:
     - B-template-kasus.qmd
     - C-glosarium.qmd
     - D-sumber-dan-gambar.qmd
+    - E-penggunaan.qmd
     - tise-six-themes/appendix-tools.qmd
 
 lang: id
@@ -76,6 +77,8 @@ format:
     code-copy: true
     smooth-scroll: true
     fig-responsive: true
+  
+
 bibliography: tise-six-themes/references.bib
 
 crossref:

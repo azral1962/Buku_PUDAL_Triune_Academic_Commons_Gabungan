@@ -1,0 +1,43 @@
+id,theme_slug,theme_title,type,title,owner,priority,status,file
+K-L01,learning,AI for Learning,knowledge,Prinsip belajar efektif menggunakan AI,Tim 01,P0,draft,topics/learning/knowledge/k-l01.qmd
+K-L02,learning,AI for Learning,knowledge,"Metakognisi, belajar aktif, dan uji pemahaman",Tim 02,P0,draft,topics/learning/knowledge/k-l02.qmd
+S-L01,learning,AI for Learning,skills,Belajar satu konsep sulit dengan bantuan AI,Tim 01,P1,draft,topics/learning/skills/s-l01.qmd
+S-L02,learning,AI for Learning,skills,"Membuat latihan, kuis, dan umpan balik formatif",Tim 02,P1,draft,topics/learning/skills/s-l02.qmd
+P-L01,learning,AI for Learning,prompts,Socratic AI Tutor,Tim 01,P1,draft,topics/learning/prompts/p-l01.qmd
+P-L02,learning,AI for Learning,prompts,Penguji pemahaman dan miskonsepsi,Tim 02,P1,draft,topics/learning/prompts/p-l02.qmd
+C-L01,learning,AI for Learning,cases,Mengukur peningkatan pemahaman satu konsep,Tim 01+02,P2,draft,topics/learning/cases/c-l01.qmd
+K-R01,research,AI for Literature Research,knowledge,Struktur paper dan pembacaan kritis,Tim 03,P0,draft,topics/research/knowledge/k-r01.qmd
+K-R02,research,AI for Literature Research,knowledge,Strategi penelusuran dan validasi sumber,Tim 04,P0,draft,topics/research/knowledge/k-r02.qmd
+S-R01,research,AI for Literature Research,skills,Membaca dan meringkas paper berbantuan AI,Tim 03,P1,draft,topics/research/skills/s-r01.qmd
+S-R02,research,AI for Literature Research,skills,Matriks literatur dan identifikasi research gap,Tim 04,P1,draft,topics/research/skills/s-r02.qmd
+P-R01,research,AI for Literature Research,prompts,Critical Paper Reader,Tim 03,P1,draft,topics/research/prompts/p-r01.qmd
+P-R02,research,AI for Literature Research,prompts,Literature Comparison and Synthesis,Tim 04,P1,draft,topics/research/prompts/p-r02.qmd
+C-R01,research,AI for Literature Research,cases,Sintesis lima paper yang terverifikasi,Tim 03+04,P2,draft,topics/research/cases/c-r01.qmd
+K-W01,writing,AI for Academic Writing,knowledge,Struktur karya ilmiah dan argumentasi,Tim 05,P0,draft,topics/writing/knowledge/k-w01.qmd
+K-W02,writing,AI for Academic Writing,knowledge,"Integritas akademik, sitasi, dan atribusi AI",Tim 06,P0,draft,topics/writing/knowledge/k-w02.qmd
+S-W01,writing,AI for Academic Writing,skills,Membuat outline dari pertanyaan penelitian,Tim 05,P1,draft,topics/writing/skills/s-w01.qmd
+S-W02,writing,AI for Academic Writing,skills,"Revisi paragraf, koherensi, dan argumentasi",Tim 06,P1,draft,topics/writing/skills/s-w02.qmd
+P-W01,writing,AI for Academic Writing,prompts,Academic Outline Coach,Tim 05,P1,draft,topics/writing/prompts/p-w01.qmd
+P-W02,writing,AI for Academic Writing,prompts,Critical Writing Reviewer,Tim 06,P1,draft,topics/writing/prompts/p-w02.qmd
+C-W01,writing,AI for Academic Writing,cases,Revisi draf dengan jejak perbaikan,Tim 05+06,P2,draft,topics/writing/cases/c-w01.qmd
+K-C01,coding-data,AI for Coding & Data Analysis,knowledge,Pemrograman berbantuan AI dan debugging,Tim 07,P0,draft,topics/coding-data/knowledge/k-c01.qmd
+K-C02,coding-data,AI for Coding & Data Analysis,knowledge,"Analisis data, validasi, dan reproduksibilitas",Tim 08,P0,draft,topics/coding-data/knowledge/k-c02.qmd
+S-C01,coding-data,AI for Coding & Data Analysis,skills,Notebook Python dari masalah ke pengujian,Tim 07,P1,draft,topics/coding-data/skills/s-c01.qmd
+S-C02,coding-data,AI for Coding & Data Analysis,skills,Notebook Pandas dan Matplotlib,Tim 08,P1,draft,topics/coding-data/skills/s-c02.qmd
+P-C01,coding-data,AI for Coding & Data Analysis,prompts,Coding Tutor and Debugging Assistant,Tim 07,P1,draft,topics/coding-data/prompts/p-c01.qmd
+P-C02,coding-data,AI for Coding & Data Analysis,prompts,Data Analysis and Result Verification,Tim 08,P1,draft,topics/coding-data/prompts/p-c02.qmd
+C-C01,coding-data,AI for Coding & Data Analysis,cases,Analisis dataset akademik dengan verifikasi,Tim 07+08,P2,draft,topics/coding-data/cases/c-c01.qmd
+K-V01,visualization,AI for Visualization & Presentation,knowledge,Prinsip komunikasi visual ilmiah,Tim 09,P0,draft,topics/visualization/knowledge/k-v01.qmd
+K-V02,visualization,AI for Visualization & Presentation,knowledge,"Presentasi akademik, storytelling, dan TAIDA",Tim 10,P0,draft,topics/visualization/knowledge/k-v02.qmd
+S-V01,visualization,AI for Visualization & Presentation,skills,Diagram konsep dan grafik yang benar,Tim 09,P1,draft,topics/visualization/skills/s-v01.qmd
+S-V02,visualization,AI for Visualization & Presentation,skills,Presentasi akademik lima menit,Tim 10,P1,draft,topics/visualization/skills/s-v02.qmd
+P-V01,visualization,AI for Visualization & Presentation,prompts,Scientific Visual Designer,Tim 09,P1,draft,topics/visualization/prompts/p-v01.qmd
+P-V02,visualization,AI for Visualization & Presentation,prompts,Academic Presentation Coach,Tim 10,P1,draft,topics/visualization/prompts/p-v02.qmd
+C-V01,visualization,AI for Visualization & Presentation,cases,Paper menjadi infografik dan presentasi akurat,Tim 09+10,P2,draft,topics/visualization/cases/c-v01.qmd
+K-P01,problem-solving,AI for Academic Problem Solving,knowledge,Problem framing dan identifikasi kebutuhan,Tim 11,P0,draft,topics/problem-solving/knowledge/k-p01.qmd
+K-P02,problem-solving,AI for Academic Problem Solving,knowledge,"Alternatif solusi, keputusan, dan evaluasi nilai",Tim 12,P0,draft,topics/problem-solving/knowledge/k-p02.qmd
+S-P01,problem-solving,AI for Academic Problem Solving,skills,Analisis masalah berbantuan AI,Tim 11,P1,draft,topics/problem-solving/skills/s-p01.qmd
+S-P02,problem-solving,AI for Academic Problem Solving,skills,"Decision matrix, simulasi, dan risiko",Tim 12,P1,draft,topics/problem-solving/skills/s-p02.qmd
+P-P01,problem-solving,AI for Academic Problem Solving,prompts,Problem Framing and Root Cause Analyst,Tim 11,P1,draft,topics/problem-solving/prompts/p-p01.qmd
+P-P02,problem-solving,AI for Academic Problem Solving,prompts,Solution Critic and Decision Support,Tim 12,P1,draft,topics/problem-solving/prompts/p-p02.qmd
+C-P01,problem-solving,AI for Academic Problem Solving,cases,Solusi untuk masalah nyata kehidupan akademik,Tim 11+12,P2,draft,topics/problem-solving/cases/c-p01.qmd

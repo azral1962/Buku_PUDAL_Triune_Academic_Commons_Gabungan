@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>15&nbsp; Repositori, Portal, dan Workflow Kolaboratif – PUDAL: Navigasi Cerdas, Engine, dan Pembelajaran Adaptif</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./16-evaluasi-dan-agenda-riset.html" rel="next">
+<link href="./14-proyek-uas.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5630e6732664d48c7cde3b526013eeb9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-85797823d13c074f06d599944906f588.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5630e6732664d48c7cde3b526013eeb9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Tidak ada hasil",
+    "search-matching-documents-text": "dokumen cocok",
+    "search-copy-link-title": "Salin tautan untuk mencari",
+    "search-hide-matches-text": "Sembunyikan kecocokan lainnya",
+    "search-more-match-text": "kecocokan lainnya di dokumen ini",
+    "search-more-matches-text": "kecocokan lainnya di dokumen ini",
+    "search-clear-button-title": "Hapus",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Batal",
+    "search-submit-button-title": "Kirim",
+    "search-label": "Mencari"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="tise-six-themes/styles/book.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./12-arsitektur-agen.html">BAGIAN III — IMPLEMENTASI ACADEMIC COMMONS</a></li><li class="breadcrumb-item"><a href="./15-implementasi-teknis.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Repositori, Portal, dan Workflow Kolaboratif</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">PUDAL: Navigasi Cerdas, Engine, dan Pembelajaran Adaptif</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alihkan mode gelap"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Mencari"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prakata</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">BAGIAN I — KERANGKA DASAR</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-pendahuluan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Mengapa Perjalanan dari A ke B?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-taida-triune.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">TAIDA, Komunikasi, dan Triune Intelligence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-empat-artefak.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Empat Jenis Artefak dan Empat Cara Belajar</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">BAGIAN II — ENGINE NAVIGASI PUDAL</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-pudal-dasar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">PUDAL sebagai Siklus Kendali Kecerdasan</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-graf-model-masalah.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Graf Keadaan, Peta Masalah, dan Penemuan Rute</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-tiga-engine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Natural, Instrumental, dan Vehicular Engine</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-energi-kerja-sumberdaya.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Energi, Kerja, dan Ekosistem Sumber Daya</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-lima-pudal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Lima Putaran PUDAL Berjenjang</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-milestone-replanning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Intermediate Goals, Stages, Milestones, dan Replanning</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-learning-exploration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Learning PUDAL dan Penemuan Rute yang Lebih Optimal</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-model-formal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Model Matematis Resource-Aware Navigation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">BAGIAN III — IMPLEMENTASI ACADEMIC COMMONS</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-arsitektur-agen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dari Model PUDAL menuju Arsitektur Agen Akademik</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-enam-learning-paths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Enam Learning Paths Berbasis PUDAL</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-proyek-uas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">UAS sebagai Proyek Triune Academic Commons</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-implementasi-teknis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Repositori, Portal, dan Workflow Kolaboratif</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16-evaluasi-dan-agenda-riset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Evaluasi Kinerja, Validasi, dan Agenda Riset</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">BAGIAN IV — ENAM TEMA KOMPETENSI AKADEMIK TISE</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/00-pengantar-enam-tema.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pengantar Enam Tema Kompetensi Akademik Berbasis TISE</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/01-kerangka-tise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Kerangka Bersama: Rekayasa Perjalanan Tugas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/02-tema1-learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Tema 1 — Learning: Probabilitas Bersyarat dan Bayes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/03-tema2-literature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Tema 2 — Literature Study dan State of the Art Lima Lapisan</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/04-tema3-writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Tema 3 — Academic Writing: Esai Berbasis Gagasan dan Bukti</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/05-tema4-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Tema 4 — Computational and Data Literacy</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/06-tema5-visualisasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Tema 5 — Visualization: Visual Knowledge Engineering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/07-tema6-problem-solving.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tema 6 — Problem Solving: Mahasiswa, Akademik, dan Industri</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/08-implementasi-asesmen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Implementasi Program dan Evaluasi Lintas Tema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/09-template-kerja.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Template Kerja dan Formulir Praktikum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Referensi dan Sumber Pengembangan</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-penutup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Penutup: Sistem Cerdas yang Mencerdaskan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lampiran</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A-register-42-artefak.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Register 42 Artefak</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./B-template-kasus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Templat Case Study PUDAL</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C-glosarium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glosarium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./D-sumber-dan-gambar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Sumber Bahan, Dokumentasi Visual, dan Catatan Editorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./E-penggunaan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">E-penggunaan.html</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tise-six-themes/appendix-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Lampiran: Menjalankan dan Mengembangkan Buku</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#satu-portal-satu-repositori-bersama" id="toc-satu-portal-satu-repositori-bersama" class="nav-link active" data-scroll-target="#satu-portal-satu-repositori-bersama"><span class="header-section-number">15.1</span> Satu portal, satu repositori bersama</a></li>
+  <li><a href="#penomoran-artefak" id="toc-penomoran-artefak" class="nav-link" data-scroll-target="#penomoran-artefak"><span class="header-section-number">15.2</span> Penomoran artefak</a></li>
+  <li><a href="#struktur-folder-repositori-portal" id="toc-struktur-folder-repositori-portal" class="nav-link" data-scroll-target="#struktur-folder-repositori-portal"><span class="header-section-number">15.3</span> Struktur folder repositori portal</a></li>
+  <li><a href="#kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi" id="toc-kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi" class="nav-link" data-scroll-target="#kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi"><span class="header-section-number">15.4</span> Kolaborasi GitHub: dari tugas sampai artefak terverifikasi</a>
+  <ul class="collapse">
+  <li><a href="#memahami-git-github-dan-istilah-dasarnya" id="toc-memahami-git-github-dan-istilah-dasarnya" class="nav-link" data-scroll-target="#memahami-git-github-dan-istilah-dasarnya"><span class="header-section-number">15.4.1</span> Memahami Git, GitHub, dan istilah dasarnya</a></li>
+  <li><a href="#persiapan-akun-repositori-dan-pembagian-peran" id="toc-persiapan-akun-repositori-dan-pembagian-peran" class="nav-link" data-scroll-target="#persiapan-akun-repositori-dan-pembagian-peran"><span class="header-section-number">15.4.2</span> Persiapan akun, repositori, dan pembagian peran</a></li>
+  <li><a href="#merumuskan-pekerjaan-melalui-issue" id="toc-merumuskan-pekerjaan-melalui-issue" class="nav-link" data-scroll-target="#merumuskan-pekerjaan-melalui-issue"><span class="header-section-number">15.4.3</span> Merumuskan pekerjaan melalui Issue</a></li>
+  <li><a href="#jalur-pemula-menyunting-melalui-browser" id="toc-jalur-pemula-menyunting-melalui-browser" class="nav-link" data-scroll-target="#jalur-pemula-menyunting-melalui-browser"><span class="header-section-number">15.4.4</span> Jalur pemula: menyunting melalui browser</a></li>
+  <li><a href="#jalur-github-desktop" id="toc-jalur-github-desktop" class="nav-link" data-scroll-target="#jalur-github-desktop"><span class="header-section-number">15.4.5</span> Jalur GitHub Desktop</a></li>
+  <li><a href="#jalur-lokal-clone-branch-commit-dan-push" id="toc-jalur-lokal-clone-branch-commit-dan-push" class="nav-link" data-scroll-target="#jalur-lokal-clone-branch-commit-dan-push"><span class="header-section-number">15.4.6</span> Jalur lokal: clone, branch, commit, dan push</a></li>
+  <li><a href="#menulis-pull-request-yang-dapat-diperiksa" id="toc-menulis-pull-request-yang-dapat-diperiksa" class="nav-link" data-scroll-target="#menulis-pull-request-yang-dapat-diperiksa"><span class="header-section-number">15.4.7</span> Menulis Pull Request yang dapat diperiksa</a></li>
+  <li><a href="#melakukan-peer-review-revisi-dan-merge" id="toc-melakukan-peer-review-revisi-dan-merge" class="nav-link" data-scroll-target="#melakukan-peer-review-revisi-dan-merge"><span class="header-section-number">15.4.8</span> Melakukan peer review, revisi, dan merge</a></li>
+  <li><a href="#menyinkronkan-pekerjaan-dan-menyelesaikan-konflik" id="toc-menyinkronkan-pekerjaan-dan-menyelesaikan-konflik" class="nav-link" data-scroll-target="#menyinkronkan-pekerjaan-dan-menyelesaikan-konflik"><span class="header-section-number">15.4.9</span> Menyinkronkan pekerjaan dan menyelesaikan konflik</a></li>
+  <li><a href="#menjaga-berkas-data-dan-bukti-kontribusi" id="toc-menjaga-berkas-data-dan-bukti-kontribusi" class="nav-link" data-scroll-target="#menjaga-berkas-data-dan-bukti-kontribusi"><span class="header-section-number">15.4.10</span> Menjaga berkas, data, dan bukti kontribusi</a></li>
+  <li><a href="#latihan-satu-siklus-dan-diagnosis-masalah-umum" id="toc-latihan-satu-siklus-dan-diagnosis-masalah-umum" class="nav-link" data-scroll-target="#latihan-satu-siklus-dan-diagnosis-masalah-umum"><span class="header-section-number">15.4.11</span> Latihan satu siklus dan diagnosis masalah umum</a></li>
+  </ul></li>
+  <li><a href="#panduan-pengguna-portal" id="toc-panduan-pengguna-portal" class="nav-link" data-scroll-target="#panduan-pengguna-portal"><span class="header-section-number">15.5</span> Panduan pengguna portal</a></li>
+  <li><a href="#membangun-dan-menerbitkan-portal-yang-sebenarnya" id="toc-membangun-dan-menerbitkan-portal-yang-sebenarnya" class="nav-link" data-scroll-target="#membangun-dan-menerbitkan-portal-yang-sebenarnya"><span class="header-section-number">15.6</span> Membangun dan menerbitkan portal yang sebenarnya</a>
+  <ul class="collapse">
+  <li><a href="#preview-lengkap-pada-komputer" id="toc-preview-lengkap-pada-komputer" class="nav-link" data-scroll-target="#preview-lengkap-pada-komputer"><span class="header-section-number">15.6.1</span> Preview lengkap pada komputer</a></li>
+  <li><a href="#pemeriksaan-pr-yang-sudah-tersedia" id="toc-pemeriksaan-pr-yang-sudah-tersedia" class="nav-link" data-scroll-target="#pemeriksaan-pr-yang-sudah-tersedia"><span class="header-section-number">15.6.2</span> Pemeriksaan PR yang sudah tersedia</a></li>
+  <li><a href="#publikasi-setelah-merge-ke-main" id="toc-publikasi-setelah-merge-ke-main" class="nav-link" data-scroll-target="#publikasi-setelah-merge-ke-main"><span class="header-section-number">15.6.3</span> Publikasi setelah merge ke main</a></li>
+  <li><a href="#catatan-keadaan-publikasi-saat-pemeriksaan" id="toc-catatan-keadaan-publikasi-saat-pemeriksaan" class="nav-link" data-scroll-target="#catatan-keadaan-publikasi-saat-pemeriksaan"><span class="header-section-number">15.6.4</span> Catatan keadaan publikasi saat pemeriksaan</a></li>
+  <li><a href="#membedakan-portal-proyek-dan-buku-ini" id="toc-membedakan-portal-proyek-dan-buku-ini" class="nav-link" data-scroll-target="#membedakan-portal-proyek-dan-buku-ini"><span class="header-section-number">15.6.5</span> Membedakan portal proyek dan buku ini</a></li>
+  </ul></li>
+  <li><a href="#registri-metadata-dan-perubahan-status" id="toc-registri-metadata-dan-perubahan-status" class="nav-link" data-scroll-target="#registri-metadata-dan-perubahan-status"><span class="header-section-number">15.7</span> Registri, metadata, dan perubahan status</a></li>
+  <li><a href="#memisahkan-sumber-dan-hasil-terbitan" id="toc-memisahkan-sumber-dan-hasil-terbitan" class="nav-link" data-scroll-target="#memisahkan-sumber-dan-hasil-terbitan"><span class="header-section-number">15.8</span> Memisahkan sumber dan hasil terbitan</a></li>
+  <li><a href="#contoh-alur-review-satu-perubahan" id="toc-contoh-alur-review-satu-perubahan" class="nav-link" data-scroll-target="#contoh-alur-review-satu-perubahan"><span class="header-section-number">15.9</span> Contoh alur review satu perubahan</a></li>
+  <li><a href="#pemeriksaan-otomatis-dan-batasnya" id="toc-pemeriksaan-otomatis-dan-batasnya" class="nav-link" data-scroll-target="#pemeriksaan-otomatis-dan-batasnya"><span class="header-section-number">15.10</span> Pemeriksaan otomatis dan batasnya</a></li>
+  <li><a href="#merawat-portal-setelah-tenggat" id="toc-merawat-portal-setelah-tenggat" class="nav-link" data-scroll-target="#merawat-portal-setelah-tenggat"><span class="header-section-number">15.11</span> Merawat portal setelah tenggat</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./12-arsitektur-agen.html">BAGIAN III — IMPLEMENTASI ACADEMIC COMMONS</a></li><li class="breadcrumb-item"><a href="./15-implementasi-teknis.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Repositori, Portal, dan Workflow Kolaboratif</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Repositori, Portal, dan Workflow Kolaboratif</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="satu-portal-satu-repositori-bersama" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="satu-portal-satu-repositori-bersama"><span class="header-section-number">15.1</span> Satu portal, satu repositori bersama</h2>
+<p>Portal proyek disimpan di repositori publik <a href="https://github.com/azral1962/kipp-triune-academic-commons">azral1962/kipp-triune-academic-commons</a>, dengan branch utama <code>main</code>. Repositori ini menjadi sumber bersama untuk beranda portal, enam tema, katalog 42 artefak, enam learning path, panduan proyek, dan otomatisasi penerbitan. Mahasiswa mengerjakan sumber yang tersedia melalui Issue dan Pull Request; forum akademik menggunakan GitHub Discussions.</p>
+<p>Uraian implementasi pada bab ini mengacu pada pemeriksaan <strong>23 November 2026</strong>, terhadap commit <a href="https://github.com/azral1962/kipp-triune-academic-commons/tree/c591a6a2dd1084063b049189d20e34a0ad3dda94"><code>c591a6a</code></a>. Saat diperiksa, seluruh 42 artefak masih berstatus <code>draft</code> dan memiliki penanda <code>[ISI]</code>; enam learning path juga masih berupa kerangka. Karena itu, jumlah berkas menunjukkan kesiapan wadah kerja, belum membuktikan penyelesaian materi akademik. Lingkup pilot, aturan kontribusi, dan keadaan awal dijelaskan dalam <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/README.md">README portal</a>.</p>
+<div id="fig-repository-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-repository-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/repository.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-repository-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;15.1: Contoh struktur portal dan repositori, termasuk penomoran artefak.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="penomoran-artefak" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="penomoran-artefak"><span class="header-section-number">15.2</span> Penomoran artefak</h2>
+<p>Repositori menggunakan dua penanda yang saling melengkapi: <strong>ID tetap</strong>, seperti <code>P-R01</code>, dan <strong>kode hierarkis TT.JJ.NN</strong>, seperti <code>02.03.01</code>. TT menyatakan tema, JJ menyatakan jenis (01 Knowledge, 02 Skills, 03 AI Prompts, 04 Case Studies), dan NN menyatakan urutan. ID tetap dipakai untuk melacak tugas, diskusi, dan kontribusi; kode hierarkis menjelaskan susunan artefak. Keduanya tetap disimpan pada metadata dan registri.</p>
+<p>Contoh nyata adalah <strong>Critical Paper Reader</strong>, milik Tim 03: ID <code>P-R01</code>, kode <code>02.03.01</code>, dan path <code>topics/02-literature-research/03-ai-prompts/02-03-01-p-r01.qmd</code>. ID tersebut tidak diganti menjadi kode numerik. Standar serta aturan pemindahan berkas tersedia pada <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/docs/INDEX-CODING-STANDARD.md">standar indeks repositori</a>.</p>
+</section>
+<section id="struktur-folder-repositori-portal" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="struktur-folder-repositori-portal"><span class="header-section-number">15.3</span> Struktur folder repositori portal</h2>
+<pre class="text"><code>kipp-triune-academic-commons/
+  README.md
+  CONTRIBUTING.md
+  PROJECT_CHARTER.md
+  GOVERNANCE.md
+  QUALITY_GATE.md
+  LICENSE-DECISION.md
+  _quarto.yml
+  index.qmd
+  catalog.qmd
+  ARTIFACT_REGISTER.csv
+  portal/
+    index.html
+    assets/
+      app.js
+      style.css
+  topics/
+    01-ai-learning/
+      01-knowledge/
+      02-skills/
+      03-ai-prompts/
+      04-case-studies/
+    02-literature-research/
+    03-academic-writing/
+    04-coding-data/
+    05-visualization-presentation/
+    06-academic-problem-solving/
+  learning-paths/
+  forum/
+  docs/                     # panduan proyek dan Git/GitHub
+  templates/
+  assessments/
+  governance/
+  datasets/
+  notebooks/
+  visuals/
+  scripts/
+    check_artifacts.py
+    check_portal.py
+    build_catalog.py
+    build_portal.py
+  .github/
+    CODEOWNERS
+    ISSUE_TEMPLATE/
+    pull_request_template.md
+    workflows/
+      validate.yml
+      publish.yml
+  _site/                    # dihasilkan oleh Quarto
+  _public/                  # paket akhir hasil build portal</code></pre>
+<p>Folder tema dan jenis sudah memakai penomoran pada struktur di atas. <code>_site/</code> dan <code>_public/</code> merupakan keluaran build, bukan tempat mahasiswa mengisi materi. Folder <code>agents/</code> belum ada pada versi yang diperiksa; gagasan enam agen pada rancangan proyek tidak boleh dibaca sebagai enam implementasi perangkat lunak yang sudah tersedia.</p>
+<p>Setiap tema memiliki tujuh artefak: dua Knowledge, dua Skills, dua Prompts, dan satu Case Study. Pasangan Tim 01–02 sampai Tim 11–12 mengembangkan enam tema secara berurutan. Pembagian ID, prioritas, dan penanggung jawab dibaca dari <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/ARTIFACT_REGISTER.csv">ARTIFACT_REGISTER.csv</a>; daftar asli dalam buku tetap menjadi jejak historis, sedangkan pekerjaan portal mengikuti registri portal terkini.</p>
+</section>
+<section id="kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="kolaborasi-github-dari-tugas-sampai-artefak-terverifikasi"><span class="header-section-number">15.4</span> Kolaborasi GitHub: dari tugas sampai artefak terverifikasi</h2>
+<div id="fig-github-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-github-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/github.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-github-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;15.2: Panduan penggunaan Git dan GitHub untuk pengembangan serta review artefak.
+</figcaption>
+</figure>
+</div>
+<p><strong>Issue → Branch → Edit dan Uji → Commit → Push → Pull Request → Peer Review lintas tim → Revisi → Merge → Publish.</strong> Issue menyatakan tujuan dan kriteria penerimaan; PR membuktikan perubahan serta pengujian; reviewer memeriksa isi, referensi, dan keterpakaian. Dalam konvensi metadata repositori, hasil yang sudah melewati review serta uji dicatat sebagai <code>reviewed</code>. Istilah <em>terverifikasi</em> pada pembahasan mutu menjelaskan proses pemeriksaan, bukan nilai metadata baru bernama <code>verified</code>.</p>
+<p>Dalam Academic Commons, alur tersebut menghubungkan pekerjaan 12 kelompok dengan mutu 42 artefak. Satu perubahan sebaiknya cukup kecil untuk diperiksa secara utuh. Langkah di bawah menerapkan <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/CONTRIBUTING.md">panduan kontribusi portal</a> dengan contoh <code>P-R01</code>. Nomor Issue pada contoh tetap ilustratif. Panduan mahasiswa yang lebih rinci tersedia di <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/docs/student-workflow.md">docs/student-workflow.md</a>, sedangkan pola branch mengikuti <a href="https://docs.github.com/en/get-started/using-github/github-flow">GitHub flow</a>.</p>
+<section id="memahami-git-github-dan-istilah-dasarnya" class="level3" data-number="15.4.1">
+<h3 data-number="15.4.1" class="anchored" data-anchor-id="memahami-git-github-dan-istilah-dasarnya"><span class="header-section-number">15.4.1</span> Memahami Git, GitHub, dan istilah dasarnya</h3>
+<p><strong>Git</strong> mencatat versi berkas dan riwayat perubahan pada komputer. <strong>GitHub</strong> menyediakan tempat menyimpan repositori secara daring, membahas pekerjaan, meninjau perubahan, dan menerbitkan portal. Menyimpan berkas di komputer belum berarti perubahan tersebut sudah tersedia bagi anggota lain.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Istilah</th>
+<th>Arti praktis dalam proyek</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repository atau repositori</td>
+<td>Wadah sumber portal, artefak, registri, dan riwayat perubahan</td>
+</tr>
+<tr class="even">
+<td>Clone</td>
+<td>Membuat salinan lokal repositori beserta riwayat Git</td>
+</tr>
+<tr class="odd">
+<td>Branch</td>
+<td>Jalur kerja untuk mengembangkan perubahan sebelum digabung</td>
+</tr>
+<tr class="even">
+<td>Commit</td>
+<td>Rekaman perubahan terpilih dengan pesan dan identitas penulis</td>
+</tr>
+<tr class="odd">
+<td>Push</td>
+<td>Mengirim commit lokal ke repositori daring</td>
+</tr>
+<tr class="even">
+<td>Pull</td>
+<td>Mengambil dan mengintegrasikan perubahan dari repositori daring</td>
+</tr>
+<tr class="odd">
+<td>Issue</td>
+<td>Catatan masalah atau tugas, beserta pembahasan dan kriteria penerimaannya</td>
+</tr>
+<tr class="even">
+<td>Pull Request atau PR</td>
+<td>Usulan menggabungkan perubahan antarbranch untuk ditinjau</td>
+</tr>
+<tr class="odd">
+<td>Merge</td>
+<td>Menggabungkan perubahan suatu branch ke branch tujuan</td>
+</tr>
+<tr class="even">
+<td>Fork</td>
+<td>Salinan repositori di akun lain untuk kontribusi tanpa akses tulis ke repositori asal</td>
+</tr>
+</tbody>
+</table>
+<p>Branch utama portal bernama <code>main</code>. Mengunggah berkas, menggabungkan PR, dan menerbitkan portal adalah tiga kejadian berbeda; keberhasilan salah satunya tidak membuktikan dua lainnya berhasil. Discussions digunakan untuk pertanyaan atau pembahasan akademik, Issues untuk pekerjaan konkret, dan PR untuk perubahan berkas yang akan diintegrasikan.</p>
+</section>
+<section id="persiapan-akun-repositori-dan-pembagian-peran" class="level3" data-number="15.4.2">
+<h3 data-number="15.4.2" class="anchored" data-anchor-id="persiapan-akun-repositori-dan-pembagian-peran"><span class="header-section-number">15.4.2</span> Persiapan akun, repositori, dan pembagian peran</h3>
+<p>Gunakan repositori <code>azral1962/kipp-triune-academic-commons</code> yang sudah tersedia. Koordinator mengatur akses anggota, mengisi <code>governance/team-roster.csv</code>, dan mencatat keputusan dalam <code>governance/decision-log.md</code>. <code>PROJECT_CHARTER.md</code> masih ditandai draf dan <code>LICENSE-DECISION.md</code> menyatakan lisensi belum dipilih pada versi yang diperiksa. Pengampu dan perwakilan mahasiswa perlu mengesahkan kesepakatan proyek serta hak publikasi karya.</p>
+<p>Setiap anggota perlu dapat masuk ke GitHub, menerima undangan akses, menemukan repositori, dan membuka Issue. Aktifkan autentikasi dua faktor serta simpan kode pemulihan dengan aman. Jalur lokal memerlukan Git, editor, Python 3.10 atau lebih baru, serta Quarto untuk preview lengkap; workflow CI memakai Python 3.12. GitHub Desktop dapat menjadi pilihan antarmuka grafis. Akses Git melalui HTTPS menggunakan mekanisme kredensial seperti token atau pengelola kredensial; kata sandi akun bukan pengganti token untuk operasi Git. Alternatifnya adalah SSH. Ikuti <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github">dokumentasi autentikasi GitHub</a> sesuai metode yang dipilih.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Peran kerja</th>
+<th>Tanggung jawab utama</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Koordinator repositori</td>
+<td>Mengatur akses, aturan branch, dan penyelesaian hambatan integrasi</td>
+</tr>
+<tr class="even">
+<td>Kontributor</td>
+<td>Mengembangkan sumber, menguji perubahan, dan menanggapi review</td>
+</tr>
+<tr class="odd">
+<td>Reviewer lintas kelompok</td>
+<td>Memeriksa ketepatan isi dan mencoba artefak dari sudut pengguna</td>
+</tr>
+<tr class="even">
+<td>Integrator/pengelola rilis</td>
+<td>Memastikan perubahan yang diterima dapat dibangun dan diterbitkan bersama</td>
+</tr>
+</tbody>
+</table>
+<p>Peran kerja ini tidak otomatis sama dengan nama tingkat izin GitHub. Berikan hak akses sesuai kebutuhan; seluruh anggota tidak perlu menjadi administrator. Kontributor sebaiknya tidak menjadi satu-satunya penilai perubahan sendiri. Sepakati minimal satu reviewer dari luar penyusun artefak sebelum merge.</p>
+<p><code>README.md</code>, <code>CONTRIBUTING.md</code>, <code>GOVERNANCE.md</code>, dan <code>QUALITY_GATE.md</code> sudah tersedia sebagai panduan kerja. Aturan kontribusi menggunakan pola branch <code>tim-XX/ID-deskripsi</code> dan meminta satu reviewer dari tim lain. <code>.github/CODEOWNERS</code> masih berisi contoh akun yang dikomentari; keberadaannya belum berarti reviewer otomatis telah ditetapkan. Pengelola perlu memeriksa akun pemilik, izin, serta kewajiban review pada pengaturan branch. Mekanisme pembatasannya dijelaskan dalam <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches">aturan protected branches</a>.</p>
+</section>
+<section id="merumuskan-pekerjaan-melalui-issue" class="level3" data-number="15.4.3">
+<h3 data-number="15.4.3" class="anchored" data-anchor-id="merumuskan-pekerjaan-melalui-issue"><span class="header-section-number">15.4.3</span> Merumuskan pekerjaan melalui Issue</h3>
+<p>Di repositori, buka <strong>Issues → New issue</strong>. Cari dahulu apakah masalah yang sama sudah dilaporkan. Pilih formulir <strong>Tugas artefak</strong>, yang disediakan dalam <code>.github/ISSUE_TEMPLATE/artifact-task.yml</code>. Formulir meminta ID artefak, tim, sasaran pengguna dan ukuran sukses, serta pekerjaan dan bukti uji. Untuk laporan masalah mutu, tersedia formulir <code>quality-report.yml</code>. Contoh pengisian tugas berikut memakai artefak yang benar-benar tersedia; isi pekerjaan merupakan rancangan latihan.</p>
+<pre class="text"><code>Judul: [P-R01 | 02.03.01] Isi dan uji Critical Paper Reader
+
+Masalah pengguna:
+Mahasiswa memerlukan bantuan membaca paper tanpa menerima sumber karangan AI.
+
+Lingkup perubahan:
+Isi prompt, contoh aktual, pengujian, batasan, dan catatan review.
+
+Lokasi:
+topics/02-literature-research/03-ai-prompts/02-03-01-p-r01.qmd
+
+Kriteria penerimaan:
+- [ ] Tujuan, pengguna, dan bahan masukan prompt dinyatakan.
+- [ ] Dua contoh normal dan satu contoh bermasalah dicoba.
+- [ ] Klaim keluaran diperiksa terhadap paper sumber.
+- [ ] Reviewer lintas tim dan pengguna uji memberi umpan balik.
+- [ ] Halaman dapat dirender dan tautan terkait berfungsi.
+
+Tim penanggung jawab: Tim 03; tetapkan satu anggota koordinator tugas
+Reviewer: anggota dari kelompok lain
+Bukti yang diminta: input-output aktual, sumber, catatan uji, dan hasil render</code></pre>
+<p>Formulir tugas mencantumkan label <code>artifact</code>; pengelola memastikan label tersebut tersedia. Label tambahan, milestone minggu 1–3, dan papan Projects dapat disepakati untuk koordinasi. Jika dipakai, kolom seperti <strong>Direncanakan → Dikerjakan → Direview → Perlu revisi → Diterima</strong> merupakan alat perencanaan tim. Kolom itu tidak otomatis mengubah nilai <code>status</code> pada YAML dan CSV.</p>
+</section>
+<section id="jalur-pemula-menyunting-melalui-browser" class="level3" data-number="15.4.4">
+<h3 data-number="15.4.4" class="anchored" data-anchor-id="jalur-pemula-menyunting-melalui-browser"><span class="header-section-number">15.4.4</span> Jalur pemula: menyunting melalui browser</h3>
+<p>Untuk koreksi teks singkat, anggota yang memiliki akses tulis dapat bekerja tanpa memasang Git lokal:</p>
+<ol type="1">
+<li>Buka repositori dan pastikan branch awal adalah <code>main</code> yang terbaru.</li>
+<li>Buat branch dengan nama yang menjelaskan tugas, misalnya <code>tim-03/P-R01-critical-reader</code>.</li>
+<li>Pada branch tersebut, buka <code>topics/02-literature-research/03-ai-prompts/02-03-01-p-r01.qmd</code> dan pilih penyuntingan. Isi bagian <code>[ISI]</code>, pertahankan metadata, lalu periksa diff, yaitu perbandingan sebelum dan sesudah perubahan.</li>
+<li>Simpan sebagai commit pada branch kerja dengan pesan yang spesifik, misalnya <code>docs(P-R01): isi dan uji Critical Paper Reader</code>.</li>
+<li>Buka PR menuju <code>main</code>, hubungkan Issue, dan minta review. Jika belum siap, gunakan draft PR.</li>
+<li>Jika reviewer meminta revisi, sunting dan commit kembali pada branch yang sama agar PR memuat revisi tersebut.</li>
+</ol>
+<p>Jika tidak memiliki akses tulis, gunakan fork sesuai kebijakan pengelola, lalu ajukan PR dari branch pada fork ke repositori asal. Pemilihan branch sumber dan tujuan dijelaskan dalam <a href="https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request">panduan membuat Pull Request</a>.</p>
+<p>Pratinjau Markdown di GitHub belum membuktikan bahwa sitasi, penomoran gambar, dan navigasi Quarto bekerja. Untuk perubahan melalui browser, minta anggota yang mempunyai lingkungan lokal atau pipeline otomatis melakukan render sebelum PR diterima.</p>
+</section>
+<section id="jalur-github-desktop" class="level3" data-number="15.4.5">
+<h3 data-number="15.4.5" class="anchored" data-anchor-id="jalur-github-desktop"><span class="header-section-number">15.4.5</span> Jalur GitHub Desktop</h3>
+<p>Panduan portal juga menyediakan jalur tanpa perintah terminal. Di GitHub Desktop, pilih <strong>File → Clone repository</strong> untuk repositori proyek, perbarui <code>main</code> melalui <strong>Fetch origin/Pull origin</strong>, lalu buat branch lewat <strong>Current Branch → New Branch</strong>. Sunting <code>.qmd</code> pada editor, periksa perubahan di Desktop, tulis pesan commit, kemudian pilih <strong>Publish branch</strong> atau <strong>Push origin</strong>. Lanjutkan melalui <strong>Preview Pull Request/Create Pull Request</strong>. Revisi tetap dikirim dari branch PR yang sama; render dan pemeriksaan Python dilakukan oleh anggota yang menyiapkan lingkungan lokal.</p>
+</section>
+<section id="jalur-lokal-clone-branch-commit-dan-push" class="level3" data-number="15.4.6">
+<h3 data-number="15.4.6" class="anchored" data-anchor-id="jalur-lokal-clone-branch-commit-dan-push"><span class="header-section-number">15.4.6</span> Jalur lokal: clone, branch, commit, dan push</h3>
+<p>Jalur lokal cocok untuk perubahan banyak berkas, gambar, atau contoh yang perlu dijalankan. Contoh berikut menggunakan terminal PowerShell dan akses tulis ke repositori portal. Jalankan di salinan <strong>repo portal</strong>, yang terpisah dari repo sumber buku ini.</p>
+<p>Tetapkan identitas commit sekali pada komputer yang digunakan. Alamat surel dapat memakai alamat privat <code>noreply</code> yang disediakan dalam pengaturan akun GitHub.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>git config <span class="op">--</span>global user<span class="op">.</span><span class="fu">name</span> <span class="st">"Nama Mahasiswa"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>git config <span class="op">--</span>global user<span class="op">.</span><span class="fu">email</span> <span class="st">"ALAMAT-EMAIL-COMMIT"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>git clone https<span class="op">://</span>github<span class="op">.</span><span class="fu">com</span><span class="op">/</span>azral1962<span class="op">/</span>kipp-triune-academic-commons<span class="op">.</span><span class="fu">git</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cd</span> kipp-triune-academic-commons</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>git status</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>clone</code> cukup dilakukan sekali untuk satu salinan lokal. Pada pekerjaan berikutnya, masuk ke folder repositori yang sudah ada. Sebelum memulai tugas baru, pastikan <code>git status</code> menunjukkan tidak ada perubahan lokal yang belum diselesaikan, kemudian perbarui <code>main</code> dan buat branch:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>git <span class="cf">switch</span> main</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>git pull <span class="op">--</span>ff-only origin main</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>git <span class="cf">switch</span> <span class="op">-</span>c tim-03<span class="op">/</span>P-R01-critical-reader</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Sunting sumber <code>P-R01</code> yang ditunjuk registri. Pertahankan <code>id</code>, <code>index_code</code>, <code>type</code>, <code>theme</code>, <code>owner</code>, dan <code>priority</code>; jelaskan bantuan AI pada <code>ai_usage</code>. Saat artefak belum disetujui, pertahankan <code>status: draft</code>. Setelah menyimpan, jalankan pemeriksaan yang tersedia:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>git status</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>git <span class="fu">diff</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>check_artifacts<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>check_portal<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>build_catalog<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>git <span class="fu">diff</span> <span class="op">--</span> catalog<span class="op">.</span><span class="fu">qmd</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>quarto render</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Periksa halaman hasil di <code>_site/</code>; untuk menguji beranda bersama seluruh materi, ikuti langkah perakitan <code>_public/</code> pada bagian penerbitan. Periksa sumber, contoh keluaran AI, tautan, dan navigasi. Perintah render tidak otomatis menguji kebenaran isi atau kegunaan prompt. Jika satu perintah gagal, perbaiki kegagalannya sebelum menganggap rangkaian pemeriksaan selesai.</p>
+<p>Pilih hanya berkas yang terkait tugas. Untuk contoh <code>P-R01</code>, gunakan path yang benar-benar ada pada repo portal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>git add topics<span class="op">/</span><span class="dv">02</span><span class="op">-</span>literature-research<span class="op">/</span><span class="dv">03</span><span class="op">-</span>ai-prompts<span class="op">/</span><span class="dv">02</span><span class="op">-</span><span class="dv">03</span><span class="op">-</span><span class="dv">01</span><span class="op">-</span>p-r01<span class="op">.</span><span class="fu">qmd</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>git <span class="fu">diff</span> <span class="op">--</span>staged</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>git commit <span class="op">-</span>m <span class="st">"docs(P-R01): isi dan uji Critical Paper Reader"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>git push <span class="op">-</span>u origin tim-03<span class="op">/</span>P-R01-critical-reader</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>git add</code> memilih perubahan yang akan direkam; <code>git diff --staged</code> memeriksa pilihan itu sebelum commit. Jika status atau data registri berubah dengan persetujuan koordinator, sertakan pula <code>ARTIFACT_REGISTER.csv</code> dan hasil pembaruan <code>catalog.qmd</code>. <code>_site/</code> serta <code>_public/</code> dihasilkan ulang untuk penerbitan. <code>push</code> mengirim branch kerja; perubahan belum masuk <code>main</code> sampai PR digabung.</p>
+</section>
+<section id="menulis-pull-request-yang-dapat-diperiksa" class="level3" data-number="15.4.7">
+<h3 data-number="15.4.7" class="anchored" data-anchor-id="menulis-pull-request-yang-dapat-diperiksa"><span class="header-section-number">15.4.7</span> Menulis Pull Request yang dapat diperiksa</h3>
+<p>Di GitHub, pilih <strong>Compare &amp; pull request</strong>, atau buat PR dari menu <strong>Pull requests</strong>. Pastikan <strong>base</strong> adalah <code>main</code> dan <strong>compare</strong> adalah branch kerja. Template <code>.github/pull_request_template.md</code> sudah meminta ID, tim, prioritas, pemeriksaan mutu, temuan, dan tautan terkait. Lengkapi template tersebut dengan bukti yang konkret, misalnya:</p>
+<pre class="text"><code>Artefak: P-R01 | 02.03.01 | Critical Paper Reader
+Tim pembuat: Tim 03
+Prioritas: P1
+
+Masalah dan perubahan:
+Kerangka awal belum memuat contoh penggunaan dan hasil uji.
+PR mengisi prompt, dua uji normal, satu uji bermasalah, dan batasan.
+
+Artefak dan berkas:
+Cantumkan ID registri, path sumber, dan halaman yang terdampak.
+
+Pemeriksaan:
+- [ ] check_artifacts.py dan check_portal.py berhasil.
+- [ ] Katalog diperbarui bila data registri berubah.
+- [ ] Render HTML berhasil; perintah dan versi Quarto dicatat.
+- [ ] Klaim keluaran diperiksa terhadap paper sumber.
+- [ ] Tautan, gambar, sitasi, dan tampilan diperiksa.
+- [ ] Uji pembaca dicatat, termasuk kekurangan yang ditemukan.
+
+Bukti:
+Cantumkan tautan preview atau lokasi catatan hasil uji.
+
+Keterbatasan:
+Tuliskan hal yang belum diuji atau masih membutuhkan tindak lanjut.
+
+Closes #27</code></pre>
+<p>Ganti <code>#27</code> dengan Issue sebenarnya. Kata kunci <code>Closes</code> dapat menutup Issue terkait ketika PR masuk ke branch default; gunakan <code>Refs #27</code> jika PR baru menyelesaikan sebagian pekerjaan. Jangan mencentang pemeriksaan yang belum dijalankan. Bedakan hasil yang diamati dari rencana pengujian.</p>
+</section>
+<section id="melakukan-peer-review-revisi-dan-merge" class="level3" data-number="15.4.8">
+<h3 data-number="15.4.8" class="anchored" data-anchor-id="melakukan-peer-review-revisi-dan-merge"><span class="header-section-number">15.4.8</span> Melakukan peer review, revisi, dan merge</h3>
+<p>Reviewer membaca tujuan Issue, memeriksa <strong>Files changed</strong>, lalu mencoba hasil perubahan. Untuk artefak akademik, gunakan checklist berikut sebagai bukti penerimaan:</p>
+<ul>
+<li><strong>Ketepatan:</strong> konsep, angka, contoh, dan kesimpulan konsisten.</li>
+<li><strong>Sumber:</strong> rujukan dapat ditelusuri dan mendukung klaim yang dibuat.</li>
+<li><strong>Keterpakaian:</strong> langkah dapat diikuti pembaca yang tidak ikut menyusunnya.</li>
+<li><strong>Integrasi:</strong> ID, registri, prasyarat, dan tautan antarartefak sesuai.</li>
+<li><strong>Tampilan:</strong> rumus, tabel, gambar, dan navigasi terbaca pada halaman hasil.</li>
+<li><strong>Integritas:</strong> hak penggunaan materi jelas dan bantuan AI diungkap sesuai ketentuan kelas.</li>
+</ul>
+<p>Komentar review menyebut lokasi, masalah, dan hasil yang diharapkan, misalnya: “Pada contoh keluaran P-R01, simpulan ini belum dirujuk ke bagian paper. Tunjukkan bagian sumber atau tandai klaim sebagai belum terverifikasi.” Pisahkan koreksi yang harus diselesaikan dari saran pengayaan. Gunakan <code>templates/peer-review.md</code> dan <code>templates/user-test.md</code> untuk menyimpan bukti. Kontributor memperbaiki branch yang sama; reviewer memeriksa revisi sebelum menyatakan persetujuan.</p>
+<p>Koordinator melakukan merge setelah kriteria penerimaan, review lintas tim, uji pengguna, dan pemeriksaan yang diwajibkan terpenuhi. Perubahan status mengikuti prosedur YAML–CSV–katalog pada bagian registri. Sesudah merge, perbarui salinan lokal dengan <code>git switch main</code> lalu <code>git pull --ff-only origin main</code>. Catat tautan PR pada bagian peer review artefak dan laporan kontribusi; registri saat ini tidak mempunyai kolom khusus URL PR.</p>
+</section>
+<section id="menyinkronkan-pekerjaan-dan-menyelesaikan-konflik" class="level3" data-number="15.4.9">
+<h3 data-number="15.4.9" class="anchored" data-anchor-id="menyinkronkan-pekerjaan-dan-menyelesaikan-konflik"><span class="header-section-number">15.4.9</span> Menyinkronkan pekerjaan dan menyelesaikan konflik</h3>
+<p>Konflik dapat terjadi ketika dua branch mengubah bagian berkas yang sama. Kurangi risikonya dengan pembagian lingkup, PR berukuran kecil, dan pembaruan dari <code>main</code>. Sebelum sinkronisasi, selesaikan atau simpan perubahan lokal dan periksa <code>git status</code>. Pada branch kerja, integrasikan versi terbaru:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>git <span class="cf">switch</span> tim-03<span class="op">/</span>P-R01-critical-reader</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>git fetch origin</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>git merge origin<span class="op">/</span>main</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Jika Git melaporkan konflik, buka berkas yang disebut oleh <code>git status</code>. Kenali tiga penanda berikut:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Penanda dalam berkas</th>
+<th>Makna pada contoh merge ini</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code></td>
+<td>Awal bagian isi dari branch kerja</td>
+</tr>
+<tr class="even">
+<td><code>=======</code></td>
+<td>Pemisah antara isi branch kerja dan isi dari <code>main</code></td>
+</tr>
+<tr class="odd">
+<td><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main</code></td>
+<td>Akhir bagian isi dari <code>main</code> yang sedang digabungkan</td>
+</tr>
+</tbody>
+</table>
+<p>Diskusikan makna perubahan dengan penyusunnya, susun isi akhir yang benar, lalu hapus seluruh penanda konflik. Jangan sekadar memilih satu sisi jika kedua sisi memuat informasi penting. Setelah itu, pilih berkas yang telah diselesaikan dengan <code>git add NAMA-BERKAS</code>, jalankan render dan pemeriksaan isi, selesaikan merge dengan <code>git commit</code>, lalu <code>git push</code>. Jika perlu membatalkan proses merge yang sedang berkonflik untuk meninjau ulang, gunakan <code>git merge --abort</code>. Langkah teknisnya tersedia dalam <a href="https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-using-the-command-line">panduan penyelesaian konflik GitHub</a>.</p>
+<p>Jika <code>push</code> ditolak karena branch daring telah berubah, ambil dan periksa perubahan rekan sebelum mengintegrasikannya. Hindari <code>push --force</code> pada branch bersama. Untuk keluaran HTML yang berkonflik, selesaikan sumber lebih dahulu lalu render ulang agar hasil mengikuti sumber yang telah disepakati.</p>
+</section>
+<section id="menjaga-berkas-data-dan-bukti-kontribusi" class="level3" data-number="15.4.10">
+<h3 data-number="15.4.10" class="anchored" data-anchor-id="menjaga-berkas-data-dan-bukti-kontribusi"><span class="header-section-number">15.4.10</span> Menjaga berkas, data, dan bukti kontribusi</h3>
+<p>Simpan sumber, gambar yang diperlukan, bibliografi, dan data yang boleh dibagikan. Gunakan <code>.gitignore</code> untuk berkas sementara, lingkungan lokal, atau kredensial seperti <code>.env</code>. Berkas yang sudah dilacak Git tetap terlacak meskipun kemudian dimasukkan ke <code>.gitignore</code>; periksa riwayat dan daftar perubahan sebelum mengunggah.</p>
+<p>Jangan menaruh token, kata sandi, data pribadi mahasiswa, atau dokumen berlisensi terbatas di repositori publik. Jika token terlanjur terbuka, segera cabut atau rotasi token tersebut; menghapusnya dari versi terbaru saja tidak menghapus riwayat. Untuk materi pihak ketiga, catat sumber dan izin penggunaan. Lisensi repositori tidak otomatis memberikan hak atas seluruh materi yang dikutip.</p>
+<p>Kontribusi individu ditunjukkan melalui Issue, commit yang bermakna, review, hasil uji, dan refleksi keputusan. Banyaknya commit bukan ukuran tunggal kualitas. Jika anggota mengerjakan analisis atau uji pengguna secara bersama, catat nama, tugas, serta buktinya dalam PR atau laporan agar pekerjaan yang tidak berupa penulisan berkas tetap terlihat.</p>
+</section>
+<section id="latihan-satu-siklus-dan-diagnosis-masalah-umum" class="level3" data-number="15.4.11">
+<h3 data-number="15.4.11" class="anchored" data-anchor-id="latihan-satu-siklus-dan-diagnosis-masalah-umum"><span class="header-section-number">15.4.11</span> Latihan satu siklus dan diagnosis masalah umum</h3>
+<p>Sebagai latihan awal, setiap anggota memilih satu koreksi kecil, membuka Issue, membuat branch, mengajukan PR, dan memberi review pada PR anggota lain. Latihan selesai setelah koreksi diterima dan tampak pada portal yang diterbitkan. Bukti minimum berupa tautan Issue, PR, catatan review/uji, serta alamat halaman hasil.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gejala</th>
+<th>Pemeriksaan dan tindak lanjut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repositori tidak dapat diakses</td>
+<td>Periksa akun yang aktif, URL, undangan, dan izin akses</td>
+</tr>
+<tr class="even">
+<td>Perubahan tidak terlihat di GitHub</td>
+<td>Periksa apakah berkas sudah disimpan, di-commit, dan di-push ke branch yang benar</td>
+</tr>
+<tr class="odd">
+<td>PR tidak menampilkan perubahan</td>
+<td>Periksa base/compare dan apakah commit sudah ada di branch sumber</td>
+</tr>
+<tr class="even">
+<td>Pemeriksaan otomatis gagal</td>
+<td>Baca log pada tab Actions, perbaiki penyebab, lalu commit revisi</td>
+</tr>
+<tr class="odd">
+<td>PR sudah merge tetapi portal masih lama</td>
+<td>Periksa hasil render, sumber penerbitan Pages, dan status deployment</td>
+</tr>
+<tr class="even">
+<td>Halaman lokal baik tetapi tautan publik rusak</td>
+<td>Periksa huruf besar/kecil nama berkas, path relatif, dan keberadaan aset pada hasil terbitan</td>
+</tr>
+</tbody>
+</table>
+<p>Panduan ini berfokus pada pola kerja yang dapat dipraktikkan. Nama menu, ketersediaan fitur, dan kebijakan akses dapat berubah; periksa dokumentasi resmi yang ditautkan ketika menyiapkan repositori kelas.</p>
+</section>
+</section>
+<section id="panduan-pengguna-portal" class="level2" data-number="15.5">
+<h2 data-number="15.5" class="anchored" data-anchor-id="panduan-pengguna-portal"><span class="header-section-number">15.5</span> Panduan pengguna portal</h2>
+<div id="fig-portal-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-portal-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/portal.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-portal-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;15.3: Navigasi portal akademik untuk memilih tema, menelusuri artefak, dan menjalankan learning path.
+</figcaption>
+</figure>
+</div>
+<p>Beranda bersumber dari <code>portal/index.html</code>. Katalog interaktif pada beranda membaca data registri yang dibentuk saat build, dengan pencarian dan filter tema, prioritas, serta jenis artefak. Tautan katalog membuka materi Quarto pada <code>/learn/topics/.../*.html</code>. Enam learning path tersedia melalui <code>/learn/learning-paths/index.html</code>, dan panduan Git/GitHub melalui <code>/learn/docs/student-workflow.html</code>. Path tersebut berada di bawah akar situs proyek; alamat situs final mengikuti URL yang ditampilkan GitHub Pages.</p>
+<p>Pengguna sebaiknya mulai dari pertanyaan atau kasus, lalu memilih tema dan learning path. Knowledge memberi landasan, Skills memandu praktik, Prompts membantu eksplorasi, dan Cases mengintegrasikan penerapan. Halaman forum memberikan petunjuk; diskusi aktual dilakukan di GitHub Discussions. Berkas di <code>/repository/</code> adalah salinan dokumen sumber untuk diunduh, dibentuk saat build dari repositori yang sama.</p>
+<p>Karena materi masih draf pada versi yang diperiksa, pembaca perlu memperhatikan bagian yang belum terisi sebelum memakai isinya. <code>portal/assets/app.js</code> saat ini menampilkan keterangan katalog “seluruhnya berstatus draf” secara tetap. Ketika status artefak mulai berubah, pengelola perlu menyesuaikan keterangan tersebut dengan data registri agar tampilan tidak tertinggal dari sumber.</p>
+</section>
+<section id="membangun-dan-menerbitkan-portal-yang-sebenarnya" class="level2" data-number="15.6">
+<h2 data-number="15.6" class="anchored" data-anchor-id="membangun-dan-menerbitkan-portal-yang-sebenarnya"><span class="header-section-number">15.6</span> Membangun dan menerbitkan portal yang sebenarnya</h2>
+<p>Portal memakai proyek Quarto <code>website</code> dengan <code>output-dir: _site</code>. Beranda akhir bersumber dari HTML pada <code>portal/</code>; halaman materi dirender dengan Quarto. <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/docs/integration-architecture.md">Arsitektur integrasi portal</a> menghubungkan kedua bagian tersebut melalui perakitan berikut:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tahap</th>
+<th>Sumber atau perintah</th>
+<th>Hasil</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Membentuk katalog Quarto</td>
+<td><code>python scripts/build_catalog.py</code></td>
+<td><code>catalog.qmd</code> dari registri CSV</td>
+</tr>
+<tr class="even">
+<td>Merender materi belajar</td>
+<td><code>quarto render</code></td>
+<td>Halaman HTML di <code>_site/</code></td>
+</tr>
+<tr class="odd">
+<td>Merakit portal terpadu</td>
+<td><code>python scripts/build_portal.py</code></td>
+<td>Paket situs di <code>_public/</code></td>
+</tr>
+<tr class="even">
+<td>Menyediakan beranda dan aset</td>
+<td><code>portal/</code> serta registri CSV</td>
+<td><code>_public/index.html</code>, CSS/JS, <code>assets/artifacts.json</code>, dan <code>assets/artifacts-data.js</code></td>
+</tr>
+<tr class="odd">
+<td>Menyertakan materi dan dokumen</td>
+<td><code>_site/</code> serta dokumen sumber terpilih</td>
+<td><code>_public/learn/</code> dan <code>_public/repository/</code></td>
+</tr>
+<tr class="even">
+<td>Menerbitkan</td>
+<td>Workflow <code>publish.yml</code></td>
+<td>Artefak <code>_public/</code> dikirim ke GitHub Pages</td>
+</tr>
+</tbody>
+</table>
+<section id="preview-lengkap-pada-komputer" class="level3" data-number="15.6.1">
+<h3 data-number="15.6.1" class="anchored" data-anchor-id="preview-lengkap-pada-komputer"><span class="header-section-number">15.6.1</span> Preview lengkap pada komputer</h3>
+<p>Sesudah clone dan memasang prasyarat, jalankan perintah berikut dari akar repo portal. Hentikan rangkaian dan perbaiki masalah jika salah satu pemeriksaan gagal.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>check_artifacts<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>check_portal<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>build_catalog<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>quarto render</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>build_portal<span class="op">.</span><span class="fu">py</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>python <span class="op">-</span>m http<span class="op">.</span><span class="fu">server</span> <span class="dv">8000</span> <span class="op">--</span>directory _public</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Buka <code>http://localhost:8000/</code>, lalu coba katalog, satu artefak, satu learning path, dan satu unduhan dokumen. Hentikan server dengan <code>Ctrl+C</code>. <code>build_portal.py</code> membentuk ulang folder <code>_public/</code>; simpan perubahan pada sumber agar tidak hilang saat build berikutnya. Folder <code>_site/</code> dan <code>_public/</code> tidak perlu di-commit sebagai sumber kontribusi.</p>
+<p>Jika Quarto belum tersedia, <code>python scripts/build_portal.py --allow-missing-quarto</code> dapat dipakai untuk preview terbatas beranda. Tanpa hasil render Quarto yang valid, materi belajar belum tersedia lengkap. Mode tersebut bukan bukti bahwa paket siap dipublikasikan.</p>
+</section>
+<section id="pemeriksaan-pr-yang-sudah-tersedia" class="level3" data-number="15.6.2">
+<h3 data-number="15.6.2" class="anchored" data-anchor-id="pemeriksaan-pr-yang-sudah-tersedia"><span class="header-section-number">15.6.2</span> Pemeriksaan PR yang sudah tersedia</h3>
+<p>Workflow <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/.github/workflows/validate.yml">.github/workflows/validate.yml</a>, bernama <strong>Validate source artifacts</strong>, berjalan pada <code>push</code> dan <code>pull_request</code>. Workflow menggunakan Python 3.12 untuk:</p>
+<ol type="1">
+<li>Menjalankan <code>scripts/check_artifacts.py</code> terhadap struktur dan metadata artefak.</li>
+<li>Menjalankan <code>scripts/build_catalog.py</code>, lalu <code>git diff --exit-code -- catalog.qmd</code> untuk memastikan katalog yang di-commit sesuai registri.</li>
+<li>Menjalankan <code>scripts/check_portal.py</code> untuk memeriksa pengikatan data katalog dan path sumber portal.</li>
+</ol>
+<p>Workflow PR tersebut <strong>belum menjalankan <code>quarto render</code></strong>. Karena itu, status pemeriksaan berhasil belum membuktikan seluruh halaman dapat dirender atau tampil dengan benar. Penulis atau koordinator perlu memberikan bukti render lokal sebelum merge. Penambahan render ke pemeriksaan PR dapat menjadi pengembangan berikutnya; fitur itu belum menjadi perilaku workflow saat bab ini diperbarui.</p>
+</section>
+<section id="publikasi-setelah-merge-ke-main" class="level3" data-number="15.6.3">
+<h3 data-number="15.6.3" class="anchored" data-anchor-id="publikasi-setelah-merge-ke-main"><span class="header-section-number">15.6.3</span> Publikasi setelah merge ke main</h3>
+<p>Workflow <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/.github/workflows/publish.yml">.github/workflows/publish.yml</a>, bernama <strong>Publish unified KIPP portal</strong>, berjalan pada <code>push</code> ke <code>main</code> dan dapat dijalankan manual melalui <code>workflow_dispatch</code>. Job <code>build</code> menyiapkan Python dan Quarto, memvalidasi artefak, membentuk katalog, menjalankan <code>quarto render</code>, lalu merakit <code>_public/</code>. Setelah konfigurasi Pages berhasil, folder <code>_public/</code> diunggah sebagai artefak. Job <code>deploy</code> menerbitkannya melalui lingkungan <code>github-pages</code>.</p>
+<p>Koordinator perlu mengatur <strong>Settings → Pages → Build and deployment → Source → GitHub Actions</strong> sesuai rancangan ini. Pilihan branch dengan folder <code>/docs</code> tidak mengikuti alur build portal yang tersedia. Pengaturan sumber Pages dijelaskan dalam <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">dokumentasi GitHub Pages</a>; integrasi Quarto tersedia pada <a href="https://quarto.org/docs/publishing/github-pages.html">panduan Quarto untuk GitHub Pages</a>.</p>
+<p>Sesudah merge, periksa workflow bernama <strong>Publish unified KIPP portal</strong>, keberhasilan job <code>deploy</code>, URL keluaran, dan isi halaman publik. Periksa beranda serta satu halaman <code>/learn/</code>; keberhasilan beranda saja belum membuktikan materi Quarto ikut terbit.</p>
+</section>
+<section id="catatan-keadaan-publikasi-saat-pemeriksaan" class="level3" data-number="15.6.4">
+<h3 data-number="15.6.4" class="anchored" data-anchor-id="catatan-keadaan-publikasi-saat-pemeriksaan"><span class="header-section-number">15.6.4</span> Catatan keadaan publikasi saat pemeriksaan</h3>
+<p>Riwayat Actions yang tersedia pada 23 November 2026 memuat tiga proses dari commit yang diperiksa:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Proses pada 17 November 2026</th>
+<th>Hasil tercatat</th>
+<th>Makna pemeriksaan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/azral1962/kipp-triune-academic-commons/actions/runs/44003700715">Validate source artifacts</a></td>
+<td>Berhasil</td>
+<td>Pemeriksaan struktur, katalog, dan pengikatan portal lulus</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/azral1962/kipp-triune-academic-commons/actions/runs/44003700872">Publish unified KIPP portal</a></td>
+<td>Gagal</td>
+<td>Validasi, render, dan perakitan berhasil; <code>actions/configure-pages</code> gagal dengan pesan <code>Not Found</code>, sehingga deploy terpadu tidak dijalankan</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/azral1962/kipp-triune-academic-commons/actions/runs/44004372496">pages build and deployment</a></td>
+<td>Berhasil</td>
+<td>Proses Pages lain berhasil sesudahnya; hasil ini tidak membuktikan workflow publikasi terpadu sudah berhasil dijalankan ulang</td>
+</tr>
+</tbody>
+</table>
+<p>Pesan kegagalan meminta pemeriksaan apakah Pages sudah aktif dan menggunakan GitHub Actions. Tindak lanjut koordinator adalah memeriksa pengaturan Pages, menjalankan ulang workflow publikasi terpadu setelah konfigurasi sesuai, lalu memeriksa hasil publik. Catatan ini merekam keadaan saat pemeriksaan, bukan menyatakan bahwa situs pasti masih gagal atau konfigurasi sekarang sudah benar.</p>
+</section>
+<section id="membedakan-portal-proyek-dan-buku-ini" class="level3" data-number="15.6.5">
+<h3 data-number="15.6.5" class="anchored" data-anchor-id="membedakan-portal-proyek-dan-buku-ini"><span class="header-section-number">15.6.5</span> Membedakan portal proyek dan buku ini</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek</th>
+<th>Repo portal proyek</th>
+<th>Repo buku gabungan ini</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jenis Quarto</td>
+<td><code>website</code></td>
+<td><code>book</code></td>
+</tr>
+<tr class="even">
+<td>Hasil render</td>
+<td><code>_site/</code></td>
+<td><code>docs/</code></td>
+</tr>
+<tr class="odd">
+<td>Paket situs akhir</td>
+<td><code>_public/</code>, dirakit oleh skrip</td>
+<td>Hasil buku berada di <code>docs/</code></td>
+</tr>
+<tr class="even">
+<td>Fungsi folder <code>docs/</code></td>
+<td>Panduan dan dokumentasi sumber portal</td>
+<td>Hasil render HTML buku</td>
+</tr>
+<tr class="odd">
+<td>Sumber perubahan kontribusi</td>
+<td>Artefak di <code>topics/</code> dan sumber portal terkait</td>
+<td>Bab dan lampiran <code>.qmd</code> buku</td>
+</tr>
+</tbody>
+</table>
+<p>Contoh Git pada bab ini ditujukan ke repo portal. Perubahan naskah buku tetap dilakukan pada repo buku, kemudian dirender dengan konfigurasi buku. Pemisahan konteks ini mencegah mahasiswa mencari <code>15-implementasi-teknis.qmd</code> di repo portal atau menganggap <code>docs/</code> portal sebagai hasil render.</p>
+</section>
+</section>
+<section id="registri-metadata-dan-perubahan-status" class="level2" data-number="15.7">
+<h2 data-number="15.7" class="anchored" data-anchor-id="registri-metadata-dan-perubahan-status"><span class="header-section-number">15.7</span> Registri, metadata, dan perubahan status</h2>
+<p><code>ARTIFACT_REGISTER.csv</code> merupakan sumber utama katalog. Kolomnya adalah <code>id</code>, <code>theme_slug</code>, <code>theme_title</code>, <code>type</code>, <code>title</code>, <code>owner</code>, <code>priority</code>, <code>status</code>, <code>file</code>, <code>index_code</code>, <code>theme_code</code>, dan <code>artifact_type_code</code>. Nilai prioritas awal adalah P0 untuk Knowledge, P1 untuk Skills dan Prompts, serta P2 untuk Cases. Prioritas membantu mengatur urutan kerja; prioritas tidak menyatakan bahwa materi telah selesai.</p>
+<p>Setiap artefak memiliki metadata yang harus konsisten dengan registri. Contoh awal nyata pada <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/topics/02-literature-research/03-ai-prompts/02-03-01-p-r01.qmd">P-R01</a>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Critical Paper Reader"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">id</span><span class="kw">:</span><span class="at"> </span><span class="st">"P-R01"</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">index_code</span><span class="kw">:</span><span class="at"> </span><span class="st">"02.03.01"</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> </span><span class="st">"prompts"</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="st">"research"</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">owner</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tim 03"</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="fu">priority</span><span class="kw">:</span><span class="at"> P1</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">status</span><span class="kw">:</span><span class="at"> draft</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ai_usage</span><span class="kw">:</span><span class="at"> </span><span class="st">"Belum diisi; wajib dijelaskan sebelum review"</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/docs/change-status.md">Panduan perubahan status</a> menetapkan konvensi berikut. Makna kerja di tabel menjelaskan penerapannya bersama aturan kontribusi dan quality gate.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nilai metadata</th>
+<th>Penggunaan dalam proses</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>draft</code></td>
+<td>Isi awal atau pekerjaan yang belum memenuhi kriteria penerimaan</td>
+</tr>
+<tr class="even">
+<td><code>in-review</code></td>
+<td>Sedang diajukan untuk peninjauan</td>
+</tr>
+<tr class="odd">
+<td><code>needs-revision</code></td>
+<td>Memerlukan perbaikan berdasarkan temuan review atau uji</td>
+</tr>
+<tr class="even">
+<td><code>reviewed</code></td>
+<td>Bukti review lintas tim, uji pengguna, dan tindak lanjut telah dicatat serta disetujui</td>
+</tr>
+</tbody>
+</table>
+<p>Sesudah penerimaan disetujui, ubah status pada <strong>YAML artefak dan baris CSV dengan ID yang sama</strong>, melalui koordinasi pengelola registri. Jalankan <code>python scripts/check_artifacts.py</code> dan <code>python scripts/build_catalog.py</code>, periksa diff, lalu sertakan artefak, CSV, dan <code>catalog.qmd</code> yang berubah dalam PR. Jika kontributor belum berwenang mengubah registri, minta koordinator menyiapkan perubahan tersebut pada proses review. Jangan menambahkan kolom baru atau mengganti ID untuk memperbarui status.</p>
+<p>Nilai <code>reviewed</code> menyatakan penerimaan prosedur internal pilot, bukan sertifikasi kebenaran ilmiah. Bukti uji dan komentar reviewer disimpan pada bagian artefak serta PR, bukan digantikan oleh status saja. README memakai istilah umum “Verified”; untuk nilai yang ditulis ke YAML dan CSV, ikuti <code>docs/change-status.md</code> dan <code>CONTRIBUTING.md</code> agar konsisten.</p>
+</section>
+<section id="memisahkan-sumber-dan-hasil-terbitan" class="level2" data-number="15.8">
+<h2 data-number="15.8" class="anchored" data-anchor-id="memisahkan-sumber-dan-hasil-terbitan"><span class="header-section-number">15.8</span> Memisahkan sumber dan hasil terbitan</h2>
+<p>Sumber <code>.qmd</code>, gambar, referensi, dan data yang boleh dibagikan merupakan input penerbitan. Pada repo portal, <code>catalog.qmd</code> dibentuk dari CSV, halaman Quarto di <code>_site/</code> dibentuk dari sumber, dan <code>_public/</code> dirakit untuk publikasi. Perbaiki sumber lalu jalankan generator yang sesuai agar perubahan tidak hilang pada build berikutnya. Pada repo buku ini, hasil render berada di <code>docs/</code>; struktur proyek buku dijelaskan dalam dokumentasi Quarto <span class="citation" data-cites="quarto-book">(<a href="#ref-quarto-book" role="doc-biblioref">Quarto Project, t.t.</a>)</span>.</p>
+<p>Simpan informasi lingkungan yang cukup untuk menjalankan contoh: bahasa, dependensi, versi penting, dan cara memperoleh data. Contoh yang hanya ilustratif diberi penanda tidak dieksekusi; contoh yang disebut telah diuji perlu benar-benar dijalankan pada input yang dicatat. Praktik ini membantu membedakan materi pengantar dari hasil komputasi yang dapat direproduksi <span class="citation" data-cites="wilson2017">(<a href="#ref-wilson2017" role="doc-biblioref">Wilson dkk. 2017</a>)</span>.</p>
+</section>
+<section id="contoh-alur-review-satu-perubahan" class="level2" data-number="15.9">
+<h2 data-number="15.9" class="anchored" data-anchor-id="contoh-alur-review-satu-perubahan"><span class="header-section-number">15.9</span> Contoh alur review satu perubahan</h2>
+<p>Sebagai simulasi, Tim 03 mengisi artefak <code>P-R01 — Critical Paper Reader</code>. Issue menetapkan bahwa prompt harus membantu membaca paper tanpa mengarang sumber. Kontributor mengisi kerangka pada branch <code>tim-03/P-R01-critical-reader</code>, mencoba dua masukan normal dan satu masukan bermasalah, lalu menyimpan input-output aktual serta hasil pemeriksaan terhadap sumber paper. Artefak tetap berstatus <code>draft</code> selama bukti penerimaan belum lengkap.</p>
+<p>Reviewer dari tim lain mencoba prompt dan menandai klaim yang tidak didukung paper. Kontributor merevisi instruksi, mengulang contoh yang gagal, dan memperbarui catatan uji. Sesudah kriteria <code>QUALITY_GATE.md</code> terpenuhi, perubahan status dikoordinasikan pada YAML dan CSV, katalog dibentuk ulang, dan bukti dicantumkan dalam PR. Koordinator memeriksa hasil CI, bukti render, dan persetujuan review sebelum merge.</p>
+<p>Workflow publikasi kemudian membangun <code>_site/</code>, merakit <code>_public/</code>, dan mencoba deploy ke Pages. Pengelola memeriksa keluaran publik serta halaman artefak. Simulasi ini menunjukkan proses yang perlu dijalankan mahasiswa; contoh ini bukan klaim bahwa P-R01 sudah terisi atau telah lulus review pada commit yang diperiksa.</p>
+</section>
+<section id="pemeriksaan-otomatis-dan-batasnya" class="level2" data-number="15.10">
+<h2 data-number="15.10" class="anchored" data-anchor-id="pemeriksaan-otomatis-dan-batasnya"><span class="header-section-number">15.10</span> Pemeriksaan otomatis dan batasnya</h2>
+<p>Pemeriksaan yang sudah tersedia mempunyai lingkup tertentu. <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/scripts/check_artifacts.py">check_artifacts.py</a> memeriksa jumlah 42 entri, keunikan ID, keberadaan berkas, kesesuaian metadata tertentu dengan CSV, bentuk kode hierarkis dan nama berkas, tautan dari indeks tema serta learning path, dan keberadaan judul bagian wajib. <a href="https://github.com/azral1962/kipp-triune-academic-commons/blob/main/scripts/check_portal.py">check_portal.py</a> memeriksa berkas portal, penyertaan aset manifest, pola tautan menuju materi Quarto, dan keberadaan path artefak.</p>
+<p>Kedua skrip tersebut bukan pemeriksaan menyeluruh semua tautan situs atau seluruh aturan metadata. Keduanya juga tidak membuktikan bahwa penanda <code>[ISI]</code> sudah dilengkapi, sitasi mendukung klaim, prompt menghasilkan jawaban benar, atau pengguna dapat mengikuti tutorial. Hal ini menjelaskan mengapa pemeriksaan struktur dapat lulus ketika semua artefak masih draf. Pemeriksaan substansi tetap menggunakan <code>QUALITY_GATE.md</code>, review lintas tim, dan uji pengguna.</p>
+<p>Pisahkan tiga bukti: <strong>struktur valid</strong>, <strong>materi diterima</strong>, dan <strong>publikasi berhasil</strong>. Status CI PR hanya mendukung bukti yang benar-benar diuji; persetujuan manusia harus didukung catatan review; deployment harus dibuktikan dengan hasil workflow dan halaman publik. Untuk penilaian, catat commit atau versi yang dipakai bersama tautan PR dan hasil uji agar karya dapat ditelusuri pada keadaan yang sama.</p>
+</section>
+<section id="merawat-portal-setelah-tenggat" class="level2" data-number="15.11">
+<h2 data-number="15.11" class="anchored" data-anchor-id="merawat-portal-setelah-tenggat"><span class="header-section-number">15.11</span> Merawat portal setelah tenggat</h2>
+<p>Tentukan pemilik pemeliharaan, cara melaporkan kesalahan, dan masa tinjau sumber yang mudah berubah. Tutorial layanan daring lebih cepat kedaluwarsa daripada penjelasan dasar probabilitas. Penandaan tanggal pemeriksaan membantu pengguna menilai apakah langkah teknis masih sesuai. Jika suatu materi perlu diarsipkan, catat keputusan dan alasannya tanpa menghapus sejarah. Penambahan nilai status metadata untuk arsip memerlukan kesepakatan baru; konvensi saat ini tetap memakai empat nilai pada panduan perubahan status.</p>
+<p>Sebagai latihan, pilih satu artefak dan lakukan audit dari registri sampai halaman hasil. Periksa identitas, lokasi, sumber, tampilan, serta bukti penerimaan. Lalu simulasikan pemindahan file dan jelaskan apa yang perlu diperbarui. Tujuannya agar struktur repositori mendukung pengguna dan reviewer, bukan hanya terlihat teratur bagi penyusunnya.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-quarto-book" class="csl-entry" role="listitem">
+Quarto Project. t.t. <em>Creating a Book</em>. Diakses 22 November 2026. <a href="https://quarto.org/docs/books/">https://quarto.org/docs/books/</a>.
+</div>
+<div id="ref-wilson2017" class="csl-entry" role="listitem">
+Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, dan Tracy K. Teal. 2017. <span>“Good Enough Practices in Scientific Computing.”</span> <em>PLOS Computational Biology</em> 13 (6): e1005510. <a href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Disalin!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Disalin!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./14-proyek-uas.html" class="pagination-link" aria-label="UAS sebagai Proyek Triune Academic Commons">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">UAS sebagai Proyek Triune Academic Commons</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./16-evaluasi-dan-agenda-riset.html" class="pagination-link" aria-label="Evaluasi Kinerja, Validasi, dan Agenda Riset">
+        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Evaluasi Kinerja, Validasi, dan Agenda Riset</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,163 @@
+---
+title: "UAS KIPP 2026 — Misi 21 Hari: Membangun Triune Academic Commons"
+subtitle: "Dari belajar komunikasi menjadi menciptakan karya akademik yang berguna bersama"
+author: "Tim Pengampu II2100 — Draf untuk musyawarah kelas"
+lang: id
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
+status: "Usulan petunjuk UAS — menunggu pengesahan dosen"
+---
+
+# Surat tantangan untuk mahasiswa
+
+**Bayangkan jika setiap kali mengerjakan tugas kuliah, Anda tidak perlu memulai dari nol.** Anda dapat menemukan penjelasan konsep yang baik, tutorial yang sudah dicoba, prompt AI yang telah diuji, kode yang bisa dijalankan, dan contoh pemecahan masalah—semuanya karya mahasiswa, diperiksa mahasiswa lain, dan terus disempurnakan.
+
+**Itulah yang akan kita bangun bersama dalam Ujian Akhir Semester KIPP.** Bukan sekadar mengumpulkan tugas untuk mendapatkan nilai, melainkan meninggalkan sesuatu yang dapat digunakan orang lain setelah semester berakhir.
+
+> **Tantangan UAS:** Dalam tiga minggu, 60+ mahasiswa melalui 12 kelompok membangun **KIPP Triune Academic Commons: AI for Academic Work**—satu portal sumber belajar dengan **enam paket agen AI akademik**, **enam Learning Paths berbasis PUDAL**, dan **42 artefak pendukung**.
+
+Paket agen pada tahap ini boleh berupa **prototipe berbasis prompt, workflow, dan demonstrasi terpandu**. Tidak wajib membuat agen otonom, model AI baru, atau aplikasi berbayar.
+
+# T — Target: Siapa yang kita bantu dan perubahan apa yang kita inginkan?
+
+**Sasaran pengguna:** terutama mahasiswa yang sedang mengerjakan tugas akademik; juga rekan satu kelas, mahasiswa angkatan berikutnya, dan dosen yang ingin memakai sumber belajar berkualitas.
+
+**Sasaran perubahan:** dari mahasiswa yang sekadar mengonsumsi jawaban AI menjadi mahasiswa yang **memahami, mampu mengerjakan, mampu mengarahkan AI, dapat menyelesaikan masalah, serta mampu membagikan pengetahuan dan keterampilannya kepada orang lain**.
+
+UAS ini mengukur kompetensi komunikasi KIPP: mendengar kebutuhan, menjelaskan secara jernih, membangun kepercayaan, bernegosiasi dalam tim, menarik minat pengguna, mengajak bertindak, dan mempertanggungjawabkan hasil.
+
+# A — Attention: Mengapa proyek ini layak dikerjakan?
+
+Setiap semester kita menghasilkan catatan, tugas, kode, presentasi, dan pemecahan masalah. Sering kali karya itu berhenti ketika penilaian selesai. **Bagaimana jika karya Anda justru menjadi alat belajar bagi ratusan mahasiswa berikutnya?**
+
+Di sini setiap mahasiswa menjadi **pembelajar, pengajar, pembuat alat, rekan penelaah, dan pencipta nilai**. Keberhasilan tidak diukur hanya dari banyaknya berkas, melainkan dari apakah pengguna lain benar-benar dapat belajar dan menyelesaikan tugas dengan bantuan karya Anda.
+
+# I — Interest: Apa yang akan kita bangun?
+
+## Enam tema, enam Learning Paths, enam paket agen AI
+
+| Tema / kelompok | Agen dan Learning Path | Demonstrasi Case Study |
+|---|---|---|
+| **01** · Tim 01–02 | **Learning Agent**: belajar memahami konsep, berlatih, menguji miskonsepsi | Mempelajari Teorema Bayes dan mengukur pemahaman |
+| **02** · Tim 03–04 | **Research Agent**: menelusuri dan mensintesis literatur | Sintesis lima paper ilmiah terverifikasi |
+| **03** · Tim 05–06 | **Writing Agent**: membangun argumen dan merevisi tulisan | Memperbaiki esai ilmiah tentang etika AI |
+| **04** · Tim 07–08 | **Coding & Data Agent**: memprogram dan menganalisis data | Notebook analisis dataset akademik |
+| **05** · Tim 09–10 | **Visualization Agent**: memvisualisasikan dan mempresentasikan | Mengubah paper menjadi infografik dan presentasi |
+| **06** · Tim 11–12 | **Problem-Solving Agent**: membingkai masalah dan mengevaluasi solusi | Rancangan perbaikan layanan akademik |
+
+Setiap tema menghasilkan **2 Knowledge + 2 Skills + 2 Prompts + 1 Case Study = 7 artefak**. Enam tema menghasilkan **42 artefak**, didukung satu Learning Path PUDAL per tema dan spesifikasi agen sebagai pengikat.
+
+## Empat cara belajar yang akan dipraktikkan
+
+1. **Learning by Teaching → Knowledge.** Pelajari konsep, jelaskan dengan bahasa sendiri, ajarkan kepada teman, dan perbaiki penjelasan berdasarkan pertanyaannya.
+2. **Learning by Doing → Skills.** Kerjakan prosedur, gunakan alat, uji contoh, dokumentasikan kesalahan dan cara mengatasinya.
+3. **Learning by Instructing → Prompts.** Rancang instruksi AI yang terarah, terukur, memiliki batasan dan bisa diperiksa; uji pada beberapa masukan.
+4. **Learning by Demonstrating Problem Solving → Cases.** Demonstrasikan bagaimana pengetahuan, keterampilan, dan prompt bersama-sama menghasilkan solusi untuk kasus nyata.
+
+## PUDAL: mesin setiap Learning Path
+
+| Tahap | Pertanyaan pemandu | Bukti dalam Case Study |
+|---|---|---|
+| **P — Perceive** | Masalah apa yang sesungguhnya dihadapi pengguna? | Fakta, kebutuhan, kondisi awal, batasan |
+| **U — Understand** | Konsep dan pengetahuan apa yang menjelaskan situasi itu? | Penjelasan dan rujukan ke Knowledge |
+| **D — Decide** | Alternatif apa yang tersedia dan mengapa suatu pilihan diambil? | Kriteria, perbandingan, catatan keputusan |
+| **A — Act** | Langkah, skill, tool dan prompt apa yang dijalankan? | Prosedur, hasil nyata, kode/visual/dokumen |
+| **L — Learn** | Apa yang berhasil, gagal, dan perlu diperbaiki? | Uji, umpan balik, revisi Knowledge, Skills, prompt, atau strategi keputusan |
+
+**Kasus bukan sekadar ujian di akhir.** Kasus dikenalkan sejak awal sebagai persoalan yang memicu Perceive, menjadi landasan keputusan, memandu tindakan, dan akhirnya menyediakan bukti untuk Learn. Siklus dapat berulang jika hasil belum memadai.
+
+# D — Desire: Apa manfaat yang akan Anda peroleh?
+
+**Untuk diri sendiri:** Anda memiliki bukti keterampilan yang nyata, kemampuan berkomunikasi, pengalaman bekerja dengan Git/GitHub, dan portofolio yang dapat diperlihatkan serta dijelaskan.
+
+**Untuk tim:** Anda belajar membagi pekerjaan, menerima kritik, memecahkan kebuntuan, menjaga kesepakatan, dan meningkatkan kualitas karya bersama.
+
+**Untuk komunitas:** Anda menyumbangkan sumber belajar yang dapat dipakai ulang dan diperbaiki oleh mahasiswa angkatan berikutnya.
+
+**Untuk penggunaan AI yang lebih matang:** Anda bukan hanya pengguna prompt, melainkan perancang proses kerja manusia–AI yang dapat diuji, dibatasi, dan dipertanggungjawabkan.
+
+**Target yang patut dibanggakan:** pengguna di luar tim pembuat berhasil mengikuti satu Learning Path dan menyelesaikan Case Study dengan bukti pemahaman, bukan sekadar menyalin keluaran AI.
+
+# A — Action: Bagaimana mengerjakannya?
+
+## Pembagian tanggung jawab
+
+Dua tim (masing-masing sekitar 5–6 mahasiswa) mengelola satu tema. **Setiap tim menghasilkan tiga artefak utama**: satu Knowledge, satu Skill, dan satu Prompt. **Dua tim bersama** mengintegrasikannya ke dalam satu Learning Path PUDAL dan satu Case Study.
+
+Di dalam tim, tetapkan koordinator, kurator pengetahuan, demonstrator skill, perancang prompt, reviewer/QA, dan integrator/pengelola publikasi. Peran dapat dirangkap atau dirotasi. Semua anggota harus memperlihatkan kontribusi pribadi, bukan hanya tercantum sebagai anggota kelompok.
+
+## Rencana 21 hari
+
+| Periode | Fokus | Tonggak bukti |
+|---|---|---|
+| **Minggu 1 — Temukan & pahami** | Wawancarai calon pengguna; pilih kasus; rumuskan kondisi awal; buat Knowledge dan rancangan PUDAL | Project brief, daftar Issue, dua modul Knowledge per tema, rancangan Learning Path |
+| **Minggu 2 — Buat & instruksikan** | Latih Skills; rancang dan uji Prompts; praktikkan keputusan dan tindakan; lakukan review awal | Dua Skills dan dua Prompts per tema, contoh uji, Pull Request dan umpan balik |
+| **Minggu 3 — Demonstrasikan & pelajari** | Jalankan Case Study; minta pengguna di luar tim menguji; revisi; integrasikan dan tampilkan karya | Satu Case Study per tema, minimal satu iterasi evaluasi, demo, portofolio individual |
+
+## Cara bekerja melalui GitHub
+
+1. **Pilih tugas** dari `ARTIFACT_REGISTER.csv`; catat kode indeks (`TT.JJ.NN`), prioritas, PIC, dan hasil yang diharapkan.
+2. **Buka GitHub Issue** untuk mendokumentasikan tugas atau masalah.
+3. **Buat branch** (`tim-XX/kode-artefak-deskripsi`) dan isi berkas `.qmd` sesuai template.
+4. **Commit & push** perubahan, berikut rujukan, contoh, dan catatan penggunaan AI.
+5. **Buat Pull Request** dan minta review dari mahasiswa tim lain.
+6. **Uji, diskusikan, dan revisi** sampai memenuhi Quality Gate.
+7. **Merge** setelah disetujui; konten sumber menjadi bagian dari website setelah pipeline publikasi diaktifkan.
+
+Cara melalui browser GitHub, GitHub Desktop, atau terminal semuanya diperbolehkan. Ikuti `docs/student-workflow.md` di repositori. **Jangan mengubah langsung folder `_public/`** karena merupakan keluaran build.
+
+## Produk yang wajib diserahkan
+
+**Per tim (3 artefak):**
+- Satu Knowledge berisi konsep yang benar, penjelasan yang dapat diajarkan, referensi dan pertanyaan pemahaman.
+- Satu Skill berisi prosedur langkah demi langkah, demonstrasi yang dapat diulang, dan pengujian.
+- Satu Prompt berisi tujuan, konteks, aturan, batasan, contoh input/output, dan hasil uji pada beberapa situasi.
+
+**Per pasangan tim (1 tema):**
+- Satu **Learning Path PUDAL** yang menautkan semua artefak dan menunjukkan prasyarat, alur pembelajaran, serta asesmen.
+- Satu **Case Study integratif** lengkap dengan Perceive, Understand, Decide, Act, Learn; bukti tindakan; hasil dan evaluasi.
+- Satu **Agent Package** minimal berisi misi agen, batas kewenangan, cara menjalankan prompt/workflow, referensi artefak, dan skenario uji. Prototipe berbasis prompt diperbolehkan.
+- Satu **demonstrasi** yang dapat dicoba pengguna lain.
+
+**Per mahasiswa:**
+- Riwayat kontribusi yang dapat diperiksa (Issue, commit/PR, review, uji atau dokumentasi pekerjaan yang dapat diatribusikan).
+- Setidaknya satu bukti komunikasi bermakna, seperti wawancara, fasilitasi, pengajaran, negosiasi, atau peer review yang direspons.
+- Refleksi individu sekitar 400–600 kata: apa yang saya pelajari, bagaimana saya berkontribusi, bagaimana AI membantu, perubahan apa yang terjadi setelah umpan balik, dan apa yang akan saya perbaiki.
+
+## Quality Gate: kapan karya dinilai siap?
+
+Artefak mempunyai tujuan dan sasaran pengguna, sumber yang benar-benar ada, instruksi yang jelas, demonstrasi/pengujian, pengakuan penggunaan AI, batasan, satu review independen yang ditindaklanjuti, serta bukti uji oleh pengguna di luar tim. **Status `reviewed` berarti lolos prosedur internal kelas, bukan sertifikasi ilmiah.**
+
+Dilarang memasukkan data pribadi tanpa izin, API key, data penelitian rahasia, atau materi berhak cipta tanpa hak penggunaan. Keluaran AI tidak boleh dijadikan referensi fiktif. Keputusan akademik dan publikasi tetap menjadi tanggung jawab manusia.
+
+## Presentasi akhir: Academic Commons Showcase
+
+Setiap tema memperlihatkan **satu demonstrasi PUDAL lengkap**: masalah awal → penjelasan konsep → alasan keputusan → keterampilan/prompt yang dijalankan → hasil dan perbaikannya. Peserta lain berperan sebagai pengguna dan penguji, bukan sekadar penonton.
+
+Pembagian waktu demonstrasi, tempat pengujian, dan mekanisme pengumpulan portofolio ditetapkan dosen bersama perwakilan mahasiswa sebelum showcase.
+
+# Usulan penilaian proyek UAS
+
+| Komponen | Bobot usulan | Yang diperiksa |
+|---|---:|---|
+| Kompetensi komunikasi & TAIDA | **25%** | Mendengar, menjelaskan, membangun kepercayaan, memotivasi, menggerakkan tindakan |
+| Kontribusi artefak individual | **25%** | Kualitas karya dan bukti kontribusi personal |
+| Kolaborasi & peer review | **20%** | Pembagian tanggung jawab, kualitas review, tindak lanjut |
+| Kualitas Learning Path, Case & Agent Package | **20%** | PUDAL lengkap, demonstrasi, pengujian, kegunaan nyata |
+| Refleksi & integritas penggunaan AI | **10%** | Evaluasi diri, verifikasi hasil, transparansi, pembelajaran iteratif |
+| **Total** | **100%** | |
+
+**Bobot ini masih usulan dan hanya berlaku setelah disetujui dosen serta diselaraskan dengan ketentuan UAS/RPS.** Kualitas kontribusi lebih penting daripada jumlah commit atau panjang teks yang dihasilkan.
+
+# Undangan untuk memulai
+
+**Tiga minggu, dua belas tim, enam agen, enam Learning Paths, empat puluh dua artefak. Namun, satu tujuan bersama:** membuat pekerjaan akademik lebih dapat dipahami, dikerjakan, diperiksa, dan dibagikan.
+
+Mulailah dengan mengajukan satu pertanyaan kepada teman: **"Pekerjaan akademik apa yang sulit Anda kerjakan sekarang, dan bantuan seperti apa yang benar-benar akan membuat Anda mampu mengerjakannya sendiri?"**
+
+Jadikan jawabannya dasar karya tim. Ketika orang lain dapat belajar dan bertindak lebih baik karena sesuatu yang Anda buat, Anda telah menunjukkan kompetensi komunikasi yang bernilai.
+
+**Belajarlah dengan mengajar. Mahirlah dengan berbuat. Berdayakan AI dengan menginstruksikan. Buktikan kompetensi dengan menyelesaikan masalah. Teruslah belajar melalui PUDAL.**
