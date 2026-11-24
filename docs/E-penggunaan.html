@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>e-penggunaan – PUDAL: Navigasi Cerdas, Engine, dan Pembelajaran Adaptif</title>
+<title>Lampiran E — 1. Usulan Proyek Pamungkas: Triune Academic Capstone – PUDAL: Navigasi Cerdas, Engine, dan Pembelajaran Adaptif</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -81,6 +116,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="tise-six-themes/styles/book.css">
 </head>
@@ -256,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A-register-42-artefak.html">Lampiran</a></li><li class="breadcrumb-item"><a href="./E-penggunaan.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">E-penggunaan.html</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A-register-42-artefak.html">Lampiran</a></li><li class="breadcrumb-item"><a href="./E-penggunaan.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">1. Usulan Proyek Pamungkas: <em>Triune Academic Capstone</em></span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -538,7 +602,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./E-penggunaan.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">E-penggunaan.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">1. Usulan Proyek Pamungkas: <em>Triune Academic Capstone</em></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -554,18 +618,356 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#arsitektur-ruang-kerja-lokal-ci-vs.-pi" id="toc-arsitektur-ruang-kerja-lokal-ci-vs.-pi" class="nav-link active" data-scroll-target="#arsitektur-ruang-kerja-lokal-ci-vs.-pi"><span class="header-section-number">E.1</span> 2. Arsitektur Ruang Kerja Lokal (CI vs.&nbsp;PI)</a></li>
+  <li><a href="#alur-eksekusi-3-tahap-ci-ai-specialized-ai-pi" id="toc-alur-eksekusi-3-tahap-ci-ai-specialized-ai-pi" class="nav-link" data-scroll-target="#alur-eksekusi-3-tahap-ci-ai-specialized-ai-pi"><span class="header-section-number">E.2</span> 3. Alur Eksekusi 3 Tahap (CI + AI → Specialized AI → PI)</a>
+  <ul class="collapse">
+  <li><a href="#tahap-1-generasi-draft-awal-ci-ai-draft-awal-v0.1" id="toc-tahap-1-generasi-draft-awal-ci-ai-draft-awal-v0.1" class="nav-link" data-scroll-target="#tahap-1-generasi-draft-awal-ci-ai-draft-awal-v0.1"><span class="header-section-number">E.2.1</span> Tahap 1 — Generasi Draft Awal (<code>CI + AI → Draft Awal v0.1</code>)</a></li>
+  <li><a href="#tahap-2-enhancemen-spesifik-per-tema-draft-awal-prompt-khusus-ci-ai-draft-khusus-v0.2" id="toc-tahap-2-enhancemen-spesifik-per-tema-draft-awal-prompt-khusus-ci-ai-draft-khusus-v0.2" class="nav-link" data-scroll-target="#tahap-2-enhancemen-spesifik-per-tema-draft-awal-prompt-khusus-ci-ai-draft-khusus-v0.2"><span class="header-section-number">E.2.2</span> Tahap 2 — Enhancemen Spesifik per Tema (<code>Draft Awal + Prompt Khusus CI + AI → Draft Khusus v0.2</code>)</a></li>
+  <li><a href="#tahap-3-penyempurnaan-dengan-personal-intelligence-draft-khusus-pi-final-result-v1.0" id="toc-tahap-3-penyempurnaan-dengan-personal-intelligence-draft-khusus-pi-final-result-v1.0" class="nav-link" data-scroll-target="#tahap-3-penyempurnaan-dengan-personal-intelligence-draft-khusus-pi-final-result-v1.0"><span class="header-section-number">E.2.3</span> Tahap 3 — Penyempurnaan dengan Personal Intelligence (<code>Draft Khusus + PI → Final Result v1.0</code>)</a></li>
+  </ul></li>
+  <li><a href="#bukti-usulan-rubrik-penilaian-proyek-pamungkas" id="toc-bukti-usulan-rubrik-penilaian-proyek-pamungkas" class="nav-link" data-scroll-target="#bukti-usulan-rubrik-penilaian-proyek-pamungkas"><span class="header-section-number">E.3</span> 4. Bukti &amp; Usulan Rubrik Penilaian Proyek Pamungkas</a></li>
+  <li><a href="#mengapa-desain-ini-kuat-secara-pedagogis" id="toc-mengapa-desain-ini-kuat-secara-pedagogis" class="nav-link" data-scroll-target="#mengapa-desain-ini-kuat-secara-pedagogis"><span class="header-section-number">E.4</span> 5. Mengapa Desain Ini Kuat Secara Pedagogis?</a>
+  <ul class="collapse">
+  <li><a href="#berkas-baru-yang-dibuat" id="toc-berkas-baru-yang-dibuat" class="nav-link" data-scroll-target="#berkas-baru-yang-dibuat"><span class="header-section-number">E.4.1</span> 1. Berkas Baru yang Dibuat</a></li>
+  <li><a href="#pembaruan-navigasi-isolasi-privasi-dokumentasi" id="toc-pembaruan-navigasi-isolasi-privasi-dokumentasi" class="nav-link" data-scroll-target="#pembaruan-navigasi-isolasi-privasi-dokumentasi"><span class="header-section-number">E.4.2</span> 2. Pembaruan Navigasi, Isolasi Privasi, &amp; Dokumentasi</a></li>
+  <li><a href="#hasil-verifikasi" id="toc-hasil-verifikasi" class="nav-link" data-scroll-target="#hasil-verifikasi"><span class="header-section-number">E.4.3</span> 3. Hasil Verifikasi</a></li>
+  <li><a href="#cara-pakai-untuk-setiap-mahasiswa-setelah-git-clone" id="toc-cara-pakai-untuk-setiap-mahasiswa-setelah-git-clone" class="nav-link" data-scroll-target="#cara-pakai-untuk-setiap-mahasiswa-setelah-git-clone"><span class="header-section-number">E.4.4</span> Cara Pakai untuk Setiap Mahasiswa Setelah <code>git clone</code></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A-register-42-artefak.html">Lampiran</a></li><li class="breadcrumb-item"><a href="./E-penggunaan.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">E-penggunaan.html</span></a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A-register-42-artefak.html">Lampiran</a></li><li class="breadcrumb-item"><a href="./E-penggunaan.html"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">1. Usulan Proyek Pamungkas: <em>Triune Academic Capstone</em></span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Lampiran E — 1. Usulan Proyek Pamungkas: <em>Triune Academic Capstone</em></h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<p>Analyzed .gitignore:L1-14</p>
+<p>Rancangan ini sangat tepat dan sejalan dengan arsitektur repositori saat ini—di <a href="file:///c:/github/kipp-triune-academic-commons-main/.gitignore#L12">.gitignore</a> folder <code>personal/</code> memang sudah dikecualikan dari Git. Artinya, setiap mahasiswa yang meng-<code>clone</code> repositori secara otomatis memiliki dua ruang kecerdasan yang terpisah rapi di komputernya:</p>
+<ul>
+<li><strong>Collective Intelligence (CI):</strong> seluruh folder terkelola Git (<code>topics/</code>, <code>learning-paths/</code>, <code>templates/</code>, <code>docs/</code>, <code>ARTIFACT_REGISTER.csv</code>) yang berisi 42 artefak terkurasi dan teruji lintas 12 tim.</li>
+<li><strong>Personal Intelligence (PI):</strong> folder <code>personal/</code> yang tetap privat di komputer lokal untuk menyimpan pengetahuan awal, catatan pribadi, data lokal, perspektif nilai, eksperimen draf, dan refleksi individu.</li>
+<li><strong>Artificial Intelligence (AI):</strong> agen/LLM sebagai <strong>intermediari</strong> yang menjembatani CI ke dalam pekerjaan pribadi mahasiswa secara terstruktur.</li>
+</ul>
+<p>Berikut usulan desain <strong>Proyek Akademik Individual Pamungkas</strong> yang mengintegrasikan <strong>seluruh 6 tema</strong> melalui <strong>alur 3 tahap (<code>CI+AI → Prompt Khusus → PI</code>)</strong>.</p>
+<hr>
+<p><strong>Nama proyek:</strong> <strong>Triune Academic Capstone — Kajian Ilmiah &amp; Rekomendasi Solusi Berbasis Bukti</strong><br>
+<strong>Bentuk karya:</strong> Satu paket karya akademik utuh (berbasis Quarto <code>.qmd</code> yang dapat dirender ke HTML/PDF) mengenai <strong>satu persoalan nyata pilihan pribadi mahasiswa</strong> (boleh berasal dari bidang studi/prodi, kehidupan akademik kampus, atau masalah masyarakat/industri), yang dipecahkan dari hulu ke hilir dengan memadukan seluruh 6 tema:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bagian Karya Final</th>
+<th>Tema CI yang Dimanfaatkan</th>
+<th>Output Konkret pada Karya</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Perumusan Masalah &amp; Keputusan Solusi</strong></td>
+<td>Tema <code>06</code> — Academic Problem Solving</td>
+<td><em>Problem framing</em>, analisis akar masalah, <em>decision matrix</em>, analisis risiko, dan rekomendasi solusi</td>
+</tr>
+<tr class="even">
+<td><strong>2. Fondasi Konsep &amp; Penguasaan Mandiri</strong></td>
+<td>Tema <code>01</code> — AI for Learning</td>
+<td>Peta konsep teori inti yang baru dipelajari mahasiswa + catatan perbaikan miskonsepsi</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Tinjauan Pustaka &amp; State of the Art</strong></td>
+<td>Tema <code>02</code> — Literature Research</td>
+<td>Matriks sintesis kritis minimal 5 paper ilmiah asli yang terverifikasi + identifikasi <em>research gap</em></td>
+</tr>
+<tr class="even">
+<td><strong>4. Analisis Data &amp; Bukti Komputasional</strong></td>
+<td>Tema <code>04</code> — Coding &amp; Data Analysis</td>
+<td>Notebook Python (Pandas/Matplotlib) yang dapat direproduksi + verifikasi hasil analisis dataset</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Komunikasi Visual &amp; Presentasi</strong></td>
+<td>Tema <code>05</code> — Visualization &amp; Presentation</td>
+<td>Diagram konseptual, grafik ilmiah akurat, 1 infografik ringkas, dan dek presentasi 5 menit berbasis <strong>TAIDA</strong></td>
+</tr>
+<tr class="even">
+<td><strong>6. Penulisan Ilmiah &amp; Integritas</strong></td>
+<td>Tema <code>03</code> — Academic Writing</td>
+<td>Naskah ilmiah utuh yang koheren, argumentatif, bersitasi sahih, dengan atribusi AI transparan</td>
+</tr>
+</tbody>
+</table>
+<p>Dengan format ini, keenam tema tidak terasa ditempel secara artifisial, melainkan menjadi <strong>enam komponen organik</strong> dari satu karya akademik berstandar tinggi.</p>
+<hr>
+<section id="arsitektur-ruang-kerja-lokal-ci-vs.-pi" class="level2" data-number="E.1">
+<h2 data-number="E.1" class="anchored" data-anchor-id="arsitektur-ruang-kerja-lokal-ci-vs.-pi"><span class="header-section-number">E.1</span> 2. Arsitektur Ruang Kerja Lokal (CI vs.&nbsp;PI)</h2>
+<p>Di komputer masing-masing mahasiswa, proyek pamungkas dikerjakan di dalam <code>personal/capstone/</code> agar <strong>jejak transformasi kualitas dari Tahap 1 → Tahap 2 → Tahap 3 terekam eksplisit</strong> sebagai bukti kontribusi dan pembuktian daya <em>Triune Intelligence</em>:</p>
+<pre class="text"><code>kipp-triune-academic-commons/            ← COLLECTIVE INTELLIGENCE (sync via GitHub)
+├── topics/                              ← 42 artefak tervalidasi (Knowledge, Skills, Prompts, Cases)
+├── learning-paths/                      ← 6 rute PUDAL
+├── templates/ &amp; docs/
+└── personal/                            ← PERSONAL INTELLIGENCE (gitignored, privat lokal)
+    ├── 00-personal-context/             ← Profil belajar (state A), catatan bacaan, wawancara/data lokal
+    └── capstone/
+        ├── brief-pudal.md               ← Orientation PUDAL: topik pribadi, A → B, kriteria sukses
+        ├── stage-1-draft-awal/          ← TAHAP 1 (CI + AI)
+        │   ├── draft-v0.1.qmd           ← Draft awal utuh hasil generasi berbasis CI
+        │   └── stage-1-log.md           ← Artefak CI yang dibaca AI, prompt awal, audit kelemahan v0.1
+        ├── stage-2-draft-khusus/        ← TAHAP 2 (Draft Awal + Prompt Khusus per Tema + AI)
+        │   ├── t06-problem-decision.md
+        │   ├── t01-concept-mastery.md
+        │   ├── t02-literature-matrix.md
+        │   ├── t04-analysis.ipynb
+        │   ├── t05-visuals-taida/
+        │   ├── t03-argument-outline.md
+        │   └── draft-v0.2.qmd           ← Gabungan hasil pengayaan khusus lintas 6 tema
+        ├── stage-3-final-result/        ← TAHAP 3 (Penyempurnaan Personal Intelligence)
+        │   ├── karya-final-v1.0.qmd     ← Karya akhir siap render (HTML/PDF)
+        │   ├── presentasi-taida.qmd     ← Slide presentasi 5 menit
+        │   └── delta-triune.md          ← Tabel evolusi v0.1 → v0.2 → v1.0 (bukti nilai tambah PI)
+        └── evidence/                    ← AI Assistance Ledger, cek sitasi primer, uji mandiri (O_L), refleksi</code></pre>
+<blockquote class="blockquote">
+<p><strong>Siklus umpan balik PI → CI (opsional namun dianjurkan):</strong> Jika saat mengerjakan proyek pamungkas mahasiswa menemukan celah pada artefak CI (misalnya prompt kurang tajam atau langkah tutorial gagal), mahasiswa dapat mengajukan perbaikan umum melalui <strong>Issue/Pull Request</strong> ke repositori bersama tanpa mengunggah isi folder <code>personal/</code>.</p>
+</blockquote>
+<hr>
+</section>
+<section id="alur-eksekusi-3-tahap-ci-ai-specialized-ai-pi" class="level2" data-number="E.2">
+<h2 data-number="E.2" class="anchored" data-anchor-id="alur-eksekusi-3-tahap-ci-ai-specialized-ai-pi"><span class="header-section-number">E.2</span> 3. Alur Eksekusi 3 Tahap (CI + AI → Specialized AI → PI)</h2>
+<section id="tahap-1-generasi-draft-awal-ci-ai-draft-awal-v0.1" class="level3" data-number="E.2.1">
+<h3 data-number="E.2.1" class="anchored" data-anchor-id="tahap-1-generasi-draft-awal-ci-ai-draft-awal-v0.1"><span class="header-section-number">E.2.1</span> Tahap 1 — Generasi Draft Awal (<code>CI + AI → Draft Awal v0.1</code>)</h3>
+<ul>
+<li><strong>Tujuan:</strong> Memperlihatkan seberapa jauh <strong>Collective Intelligence</strong> yang dimediasi <strong>AI</strong> dapat membawa mahasiswa dari kondisi awal <span class="math inline">\(A\)</span> ke prototipe karya pertama dalam waktu singkat.</li>
+<li><strong>Cara kerja:</strong>
+<ol type="1">
+<li>Mahasiswa menetapkan 1 masalah nyata pribadi dan target capaian <span class="math inline">\(B\)</span> di <code>brief-pudal.md</code> (<em>Orientation PUDAL</em>).</li>
+<li>Mahasiswa mengarahkan AI untuk membaca struktur dan modul dasar dari repositori lokal (<code>learning-paths/</code> dan modul <code>01-knowledge/</code> di 6 tema) sebagai <em>grounding context</em>.</li>
+<li>AI menggenerasi <strong>Draft Awal (<code>draft-v0.1.qmd</code>)</strong> yang sudah memuat struktur lengkap 6 bagian (framing masalah, konsep kunci, rencana literatur, rencana analisis data, rancangan visual, dan draf tulisan awal).</li>
+</ol></li>
+<li><strong>Wajib dicatat di <code>stage-1-log.md</code>:</strong> Daftar artefak CI yang dipakai AI + <strong>diagnosis jujur kelemahan <code>v0.1</code></strong> (klaim yang masih umum, sitasi yang belum terverifikasi, data yang masih placeholder, dan bagian yang terasa generik).</li>
+</ul>
+</section>
+<section id="tahap-2-enhancemen-spesifik-per-tema-draft-awal-prompt-khusus-ci-ai-draft-khusus-v0.2" class="level3" data-number="E.2.2">
+<h3 data-number="E.2.2" class="anchored" data-anchor-id="tahap-2-enhancemen-spesifik-per-tema-draft-awal-prompt-khusus-ci-ai-draft-khusus-v0.2"><span class="header-section-number">E.2.2</span> Tahap 2 — Enhancemen Spesifik per Tema (<code>Draft Awal + Prompt Khusus CI + AI → Draft Khusus v0.2</code>)</h3>
+<ul>
+<li><strong>Tujuan:</strong> Meningkatkan mutu bagian spesifik dari <code>v0.1</code> dengan memanfaatkan <strong>instrumen teruji milik kolektif</strong> (prompt khusus <code>03-ai-prompts/</code> dan tutorial <code>02-skills/</code> pada tiap tema).</li>
+<li><strong>Cara kerja per tema:</strong></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Urutan</th>
+<th>Bagian <code>v0.1</code> yang Diperdalam</th>
+<th>Artefak CI yang Dipakai</th>
+<th>Hasil Enhancemen (<code>v0.2</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Masalah &amp; alternatif solusi</td>
+<td><code>P-P01</code>, <code>P-P02</code>, <code>S-P01</code>, <code>S-P02</code></td>
+<td>Rumusan akar masalah tajam, ≥3 alternatif solusi, <em>decision matrix</em> awal, daftar risiko</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Penguasaan konsep kunci</td>
+<td><code>P-L01</code>, <code>P-L02</code>, <code>S-L01</code>, <code>S-L02</code></td>
+<td>Dialog <em>Socratic Tutor</em>, peta konsep, dan koreksi miskonsepsi pada teori inti</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Tinjauan pustaka</td>
+<td><code>P-R01</code>, <code>P-R02</code>, <code>S-R01</code>, <code>S-R02</code></td>
+<td>Pembacaan kritis dan matriks perbandingan 5 paper + identifikasi <em>research gap</em></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Analisis data &amp; kode</td>
+<td><code>P-C01</code>, <code>P-C02</code>, <code>S-C01</code>, <code>S-C02</code></td>
+<td>Notebook Python (Pandas/Matplotlib) yang berjalan bersih beserta uji verifikasi kode</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Diagram, grafik &amp; slide</td>
+<td><code>P-V01</code>, <code>P-V02</code>, <code>S-V01</code>, <code>S-V02</code></td>
+<td>Spesifikasi visual (<em>Visual Knowledge Specification</em>), grafik bersih, dan struktur presentasi TAIDA</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Struktur tulisan &amp; argumen</td>
+<td><code>P-W01</code>, <code>P-W02</code>, <code>S-W01</code>, <code>S-W02</code></td>
+<td>Outline logis, paragraf koheren, dan hasil kritik argumen oleh <em>Critical Writing Reviewer</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Output:</strong> Enam berkas pengayaan yang disatukan menjadi <strong><code>draft-v0.2.qmd</code></strong> (berkualitas jauh lebih terstruktur dan metodologis daripada <code>v0.1</code>, namun <strong>masih merupakan keluaran berintermediasi AI</strong>).</li>
+</ul>
+</section>
+<section id="tahap-3-penyempurnaan-dengan-personal-intelligence-draft-khusus-pi-final-result-v1.0" class="level3" data-number="E.2.3">
+<h3 data-number="E.2.3" class="anchored" data-anchor-id="tahap-3-penyempurnaan-dengan-personal-intelligence-draft-khusus-pi-final-result-v1.0"><span class="header-section-number">E.2.3</span> Tahap 3 — Penyempurnaan dengan Personal Intelligence (<code>Draft Khusus + PI → Final Result v1.0</code>)</h3>
+<ul>
+<li><strong>Tujuan:</strong> Menjadikan karya benar-benar <strong>berkualitas tinggi, autentik, terverifikasi, dan dimiliki secara intelektual</strong> oleh mahasiswa — membuktikan apa yang <em>tidak</em> bisa digantikan oleh AI maupun CI semata.</li>
+<li><strong>Empat kerja inti Personal Intelligence:</strong>
+<ol type="1">
+<li><strong>Verifikasi Epistemik Langsung (<em>Zero Fabrication</em>):</strong> Mahasiswa membuka sendiri ke-5 paper asli (cek DOI, tahun, metode, halaman), menjalankan ulang notebook data, dan memeriksa angka pada setiap grafik. Semua sitasi/klaim yang meleset dikoreksi langsung.</li>
+<li><strong>Injeksi Konteks &amp; Nilai Pribadi:</strong> Mahasiswa memasukkan data/pengamatan lokal dari <code>personal/00-personal-context/</code>, pertimbangan etis, nuansa audiens nyata, serta menulis ulang narasi dengan <strong>suara akademik sendiri</strong> (menghilangkan gaya generik AI).</li>
+<li><strong>Keputusan &amp; Tanggung Jawab Akhir:</strong> Mahasiswa menentukan bobot dan pilihan akhir pada <em>decision matrix</em>, menyatakan batasan studi secara jujur, serta merumuskan rencana aksi yang realistis.</li>
+<li><strong>Dokumentasi Delta Kualitas (<code>delta-triune.md</code>) &amp; Bukti Hasil Belajar (<span class="math inline">\(O_L\)</span>):</strong>
+<ul>
+<li>Menyusun perbandingan konkret <strong><code>v0.1</code> vs <code>v0.2</code> vs <code>v1.0</code></strong> pada minimal 1 contoh dari tiap tema (menunjukkan kesalahan AI yang ditangkap manusia dan peningkatan kualitas yang terjadi).</li>
+<li>Menyiapkan <strong>presentasi lisan 5 menit (TAIDA)</strong> dan <strong>tanya-jawab tanpa bantuan AI</strong> untuk memvalidasi pemahaman mandiri (<span class="math inline">\(O_L\)</span>, selaras dengan prinsip <em>fading assistance</em> di Bagian IV buku PUDAL).</li>
+</ul></li>
+</ol></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="bukti-usulan-rubrik-penilaian-proyek-pamungkas" class="level2" data-number="E.3">
+<h2 data-number="E.3" class="anchored" data-anchor-id="bukti-usulan-rubrik-penilaian-proyek-pamungkas"><span class="header-section-number">E.3</span> 4. Bukti &amp; Usulan Rubrik Penilaian Proyek Pamungkas</h2>
+<p>Agar penilaian mengukur <strong>karya (<span class="math inline">\(O_T\)</span>)</strong> sekaligus <strong>proses &amp; penguasaan diri (<span class="math inline">\(O_L\)</span>)</strong>, berikut usulan bobot khusus Proyek Pamungkas Individual:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek Penilaian</th>
+<th style="text-align: right;">Bobot</th>
+<th>Bukti Utama yang Diperiksa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Kualitas Karya Final (<code>v1.0</code>) &amp; Integrasi 6 Tema</strong></td>
+<td style="text-align: right;">30%</td>
+<td>Koherensi argumen, ketepatan konsep, sintesis 5 paper, notebook berjalan, visual akurat, dan kualitas solusi</td>
+</tr>
+<tr class="even">
+<td><strong>2. Lompatan Nilai 3 Tahap (<code>v0.1 → v0.2 → v1.0</code>)</strong></td>
+<td style="text-align: right;">25%</td>
+<td><code>delta-triune.md</code> dan perbandingan 3 versi yang membuktikan pemanfaatan CI, efektivitas prompt khusus, dan sentuhan kritis PI</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Verifikasi, Integritas AI, &amp; Akuntabilitas</strong></td>
+<td style="text-align: right;">20%</td>
+<td>Nol sitasi/data fiktif, kelengkapan <em>AI Assistance Ledger</em>, temuan koreksi kesalahan AI, dan perlindungan privasi</td>
+</tr>
+<tr class="even">
+<td><strong>4. Penguasaan Mandiri Tanpa AI (<span class="math inline">\(O_L\)</span>) &amp; Presentasi TAIDA</strong></td>
+<td style="text-align: right;">15%</td>
+<td>Presentasi 5 menit + kemampuan menjelaskan konsep, kode/data, keputusan, dan menjawab pertanyaan acak secara lisan tanpa AI</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Refleksi Metakognitif &amp; Umpan Balik ke CI</strong></td>
+<td style="text-align: right;">10%</td>
+<td>Refleksi pribadi tentang perubahan kompetensi (<span class="math inline">\(A \to B\)</span>) + (nilai tambah) catatan perbaikan/PR untuk memperkaya CI bersama</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="mengapa-desain-ini-kuat-secara-pedagogis" class="level2" data-number="E.4">
+<h2 data-number="E.4" class="anchored" data-anchor-id="mengapa-desain-ini-kuat-secara-pedagogis"><span class="header-section-number">E.4</span> 5. Mengapa Desain Ini Kuat Secara Pedagogis?</h2>
+<ol type="1">
+<li><strong>Membuktikan tesis Triune Intelligence secara empiris:</strong> Setiap mahasiswa punya bukti visual (<code>v0.1</code> vs <code>v0.2</code> vs <code>v1.0</code>) bahwa:
+<ul>
+<li><code>CI + AI</code> saja (<code>v0.1</code>) memberi <strong>kecepatan &amp; cakupan</strong>, tetapi rentan generik dan salah fakta.</li>
+<li><code>CI + Specialized Prompts + AI</code> (<code>v0.2</code>) memberi <strong>kedalaman metodologis</strong> sesuai standar komunitas.</li>
+<li><code>PI</code> (<code>v1.0</code>) memberi <strong>kebenaran terverifikasi, konteks nyata, karakter, dan keputusan bernilai</strong>.</li>
+</ul></li>
+<li><strong>Menjaga privasi secara teknis:</strong> Karena dikerjakan di <code>personal/</code> yang sudah masuk <code>.gitignore</code>, mahasiswa bebas menyimpan catatan jujur, draf mentah, data lokal, dan refleksi personal tanpa risiko bocor ke repositori publik.</li>
+<li><strong>Menghubungkan fase kolektif dan fase individual:</strong> Fase kelompok (Minggu 1–3) memaksa kelas membangun <strong>Collective Intelligence yang bermutu</strong>; Proyek Pamungkas membuat setiap mahasiswa merasakan langsung <strong>manfaat nyata CI yang mereka bangun bersama</strong> untuk melahirkan karya individu terbaiknya.</li>
+</ol>
+<hr>
+<p>Jika usulan ini sudah sesuai dengan visi Anda, saya dapat membantu menurunkannya langsung ke dalam berkas repositori, misalnya: 1. Menulis dokumen panduan resmi di <code>docs/individual-capstone.md</code> (atau <code>.qmd</code> agar tampil di website Quarto), 2. Membuat <strong>template starter</strong> untuk <code>brief-pudal.md</code>, <code>delta-triune.md</code>, <code>ai-ledger.md</code>, dan <code>karya-final.qmd</code> di <code>templates/</code>, serta 3. Menyediakan skrip kecil (mis. <code>scripts/init_personal_capstone.py</code>) agar setiap mahasiswa setelah <code>git clone</code> cukup menjalankan satu perintah untuk membangkitkan seluruh struktur <code>personal/capstone/</code> siap pakai di komputernya.</p>
+<p>Analyzed check_portal.py:L1-20 Analyzed build_catalog.py:L1-11 Analyzed reflection.md:L1-10 Analyzed peer-review.md:L1-10 Analyzed user-test.md:L1-10 Analyzed change-status.md:L1-10 Created individual-capstone.qmd Created brief-pudal.md Created stage-1-log.md Created stage-2-enhancement.md Created delta-triune.md Created ai-ledger.md Created karya-final.qmd Created presentasi-taida.qmd Created init_personal_capstone.py Edited _quarto.yml Edited README.md Edited index.qmd Edited rubric.md Ran validate repo checks and test capstone initializer Ran run Quarto render and portal build check · Exited with code 1 Ran render Quarto site and build portal · Exited with code 1</p>
+<p>Sedang menjalankan verifikasi <code>quarto render</code> (91 berkas) dan <code>build_portal.py</code> untuk memastikan seluruh panduan, templat baru, dan isolasi folder <code>personal/</code> terbangun tanpa error.</p>
+<p>Implementasi <strong>Proyek Pamungkas Individual (<em>Triune Academic Capstone</em>)</strong> selesai dan seluruh validasi repositori serta build Quarto/portal telah lolos.</p>
+<section id="berkas-baru-yang-dibuat" class="level3" data-number="E.4.1">
+<h3 data-number="E.4.1" class="anchored" data-anchor-id="berkas-baru-yang-dibuat"><span class="header-section-number">E.4.1</span> 1. Berkas Baru yang Dibuat</h3>
+<ul>
+<li><strong>Panduan Resmi Proyek Pamungkas:</strong>
+<ul>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/docs/individual-capstone.qmd">docs/individual-capstone.qmd</a> — panduan lengkap arsitektur <strong>Collective Intelligence (CI) + Artificial Intelligence (AI) + Personal Intelligence (PI)</strong>, pemetaan integrasi seluruh <strong>6 tema</strong>, alur wajib <strong>3 tahap</strong> (<code>v0.1 → v0.2 → v1.0</code>), checklist mutu, dan usulan rubrik penilaian.</li>
+</ul></li>
+<li><strong>Templat Proyek Pamungkas (<code>templates/capstone/</code>):</strong>
+<ul>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/brief-pudal.md">brief-pudal.md</a> — Orientation PUDAL (<span class="math inline">\(A \to B\)</span>), rencana 6 tema, dan batasan privasi.</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/stage-1-log.md">stage-1-log.md</a> — log Tahap 1 (<code>CI + AI → Draft Awal v0.1</code>) &amp; audit kelemahan awal.</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/stage-2-enhancement.md">stage-2-enhancement.md</a> — log Tahap 2 (<code>v0.1 + Prompt Khusus CI + AI → Draft Khusus v0.2</code>) untuk seluruh 6 tema.</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/delta-triune.md">delta-triune.md</a> — matriks evolusi <code>v0.1 → v0.2 → v1.0</code>, log koreksi kesalahan AI oleh manusia, dan umpan balik selektif <code>PI → CI</code>.</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/ai-ledger.md">ai-ledger.md</a> — <em>AI Assistance Ledger</em>, verifikasi ≥5 sumber primer, serta refleksi &amp; bukti penguasaan mandiri tanpa AI (<span class="math inline">\(O_L\)</span>).</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/karya-final.qmd">karya-final.qmd</a> — templat naskah Quarto 6 bab terpadu (dipakai untuk <code>draft-v0.1.qmd</code>, <code>draft-v0.2.qmd</code>, dan <code>karya-final-v1.0.qmd</code>).</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/presentasi-taida.qmd">presentasi-taida.qmd</a> — templat slide presentasi 5 menit berbasis TAIDA (<code>revealjs</code>).</li>
+</ul></li>
+<li><strong>Skrip Inisialisasi Ruang Kerja Personal:</strong>
+<ul>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/scripts/init_personal_capstone.py">scripts/init_personal_capstone.py</a> — skrip Python (tanpa dependensi eksternal) untuk membangkitkan struktur privat <code>personal/00-personal-context/</code> dan <code>personal/capstone/</code> (17 berkas siap pakai, termasuk notebook <code>t04-analysis.ipynb</code>), mengecek <code>.gitignore</code>, dan aman karena tidak menimpa berkas yang sudah ada kecuali memakai <code>--force</code>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="pembaruan-navigasi-isolasi-privasi-dokumentasi" class="level3" data-number="E.4.2">
+<h3 data-number="E.4.2" class="anchored" data-anchor-id="pembaruan-navigasi-isolasi-privasi-dokumentasi"><span class="header-section-number">E.4.2</span> 2. Pembaruan Navigasi, Isolasi Privasi, &amp; Dokumentasi</h3>
+<ul>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/_quarto.yml">_quarto.yml</a> — menambahkan pengecualian <code>"!personal/**"</code> pada <code>project.render</code> agar berkas privat di <code>personal/</code> tidak ikut ter-render ke situs kolektif, serta menambahkan tautan <strong>Capstone Individu</strong> di navbar dan sidebar.</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/README.md">README.md</a> — menambahkan bagian <strong>Proyek Pamungkas Individual</strong> dan cara menjalankan skrip inisialisasi.</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/index.qmd">index.qmd</a> — menambahkan tautan Proyek Pamungkas Individual di daftar “Mulai di sini”.</li>
+<li><a href="file:///c:/github/kipp-triune-academic-commons-main/assessments/rubric.md">assessments/rubric.md</a> — menambahkan ringkasan usulan rubrik Proyek Pamungkas Individual.</li>
+</ul>
+</section>
+<section id="hasil-verifikasi" class="level3" data-number="E.4.3">
+<h3 data-number="E.4.3" class="anchored" data-anchor-id="hasil-verifikasi"><span class="header-section-number">E.4.3</span> 3. Hasil Verifikasi</h3>
+<ul>
+<li><code>python scripts/check_artifacts.py</code> → <strong>PASS</strong> (42 artefak, 6 learning paths konsisten).</li>
+<li><code>python scripts/check_portal.py</code> &amp; <code>python scripts/build_catalog.py</code> → <strong>PASS</strong>.</li>
+<li>Uji <code>python scripts/init_personal_capstone.py</code> (di folder uji terpisah) → membuat 17 berkas lengkap dengan substitusi placeholder &amp; notebook <code>nbformat v4</code> valid; eksekusi ulang tanpa <code>--force</code> melewati seluruh 17 berkas dengan aman.</li>
+<li><code>quarto render</code> (91/91 berkas, termasuk <code>docs/individual-capstone.qmd</code> &amp; seluruh <code>templates/capstone/</code>, dengan <code>personal/</code> terisolasi) &amp; <code>python scripts/build_portal.py</code> → <strong>berhasil membangun <code>_site/</code> dan <code>_public/</code></strong> (<code>Quarto site included: True</code>).</li>
+</ul>
+</section>
+<section id="cara-pakai-untuk-setiap-mahasiswa-setelah-git-clone" class="level3" data-number="E.4.4">
+<h3 data-number="E.4.4" class="anchored" data-anchor-id="cara-pakai-untuk-setiap-mahasiswa-setelah-git-clone"><span class="header-section-number">E.4.4</span> Cara Pakai untuk Setiap Mahasiswa Setelah <code>git clone</code></h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/init_personal_capstone.py <span class="dt">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--name</span> <span class="st">"Nama Lengkap"</span> <span class="dt">\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--nim</span> <span class="st">"18225XXX"</span> <span class="dt">\</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--topic</span> <span class="st">"Judul Masalah Akademik Anda"</span></span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Setelah itu, seluruh draf 3 tahap dikerjakan secara privat di <code>personal/capstone/</code> dan karya final dapat dirender mandiri lewat <code>quarto render personal/capstone/stage-3-final-result/karya-final-v1.0.qmd</code>.</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

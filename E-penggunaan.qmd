@@ -1,0 +1,193 @@
+Analyzed .gitignore:L1-14
+
+Rancangan ini sangat tepat dan sejalan dengan arsitektur repositori saat ini—di [.gitignore](file:///c:/github/kipp-triune-academic-commons-main/.gitignore#L12) folder `personal/` memang sudah dikecualikan dari Git. Artinya, setiap mahasiswa yang meng-`clone` repositori secara otomatis memiliki dua ruang kecerdasan yang terpisah rapi di komputernya:
+
+- **Collective Intelligence (CI):** seluruh folder terkelola Git (`topics/`, `learning-paths/`, `templates/`, `docs/`, `ARTIFACT_REGISTER.csv`) yang berisi 42 artefak terkurasi dan teruji lintas 12 tim.
+- **Personal Intelligence (PI):** folder `personal/` yang tetap privat di komputer lokal untuk menyimpan pengetahuan awal, catatan pribadi, data lokal, perspektif nilai, eksperimen draf, dan refleksi individu.
+- **Artificial Intelligence (AI):** agen/LLM sebagai **intermediari** yang menjembatani CI ke dalam pekerjaan pribadi mahasiswa secara terstruktur.
+
+Berikut usulan desain **Proyek Akademik Individual Pamungkas** yang mengintegrasikan **seluruh 6 tema** melalui **alur 3 tahap (`CI+AI → Prompt Khusus → PI`)**.
+
+---
+
+## 1. Usulan Proyek Pamungkas: *Triune Academic Capstone*
+
+**Nama proyek:** **Triune Academic Capstone — Kajian Ilmiah & Rekomendasi Solusi Berbasis Bukti**  
+**Bentuk karya:** Satu paket karya akademik utuh (berbasis Quarto `.qmd` yang dapat dirender ke HTML/PDF) mengenai **satu persoalan nyata pilihan pribadi mahasiswa** (boleh berasal dari bidang studi/prodi, kehidupan akademik kampus, atau masalah masyarakat/industri), yang dipecahkan dari hulu ke hilir dengan memadukan seluruh 6 tema:
+
+| Bagian Karya Final | Tema CI yang Dimanfaatkan | Output Konkret pada Karya |
+|---|---|---|
+| **1. Perumusan Masalah & Keputusan Solusi** | Tema `06` — Academic Problem Solving | *Problem framing*, analisis akar masalah, *decision matrix*, analisis risiko, dan rekomendasi solusi |
+| **2. Fondasi Konsep & Penguasaan Mandiri** | Tema `01` — AI for Learning | Peta konsep teori inti yang baru dipelajari mahasiswa + catatan perbaikan miskonsepsi |
+| **3. Tinjauan Pustaka & State of the Art** | Tema `02` — Literature Research | Matriks sintesis kritis minimal 5 paper ilmiah asli yang terverifikasi + identifikasi *research gap* |
+| **4. Analisis Data & Bukti Komputasional** | Tema `04` — Coding & Data Analysis | Notebook Python (Pandas/Matplotlib) yang dapat direproduksi + verifikasi hasil analisis dataset |
+| **5. Komunikasi Visual & Presentasi** | Tema `05` — Visualization & Presentation | Diagram konseptual, grafik ilmiah akurat, 1 infografik ringkas, dan dek presentasi 5 menit berbasis **TAIDA** |
+| **6. Penulisan Ilmiah & Integritas** | Tema `03` — Academic Writing | Naskah ilmiah utuh yang koheren, argumentatif, bersitasi sahih, dengan atribusi AI transparan |
+
+Dengan format ini, keenam tema tidak terasa ditempel secara artifisial, melainkan menjadi **enam komponen organik** dari satu karya akademik berstandar tinggi.
+
+---
+
+## 2. Arsitektur Ruang Kerja Lokal (CI vs. PI)
+
+Di komputer masing-masing mahasiswa, proyek pamungkas dikerjakan di dalam `personal/capstone/` agar **jejak transformasi kualitas dari Tahap 1 → Tahap 2 → Tahap 3 terekam eksplisit** sebagai bukti kontribusi dan pembuktian daya *Triune Intelligence*:
+
+```text
+kipp-triune-academic-commons/            ← COLLECTIVE INTELLIGENCE (sync via GitHub)
+├── topics/                              ← 42 artefak tervalidasi (Knowledge, Skills, Prompts, Cases)
+├── learning-paths/                      ← 6 rute PUDAL
+├── templates/ & docs/
+└── personal/                            ← PERSONAL INTELLIGENCE (gitignored, privat lokal)
+    ├── 00-personal-context/             ← Profil belajar (state A), catatan bacaan, wawancara/data lokal
+    └── capstone/
+        ├── brief-pudal.md               ← Orientation PUDAL: topik pribadi, A → B, kriteria sukses
+        ├── stage-1-draft-awal/          ← TAHAP 1 (CI + AI)
+        │   ├── draft-v0.1.qmd           ← Draft awal utuh hasil generasi berbasis CI
+        │   └── stage-1-log.md           ← Artefak CI yang dibaca AI, prompt awal, audit kelemahan v0.1
+        ├── stage-2-draft-khusus/        ← TAHAP 2 (Draft Awal + Prompt Khusus per Tema + AI)
+        │   ├── t06-problem-decision.md
+        │   ├── t01-concept-mastery.md
+        │   ├── t02-literature-matrix.md
+        │   ├── t04-analysis.ipynb
+        │   ├── t05-visuals-taida/
+        │   ├── t03-argument-outline.md
+        │   └── draft-v0.2.qmd           ← Gabungan hasil pengayaan khusus lintas 6 tema
+        ├── stage-3-final-result/        ← TAHAP 3 (Penyempurnaan Personal Intelligence)
+        │   ├── karya-final-v1.0.qmd     ← Karya akhir siap render (HTML/PDF)
+        │   ├── presentasi-taida.qmd     ← Slide presentasi 5 menit
+        │   └── delta-triune.md          ← Tabel evolusi v0.1 → v0.2 → v1.0 (bukti nilai tambah PI)
+        └── evidence/                    ← AI Assistance Ledger, cek sitasi primer, uji mandiri (O_L), refleksi
+```
+
+> **Siklus umpan balik PI → CI (opsional namun dianjurkan):** Jika saat mengerjakan proyek pamungkas mahasiswa menemukan celah pada artefak CI (misalnya prompt kurang tajam atau langkah tutorial gagal), mahasiswa dapat mengajukan perbaikan umum melalui **Issue/Pull Request** ke repositori bersama tanpa mengunggah isi folder `personal/`.
+
+---
+
+## 3. Alur Eksekusi 3 Tahap (CI + AI → Specialized AI → PI)
+
+### Tahap 1 — Generasi Draft Awal (`CI + AI → Draft Awal v0.1`)
+- **Tujuan:** Memperlihatkan seberapa jauh **Collective Intelligence** yang dimediasi **AI** dapat membawa mahasiswa dari kondisi awal $A$ ke prototipe karya pertama dalam waktu singkat.
+- **Cara kerja:**
+  1. Mahasiswa menetapkan 1 masalah nyata pribadi dan target capaian $B$ di `brief-pudal.md` (*Orientation PUDAL*).
+  2. Mahasiswa mengarahkan AI untuk membaca struktur dan modul dasar dari repositori lokal (`learning-paths/` dan modul `01-knowledge/` di 6 tema) sebagai *grounding context*.
+  3. AI menggenerasi **Draft Awal (`draft-v0.1.qmd`)** yang sudah memuat struktur lengkap 6 bagian (framing masalah, konsep kunci, rencana literatur, rencana analisis data, rancangan visual, dan draf tulisan awal).
+- **Wajib dicatat di `stage-1-log.md`:** Daftar artefak CI yang dipakai AI + **diagnosis jujur kelemahan `v0.1`** (klaim yang masih umum, sitasi yang belum terverifikasi, data yang masih placeholder, dan bagian yang terasa generik).
+
+### Tahap 2 — Enhancemen Spesifik per Tema (`Draft Awal + Prompt Khusus CI + AI → Draft Khusus v0.2`)
+- **Tujuan:** Meningkatkan mutu bagian spesifik dari `v0.1` dengan memanfaatkan **instrumen teruji milik kolektif** (prompt khusus `03-ai-prompts/` dan tutorial `02-skills/` pada tiap tema).
+- **Cara kerja per tema:**
+
+| Urutan | Bagian `v0.1` yang Diperdalam | Artefak CI yang Dipakai | Hasil Enhancemen (`v0.2`) |
+|---|---|---|---|
+| 1 | Masalah & alternatif solusi | `P-P01`, `P-P02`, `S-P01`, `S-P02` | Rumusan akar masalah tajam, ≥3 alternatif solusi, *decision matrix* awal, daftar risiko |
+| 2 | Penguasaan konsep kunci | `P-L01`, `P-L02`, `S-L01`, `S-L02` | Dialog *Socratic Tutor*, peta konsep, dan koreksi miskonsepsi pada teori inti |
+| 3 | Tinjauan pustaka | `P-R01`, `P-R02`, `S-R01`, `S-R02` | Pembacaan kritis dan matriks perbandingan 5 paper + identifikasi *research gap* |
+| 4 | Analisis data & kode | `P-C01`, `P-C02`, `S-C01`, `S-C02` | Notebook Python (Pandas/Matplotlib) yang berjalan bersih beserta uji verifikasi kode |
+| 5 | Diagram, grafik & slide | `P-V01`, `P-V02`, `S-V01`, `S-V02` | Spesifikasi visual (*Visual Knowledge Specification*), grafik bersih, dan struktur presentasi TAIDA |
+| 6 | Struktur tulisan & argumen | `P-W01`, `P-W02`, `S-W01`, `S-W02` | Outline logis, paragraf koheren, dan hasil kritik argumen oleh *Critical Writing Reviewer* |
+
+- **Output:** Enam berkas pengayaan yang disatukan menjadi **`draft-v0.2.qmd`** (berkualitas jauh lebih terstruktur dan metodologis daripada `v0.1`, namun **masih merupakan keluaran berintermediasi AI**).
+
+### Tahap 3 — Penyempurnaan dengan Personal Intelligence (`Draft Khusus + PI → Final Result v1.0`)
+- **Tujuan:** Menjadikan karya benar-benar **berkualitas tinggi, autentik, terverifikasi, dan dimiliki secara intelektual** oleh mahasiswa — membuktikan apa yang *tidak* bisa digantikan oleh AI maupun CI semata.
+- **Empat kerja inti Personal Intelligence:**
+  1. **Verifikasi Epistemik Langsung (*Zero Fabrication*):** Mahasiswa membuka sendiri ke-5 paper asli (cek DOI, tahun, metode, halaman), menjalankan ulang notebook data, dan memeriksa angka pada setiap grafik. Semua sitasi/klaim yang meleset dikoreksi langsung.
+  2. **Injeksi Konteks & Nilai Pribadi:** Mahasiswa memasukkan data/pengamatan lokal dari `personal/00-personal-context/`, pertimbangan etis, nuansa audiens nyata, serta menulis ulang narasi dengan **suara akademik sendiri** (menghilangkan gaya generik AI).
+  3. **Keputusan & Tanggung Jawab Akhir:** Mahasiswa menentukan bobot dan pilihan akhir pada *decision matrix*, menyatakan batasan studi secara jujur, serta merumuskan rencana aksi yang realistis.
+  4. **Dokumentasi Delta Kualitas (`delta-triune.md`) & Bukti Hasil Belajar ($O_L$):**
+     - Menyusun perbandingan konkret **`v0.1` vs `v0.2` vs `v1.0`** pada minimal 1 contoh dari tiap tema (menunjukkan kesalahan AI yang ditangkap manusia dan peningkatan kualitas yang terjadi).
+     - Menyiapkan **presentasi lisan 5 menit (TAIDA)** dan **tanya-jawab tanpa bantuan AI** untuk memvalidasi pemahaman mandiri ($O_L$, selaras dengan prinsip *fading assistance* di Bagian IV buku PUDAL).
+
+---
+
+## 4. Bukti & Usulan Rubrik Penilaian Proyek Pamungkas
+
+Agar penilaian mengukur **karya ($O_T$)** sekaligus **proses & penguasaan diri ($O_L$)**, berikut usulan bobot khusus Proyek Pamungkas Individual:
+
+| Aspek Penilaian | Bobot | Bukti Utama yang Diperiksa |
+|---|---:|---|
+| **1. Kualitas Karya Final (`v1.0`) & Integrasi 6 Tema** | 30% | Koherensi argumen, ketepatan konsep, sintesis 5 paper, notebook berjalan, visual akurat, dan kualitas solusi |
+| **2. Lompatan Nilai 3 Tahap (`v0.1 → v0.2 → v1.0`)** | 25% | `delta-triune.md` dan perbandingan 3 versi yang membuktikan pemanfaatan CI, efektivitas prompt khusus, dan sentuhan kritis PI |
+| **3. Verifikasi, Integritas AI, & Akuntabilitas** | 20% | Nol sitasi/data fiktif, kelengkapan *AI Assistance Ledger*, temuan koreksi kesalahan AI, dan perlindungan privasi |
+| **4. Penguasaan Mandiri Tanpa AI ($O_L$) & Presentasi TAIDA** | 15% | Presentasi 5 menit + kemampuan menjelaskan konsep, kode/data, keputusan, dan menjawab pertanyaan acak secara lisan tanpa AI |
+| **5. Refleksi Metakognitif & Umpan Balik ke CI** | 10% | Refleksi pribadi tentang perubahan kompetensi ($A \to B$) + (nilai tambah) catatan perbaikan/PR untuk memperkaya CI bersama |
+
+---
+
+## 5. Mengapa Desain Ini Kuat Secara Pedagogis?
+
+1. **Membuktikan tesis Triune Intelligence secara empiris:** Setiap mahasiswa punya bukti visual (`v0.1` vs `v0.2` vs `v1.0`) bahwa:
+   - `CI + AI` saja (`v0.1`) memberi **kecepatan & cakupan**, tetapi rentan generik dan salah fakta.
+   - `CI + Specialized Prompts + AI` (`v0.2`) memberi **kedalaman metodologis** sesuai standar komunitas.
+   - `PI` (`v1.0`) memberi **kebenaran terverifikasi, konteks nyata, karakter, dan keputusan bernilai**.
+2. **Menjaga privasi secara teknis:** Karena dikerjakan di `personal/` yang sudah masuk `.gitignore`, mahasiswa bebas menyimpan catatan jujur, draf mentah, data lokal, dan refleksi personal tanpa risiko bocor ke repositori publik.
+3. **Menghubungkan fase kolektif dan fase individual:** Fase kelompok (Minggu 1–3) memaksa kelas membangun **Collective Intelligence yang bermutu**; Proyek Pamungkas membuat setiap mahasiswa merasakan langsung **manfaat nyata CI yang mereka bangun bersama** untuk melahirkan karya individu terbaiknya.
+
+---
+
+Jika usulan ini sudah sesuai dengan visi Anda, saya dapat membantu menurunkannya langsung ke dalam berkas repositori, misalnya:
+1. Menulis dokumen panduan resmi di `docs/individual-capstone.md` (atau `.qmd` agar tampil di website Quarto),
+2. Membuat **template starter** untuk `brief-pudal.md`, `delta-triune.md`, `ai-ledger.md`, dan `karya-final.qmd` di `templates/`, serta
+3. Menyediakan skrip kecil (mis. `scripts/init_personal_capstone.py`) agar setiap mahasiswa setelah `git clone` cukup menjalankan satu perintah untuk membangkitkan seluruh struktur `personal/capstone/` siap pakai di komputernya.
+
+Analyzed check_portal.py:L1-20
+Analyzed build_catalog.py:L1-11
+Analyzed reflection.md:L1-10
+Analyzed peer-review.md:L1-10
+Analyzed user-test.md:L1-10
+Analyzed change-status.md:L1-10
+Created individual-capstone.qmd
+Created brief-pudal.md
+Created stage-1-log.md
+Created stage-2-enhancement.md
+Created delta-triune.md
+Created ai-ledger.md
+Created karya-final.qmd
+Created presentasi-taida.qmd
+Created init_personal_capstone.py
+Edited _quarto.yml
+Edited README.md
+Edited index.qmd
+Edited rubric.md
+Ran validate repo checks and test capstone initializer
+Ran run Quarto render and portal build check · Exited with code 1
+Ran render Quarto site and build portal · Exited with code 1
+
+Sedang menjalankan verifikasi `quarto render` (91 berkas) dan `build_portal.py` untuk memastikan seluruh panduan, templat baru, dan isolasi folder `personal/` terbangun tanpa error.
+
+Implementasi **Proyek Pamungkas Individual (*Triune Academic Capstone*)** selesai dan seluruh validasi repositori serta build Quarto/portal telah lolos.
+
+### 1. Berkas Baru yang Dibuat
+- **Panduan Resmi Proyek Pamungkas:**
+  - [docs/individual-capstone.qmd](file:///c:/github/kipp-triune-academic-commons-main/docs/individual-capstone.qmd) — panduan lengkap arsitektur **Collective Intelligence (CI) + Artificial Intelligence (AI) + Personal Intelligence (PI)**, pemetaan integrasi seluruh **6 tema**, alur wajib **3 tahap** (`v0.1 → v0.2 → v1.0`), checklist mutu, dan usulan rubrik penilaian.
+- **Templat Proyek Pamungkas (`templates/capstone/`):**
+  - [brief-pudal.md](file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/brief-pudal.md) — Orientation PUDAL ($A \to B$), rencana 6 tema, dan batasan privasi.
+  - [stage-1-log.md](file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/stage-1-log.md) — log Tahap 1 (`CI + AI → Draft Awal v0.1`) & audit kelemahan awal.
+  - [stage-2-enhancement.md](file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/stage-2-enhancement.md) — log Tahap 2 (`v0.1 + Prompt Khusus CI + AI → Draft Khusus v0.2`) untuk seluruh 6 tema.
+  - [delta-triune.md](file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/delta-triune.md) — matriks evolusi `v0.1 → v0.2 → v1.0`, log koreksi kesalahan AI oleh manusia, dan umpan balik selektif `PI → CI`.
+  - [ai-ledger.md](file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/ai-ledger.md) — *AI Assistance Ledger*, verifikasi ≥5 sumber primer, serta refleksi & bukti penguasaan mandiri tanpa AI ($O_L$).
+  - [karya-final.qmd](file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/karya-final.qmd) — templat naskah Quarto 6 bab terpadu (dipakai untuk `draft-v0.1.qmd`, `draft-v0.2.qmd`, dan `karya-final-v1.0.qmd`).
+  - [presentasi-taida.qmd](file:///c:/github/kipp-triune-academic-commons-main/templates/capstone/presentasi-taida.qmd) — templat slide presentasi 5 menit berbasis TAIDA (`revealjs`).
+- **Skrip Inisialisasi Ruang Kerja Personal:**
+  - [scripts/init_personal_capstone.py](file:///c:/github/kipp-triune-academic-commons-main/scripts/init_personal_capstone.py) — skrip Python (tanpa dependensi eksternal) untuk membangkitkan struktur privat `personal/00-personal-context/` dan `personal/capstone/` (17 berkas siap pakai, termasuk notebook `t04-analysis.ipynb`), mengecek `.gitignore`, dan aman karena tidak menimpa berkas yang sudah ada kecuali memakai `--force`.
+
+### 2. Pembaruan Navigasi, Isolasi Privasi, & Dokumentasi
+- [_quarto.yml](file:///c:/github/kipp-triune-academic-commons-main/_quarto.yml) — menambahkan pengecualian `"!personal/**"` pada `project.render` agar berkas privat di `personal/` tidak ikut ter-render ke situs kolektif, serta menambahkan tautan **Capstone Individu** di navbar dan sidebar.
+- [README.md](file:///c:/github/kipp-triune-academic-commons-main/README.md) — menambahkan bagian **Proyek Pamungkas Individual** dan cara menjalankan skrip inisialisasi.
+- [index.qmd](file:///c:/github/kipp-triune-academic-commons-main/index.qmd) — menambahkan tautan Proyek Pamungkas Individual di daftar "Mulai di sini".
+- [assessments/rubric.md](file:///c:/github/kipp-triune-academic-commons-main/assessments/rubric.md) — menambahkan ringkasan usulan rubrik Proyek Pamungkas Individual.
+
+### 3. Hasil Verifikasi
+- `python scripts/check_artifacts.py` → **PASS** (42 artefak, 6 learning paths konsisten).
+- `python scripts/check_portal.py` & `python scripts/build_catalog.py` → **PASS**.
+- Uji `python scripts/init_personal_capstone.py` (di folder uji terpisah) → membuat 17 berkas lengkap dengan substitusi placeholder & notebook `nbformat v4` valid; eksekusi ulang tanpa `--force` melewati seluruh 17 berkas dengan aman.
+- `quarto render` (91/91 berkas, termasuk `docs/individual-capstone.qmd` & seluruh `templates/capstone/`, dengan `personal/` terisolasi) & `python scripts/build_portal.py` → **berhasil membangun `_site/` dan `_public/`** (`Quarto site included: True`).
+
+### Cara Pakai untuk Setiap Mahasiswa Setelah `git clone`
+```bash
+python scripts/init_personal_capstone.py \
+  --name "Nama Lengkap" \
+  --nim "18225XXX" \
+  --topic "Judul Masalah Akademik Anda"
+```
+Setelah itu, seluruh draf 3 tahap dikerjakan secara privat di `personal/capstone/` dan karya final dapat dirender mandiri lewat `quarto render personal/capstone/stage-3-final-result/karya-final-v1.0.qmd`.
